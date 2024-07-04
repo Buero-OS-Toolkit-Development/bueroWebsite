@@ -21,6 +21,12 @@ body {
     position: -webkit-sticky;
     background-color: #e5e5e5;
 }
+.footer:hover {
+    height: 16px;
+}
+.footerText:hover {
+    font-size: 13px;
+}
 .navbar {
     background-color: #e5e5e5;
     height: 50px;
