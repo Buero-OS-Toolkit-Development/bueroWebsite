@@ -2,8 +2,7 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Supported versions of Büro Guide (this website):
 
 | Version | Supported          |
 | ------- | ------------------ |
@@ -11,12 +10,28 @@ currently being supported with security updates.
 | 1.1.x   | :x:                |
 | 0.x     | :x:                |
 
-## Reporting a Vulnerability
+Supported versions of Büro:
 
-Use this section to tell people how to report a vulnerability.
+| Version | Supported          |
+| ------- | ------------------ |
+| 3.6.x   | :white_check_mark: |
+| 3.5.x   | :white_check_mark: |
+| 4.0--PRE| :white_check_mark: |
+| <3.0    | :x:                |
+| <3.5    | :x:                |
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
+
+
+
+
+
+
+
+
+
+
+
+
 declined, etc.
 
 coming soon...
