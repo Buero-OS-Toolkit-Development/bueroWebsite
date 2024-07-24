@@ -22,16 +22,3 @@ Supported versions of Büro:
 
 
 
-
-
-
-
-
-
-
-
-
-
-declined, etc.
-
-coming soon...
