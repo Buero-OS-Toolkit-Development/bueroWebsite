@@ -85,3 +85,9 @@ a:active {
 h2 {
     font-size: 32px;
 }
+.photoElement {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+}
