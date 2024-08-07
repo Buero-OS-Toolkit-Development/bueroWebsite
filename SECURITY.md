@@ -1,6 +1,6 @@
 # Security Policy
 
-## Supported Versions
+## Supported Versions of Büro or directly associated projects
 
 Supported versions of Büro Guide (this website):
 
@@ -21,5 +21,22 @@ Supported versions of Büro:
 | 3.5.x   | :x:                |
 | <3.5    | :x:                |
 
+Supported versions of System:
 
+| Version | Supported          |
+| ------- | ------------------ |
+| 4.0.x   | :white_check_mark: |
+| 3.6.4   | :x:                |
+| <3.6    | :x:                |
 
+Supported versions of Background System:
+
+| Version | Supported          |
+| ------- | ------------------ |
+| 4       | :white_check_mark: |
+| 3       | :white_check_mark: |
+| <3      | :x:                |
+
+## Supported Versios of other projects (packages of Büro)
+
+coming soon...
