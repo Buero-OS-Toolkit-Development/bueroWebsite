@@ -37,6 +37,14 @@ Supported versions of Background System:
 | 3       | :white_check_mark: |
 | <3      | :x:                |
 
+Supported versions of Setup:
+
+| Version | Supported          |
+| ------- | ------------------ |
+| 12      | :white_check_mark: |
+| 11      | :x:                |
+| <11     | :x:                |
+
 ## Supported Versios of other projects (packages of Büro)
 
 coming soon...
