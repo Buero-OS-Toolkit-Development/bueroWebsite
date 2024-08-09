@@ -48,3 +48,8 @@ Supported versions of Setup:
 ## Supported Versios of other projects (packages of Büro)
 
 coming soon...
+
+## Reporting a vulnerability
+
+Create an issue with your vulnerability to report it
+or use the 'Feedback' function of Büro.
