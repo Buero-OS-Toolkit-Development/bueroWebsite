@@ -1,0 +1,2 @@
+This file exists only for creating this directory.
+The directory is filled with content for websharing and web functionalities of Büro etc..
