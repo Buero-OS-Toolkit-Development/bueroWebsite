@@ -26,7 +26,7 @@ Supported versions of System:
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 4.0.x   | :white_check_mark: |
+| >4.0.3  | :white_check_mark: |
 | 3.6.4   | :x:                |
 | <3.6    | :x:                |
 
