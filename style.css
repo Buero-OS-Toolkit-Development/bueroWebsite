@@ -15,17 +15,20 @@ body {
     padding: 0;
 }
 .footer {
-    height: 8px;
+    height: 15px;
     bottom: 0px;
     position: sticky;
     position: -webkit-sticky;
     background-color: #e5e5e5;
 }
 .footer:hover {
-    height: 16px;
+    height: 25px;
+}
+.footerText {
+    font-size: 12px;
 }
 .footerText:hover {
-    font-size: 13px;
+    font-size: 18px;
 }
 .navbar {
     background-color: #e5e5e5;
