@@ -1,0 +1,13 @@
+{
+  "name": "Büro Guide",
+  "start_url": "https://leanderkafemann.github.io/bueroWebsite/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "./images/logo_Python.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
+  
