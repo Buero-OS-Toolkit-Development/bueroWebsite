@@ -1,5 +1,9 @@
 {
-  "name": "Büro Guide",
+  "lang":  "de-de",
+  "name": "Büro - der Guide",
+  "short_name": "Büro Guide",
+  "description": "Ein Guide durch die Features von Büro.",
+  "orientation": "landscape-primary",
   "start_url": "https://leanderkafemann.github.io/bueroWebsite/",
   "display": "standalone",
   "icons": [
