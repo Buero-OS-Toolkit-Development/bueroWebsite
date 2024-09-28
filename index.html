@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="de-de">
+<!--
+    Dieser Code wurde ausschließlich von Leander Kafemann entwickelt.
+    Die Verwendung von Style- und Manifestdateien ist erlaubt,
+    nicht jedoch die von Pythonskripten oder HTML-Dateien.
+-->
 <head>
     <title>B&uuml;ro-der Guide</title>
     <meta name="author" content="Leander Kafemann" />
@@ -63,8 +68,9 @@
                 -Verbesserungen von B&uuml;roOnline<br/>
                 -Zugriffsvergabe an B&uuml;roPlugins<br/><br/>
                 <i>
-                    Was ist neu in B&uuml;ro 4.0.8?<br/>
-                    Einige Nutzer wurden reautorisiert.
+                    Was ist neu in B&uuml;ro 4.0.9?<br/>
+                    Die Option Sonderangebote wurde in den Bereich Shopping verschoben.<br/>
+                    Des Weiteren werden einige Mails jetzt &uuml;ber B&uuml;roMail versendet.
                 </i>
             </p>
             <h3>Was ist neu in den neuen Versionen der Systempakete?</h3>
@@ -79,8 +85,8 @@
                 - verbesserte Fehlerbehebung<br/>
                 - automatische Erkennung der Version bei Updates<br/><br/>
                 <i>
-                    Was ist neu in System 4.0.8?<br/>
-                    Neu in dieser Version ist die Unterst&uuml;tzung von B&uuml;roMail w&auml;hrend Updates.
+                    Was ist neu in System 4.0.9?<br/>
+                    Neu in dieser Version ist die Verwendung von DebugLogs w&auml;hrend Updates.
                 </i><br/><br/>
                 <b>Hintergrundsystem 4</b><br/>
                 - Verbesserungen in der Nutzerf&uuml;hrung<br/><br/>
@@ -123,8 +129,8 @@
             <h2 id="installation">Installation</h2>
             <p>
                 Laden Sie die neueste Version von
-                <a href="./data/büro4.0.8.zip">B&uuml;ro (V4.0.8)</a> (Hauptprogramm),
-                <a href="./data/system4.0.8.zip">System (V4.0.8)</a> (UpdateInstaller und Fehleranalyse)<br/>und
+                <a href="./data/büro4.0.9.zip">B&uuml;ro (V4.0.9)</a> (Hauptprogramm),
+                <a href="./data/system4.0.9.zip">System (V4.0.9)</a> (UpdateInstaller und Fehleranalyse)<br/>und
                 <a href="./data/systemupdate[neue Datei4].zip">Hintergrundsystem (V4)</a> (Updater f&uuml;r System)
                 herunter.<br/>
                 Laden Sie unseren
@@ -554,12 +560,11 @@
             Dieser Eintrag ist noch nicht bereit und wird in K&uuml;rze erscheinen.
         </p>
         <!--#comment out here
-    <p>
-        Der wesentliche Unterschied zwischen einem normalen Paket und einem Plugin ist,<br/>
-        dass das Plugin Daten von B&uuml;ro lesen und &auml;ndern darf sowie Zugriff auf andere installierte Pakete hat.<br/>
-        So k&ouml;nnen Sie z.B. eine pre_mail speichern, die beim n&auml;chsten &Ouml;ffnen von B&uuml;roMail geladen wird und dann B&uuml;roMail &ouml;ffnen.
-    </p>
-    -->
+        <p>
+            Der wesentliche Unterschied zwischen einem normalen Paket und einem Plugin ist,<br/>
+            dass das Plugin Daten von B&uuml;ro lesen und &auml;ndern darf sowie Zugriff auf andere installierte Pakete hat.<br/>
+        </p>
+        -->
         <h3>Erleichterungen f&uuml;r Entwickler</h3>
         <p>
             Dieser Eintrag ist noch nicht bereit und wird in K&uuml;rze erscheinen.
@@ -572,18 +577,17 @@
             -DebugLogs erstellen (Klasse DebugLog)<br/>
             -Statusbalken erstellen (Klasse status)<br/>
             -PREMIUM &uuml;berpr&uuml;fen (Funktion bueroUtils.checkPREMIUM)<br/>
+            -PreMails f&uuml;r B&uuml;roMail erstellen (Funktion bueroUtils.createPreMail)<br/>
             -u.v.m.<br/>
             Zus&auml;tzlich k&ouml;nnen Sie die folgenden, zwingend installierten Module nutzen:<br/>
             'pip', 'colorama', 'easygui', 'eyed3', 'keyboard', 'naturalsize', 'numpy', 'pgzero', 'pillow', 'ping3', 'pyautogui', 'pycols', 'pygame', 'pyimager', 'pyperclip', 'pysounds', 'requests'<br/><br/>
             Schauen Sie f&uuml;r mehr Informationen direkt in die bueroUtils - die Funktionen sind jeweils erkl&auml;rt.
         </p>
-        <!--#comment out here
         <h4>Das Paket B&uuml;roEntwickler</h4>
         <p>
             Dieses Paket ist noch nicht erschienen,<br/>
             weshalb dieser Eintrag noch nicht verf&uuml;gbar ist.
         </p>
-        -->
         <div style="display: block;">
             <h2 id="weblinks">Weblinks</h2>
             <p>
@@ -608,7 +612,7 @@
         </div>
     </div>
     <div class="footer" id="footer" style="text-align: center;">
-        <p class="footerText">Copyright LK 2024 - BueroWebKit-Version 1.2.24</p>
+        <p class="footerText">Copyright LK 2024 - BueroWebKit-Version 1.2.25</p>
     </div>
 </body>
 </html>
