@@ -16,7 +16,8 @@ Supported versions of Büro:
 | Version | Supported          |
 | ------- | ------------------ |
 | 4.1--PRE| :x:                |
-| 4.0.x   | :white_check_mark: |
+| 4.0.11  | :white_check_mark: |
+| 4.0.x   | :x:                |
 | 3.6.9   | :x:                |
 | 3.6.x   | :x:                |
 | 3.5.x   | :x:                |
