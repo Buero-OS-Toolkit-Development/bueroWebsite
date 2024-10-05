@@ -2,7 +2,7 @@
   "lang": "de-de",
   "name": "Buero - der Guide",
   "short_name": "Buero Guide",
-  "description": "Ein Guide durch die Features von B�ro.",
+  "description": "Ein Guide durch die Features von Buero.",
   "orientation": "landscape-primary",
   "start_url": "https://leanderkafemann.github.io/bueroWebsite/",
   "display": "standalone",
