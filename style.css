@@ -94,3 +94,9 @@ h2 {
     width: 50%;
     display: block;
 }
+details {
+    text-align: center;
+}
+summary {
+    text-align: center;
+}
