@@ -1,0 +1,5 @@
+https://leanderkafemann.github.io/bueroWebsite/
+https://leanderkafemann.github.io/bueroWebsite/style.css
+https://leanderkafemann.github.io/bueroWebsite/manifest.json
+https://leanderkafemann.github.io/bueroWebsite/images/logo_Python.png
+https://leanderkafemann.github.io/bueroWebsite/images/logo.png
