@@ -4,3 +4,5 @@ https://leanderkafemann.github.io/bueroWebsite/styling/box.css
 https://leanderkafemann.github.io/bueroWebsite/manifest.json
 https://leanderkafemann.github.io/bueroWebsite/images/logo_Python.png
 https://leanderkafemann.github.io/bueroWebsite/images/logo.png
+https://leanderkafemann.github.io/bueroWebsite/js/cookies.js
+https://leanderkafemann.github.io/bueroWebsite/js/username.js
