@@ -6,3 +6,5 @@ https://leanderkafemann.github.io/bueroWebsite/images/logo_Python.png
 https://leanderkafemann.github.io/bueroWebsite/images/logo.png
 https://leanderkafemann.github.io/bueroWebsite/js/cookies.js
 https://leanderkafemann.github.io/bueroWebsite/js/username.js
+https://leanderkafemann.github.io/bueroWebsite/js/get_like.js
+https://leanderkafemann.github.io/bueroWebsite/js/set_like.js
