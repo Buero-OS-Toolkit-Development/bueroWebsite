@@ -15,14 +15,14 @@ body {
     padding: 0;
 }
 .footer {
-    height: 25px;
+    height: 20px;
     bottom: 0px;
     position: sticky;
     position: -webkit-sticky;
     background-color: #e5e5e5;
 }
 .footer:hover {
-    height: 25px;
+    height: 30px;
 }
 .footerText {
     font-size: 12px;
