@@ -1,6 +1,6 @@
-from naturalsize import listToInt
+from naturalsize import listToInt, special_starter
 
-print("Booting replacer v1.2.52")
+print("Booting replacer v1.2.58")
 print("replacer is part of Leander Kafemanns project bueroWebsite.")
 path = "C:/Users/Leander/Documents/Python/verschlüsseln_gesamt/büro_webseite/index.html"
 with open(path, "r", encoding="utf-8") as f:
@@ -11,3 +11,4 @@ content = content_org.replace("ß", "&szlig;",).replace("ü", "&uuml;").replace(
 with open(path, "w", encoding="utf-8") as f:
     f.write(content)
 print("Targets successfully replaced.")
+special_starter()
