@@ -1,6 +1,11 @@
+/*
+    This is an extra stylesheet for boxes used in index.
+    It was created by Leander Kafemann
+*/
 .oval {
     width: 60%;
     display: auto;
     background: radial-gradient(silver, gold);
     border-radius: 40px;
+    align-content: center;
 }
