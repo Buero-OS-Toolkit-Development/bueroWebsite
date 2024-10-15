@@ -1,0 +1,6 @@
+.oval {
+    width: 60%;
+    display: auto;
+    background: radial-gradient(silver, gold);
+    border-radius: 40px;
+}
