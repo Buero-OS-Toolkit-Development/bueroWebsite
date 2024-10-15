@@ -8,7 +8,7 @@ async function getLikes(contentHeader) {
 }
 async function formatLikes(contentHeader) {
     let response_ = await getLikes(contentHeader);
-    document.getElementById(contentHeader).textContent = "Likes: " + response_;
+    document.getElementById(contentHeader).textContent = response_;
 }
 async function checkLiked(contentHeader) {
     let name_ = getCookie("username", document.cookie)
