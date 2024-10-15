@@ -1,7 +1,22 @@
 from tkinter import *
+import pyperclip
+import pyautogui as py
+
+SCHABL = """
+            <div class="oval">
+                <h3>{}</h3>
+                <p>
+                    {}
+                </p>
+            </div>
+"""
 
 def export():
-    pass
+    title = c.titel.get("1.0", END)
+    content = c.inhalt.get("1.0", END)
+    to_export = SCHABL.format(title, content)
+    pyperclip.copy(to_export)
+    py.alert((to_export if len(to_export) < 1000 else "Content too long")+"\n\nin die Zwischenablage kopiert.", "Kopiert")
 
 def quit_():
     quit(code="Exit")
@@ -14,7 +29,7 @@ c.configure(bg="light blue")
 c.pack()
 
 c.create_text(325, 60, text="  Buero Guide  \nContent Creator", font=("Verdana", "30", "bold"))
-c.create_text(325, 840, text="Copyright LK 2024  -  Version 0.1.04", font=("Verdana", "10"))
+c.create_text(325, 840, text="Copyright LK 2024  -  Version 0.3.07", font=("Verdana", "10"))
 
 c.create_text(20, 200, text="Titel:", font=("Verdana", "20"), anchor="w")
 c.create_text(325, 270, text="Inhalt:", font=("Verdana", "25"))
