@@ -12,10 +12,17 @@
     <link rel="stylesheet" href="./styling/box.css"/>
     <link rel="manifest" href="./manifest.json"/>
     <link rel="icon" type="image/png" href="./images/logo_Python.png"/>
+    <script type="text/javascript" src="./js/cookies.js"></script>
+    <script type="text/javascript" src="./js/username.js"></script>
+    <script type="text/javascript" src="./js/get_like.js"></script>
+    <script type="text/javascript" src="./js/set_like.js"></script>
     <meta charset="utf-8"/>
     <meta name="google-site-verification" content="7B0CF-ClfZaLgOrvs32NkRIFktgrLNCGxIwQPBNUqBs"/>
 </head>
 <body>
+    <script>
+        usernameCheck()
+    </script>
     <div class="navbar">
         <a href="#"><img src="./images/logo.png" alt="logo"/></a>
         <nav>
@@ -37,59 +44,34 @@
             <h1 style="font-size: 48px;" id="home"><u>B&uuml;ro - der Guide</u></h1>
             <h2>Aktuelles</h2>
             <div class="oval">
-                <font color="black">
+                <font color="red">
                     <h3>Aktuelles</h3>
                     <p>
-                        Die Sektion Aktuelles wurde jetzt verbessert!<br/>
-                        Wie vielleicht schon von Einigen bemerkt wurde,<br/>
-                        gibt es jetzt farbige Boxen um die Eintr&auml;ge.<br/>
+                        Die Eintr&auml;ge dieser Sektion sind jetzt zu echten Artikeln geworden!<br/>
+                        Du kannst sie jetzt liken!<br/>
                         <br/>
-                        <b>Diese dienen als Vorbereitung auf V2.0 dieser Webseite!</b>
+                        Daf&uuml;r musst du dich nur mit deinem B&uuml;ro-Code hier einloggen, und schon kannst auch du mitmachen!
                     </p>
                 </font>
+                <div class="like" id="aktuelles" style="">?</div><button onclick="setLike('aktuelles')" type="button" class="likeButton">&#128151;</button>
+                <script>
+                    checkLiked("aktuelles");
+                </script>
             </div>
             <div class="oval">
-                <h3>Was ist neu in Passwortgenerator 1.2?</h3>
-                <p>
-                    Eine neue Version des Passwortgenerators ist erschienen!<br/>
-                    Probieren Sie diese jetzt aus!<br/>
-                    Neu ist, dass die Namen nicht mehr auf ausgew&auml;hlte Beispiele begrenzt sind.
-                </p>
+                <font color="black">
+                    <h3>LKWEB</h3>
+                    <p>
+                        <b>Was ist neu in LKWEB 2.11?</b><br/>
+                        Dieser Code l&auml;uft auf unseren Servern.<br/>
+                        Neu ist Unterst&uuml;tzung f&uuml;r das Liken auf dieser Seite.
+                    </p>
+                </font>
+                <div class="like" id="lkweb" style="">?</div><button onclick="setLike('lkweb')" type="button" class="likeButton">&#128151;</button>
+                <script>
+                    checkLiked("lkweb");
+                </script>
             </div>
-            <div class="oval">
-                <h3>B&uuml;roBank</h3>
-                <p>
-                    <b>
-                        <a href="#bb">B&uuml;roBank</a>
-                    </b> ist das neueste Paket von B&uuml;ro.<br/>
-                    Installieren Sie es noch heute!
-                </p>
-            </div>
-            <div class="oval">
-                <h3 id="entwickeln">Entwickeln Sie jetzt Ihr eigenes B&uuml;ro-Paket!</h3>
-                <p>
-                    Sie k&ouml;nnen nun selbst ans Werk gehen und Ihr eigenes Paket f&uuml;r B&uuml;ro entwickeln.<br/>
-                    Sobald die Entwicklung Ihres Paketes abgeschlossen ist,<br/>
-                    k&ouml;nnen Sie es uns zuschicken und es wird nach einer Pr&uuml;fung des Inhalts in B&uuml;ro implementiert.<br/><br/>
-                    <b>
-                        Besuchen Sie unsere Entwickler-Sektion f&uuml;r mehr Informationen.<br/><br/>
-                        Weitere Hilfen f&uuml;r Entwickler sind f&uuml;r Version 4.1 geplant.
-                    </b>
-                </p>
-            </div>
-            <!--
-            <div class="oval">
-                <h3>Was ist neu in LK-Web 2.10?</h3>
-                <p>
-                    Dieses Projekt ist der Code unserer Server,<br/>
-                    die f&uuml;r die Interaktion von B&uuml;ro und Paketen mit dem Web<br/>
-                    und f&uuml;r das Online-Login zust&auml;ndig sind.<br/><br/>
-                    <i>
-                        Auskommentierter Inhalt
-                    </i>
-                </p>
-            </div>
-            -->
         </div>
         <div style="display: block;">
             <h2 id="&uuml;berDieseSeite">&Uuml;ber diese Seite</h2>
@@ -626,8 +608,7 @@
     </div>
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Diese Seite ben&ouml;tigt JavaScript. Bitte aktivieren Sie es, falls nicht bereits geschehen.
-            Copyright LK 2024 - BueroWebKit-Version 1.2.61
+            Diese Seite ben&ouml;tigt JavaScript. Bitte aktivieren Sie es, falls nicht bereits geschehen - Copyright Leander Kafemann 2024 - BueroWebKit-Version 2.0.0
         </p>
     </div>
 </body>
