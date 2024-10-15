@@ -100,3 +100,14 @@ details {
 summary {
     text-align: center;
 }
+div.like {
+    color: darkgrey;
+    font-size: large;
+    display: block;
+}
+button.likeButton {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    margin-bottom: 10px;
+}
