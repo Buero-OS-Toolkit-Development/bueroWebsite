@@ -13,7 +13,7 @@
     <link rel="manifest" href="./manifest.json"/>
     <link rel="icon" type="image/png" href="./images/logo_Python.png"/>
     <script type="text/javascript" src="./js/cookies.js"></script>
-    <script type="text/javascript" src="./js/username.js"></script>
+    <script type="text/javascript" src="./js/login.js"></script>
     <script type="text/javascript" src="./js/get_like.js"></script>
     <script type="text/javascript" src="./js/set_like.js"></script>
     <meta charset="utf-8"/>
@@ -42,6 +42,13 @@
     <div style="margin-top: 50px;">
         <div style="display: block;">
             <h1 style="font-size: 48px;" id="home"><u>B&uuml;ro - der Guide</u></h1>
+            <h2>Account</h2>
+            <div class="oval">
+                <p>Hallo, <div id="name__">?</div>!</p>
+            </div>
+            <script>
+                document.getElementById("name__").textContent = getCookie("username", document.cookie)
+            </script>
             <h2>Aktuelles</h2>
             <div class="oval">
                 <font color="red">
@@ -608,7 +615,7 @@
     </div>
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Diese Seite ben&ouml;tigt JavaScript. Bitte aktivieren Sie es, falls nicht bereits geschehen - Copyright Leander Kafemann 2024 - BueroWebKit-Version 2.0.0
+            Diese Seite ben&ouml;tigt JavaScript. Bitte aktivieren Sie es, falls nicht bereits geschehen - Copyright Leander Kafemann 2024 - BueroWebKit-Version 2.0.1
         </p>
     </div>
 </body>
