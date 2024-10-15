@@ -2,21 +2,25 @@ from tkinter import *
 import pyperclip
 import pyautogui as py
 
-SCHABL = """
-            <div class="oval">
-                <h3>{}</h3>
-                <p>
-                    {}
-                </p>
-            </div>
-"""
+SCHABL = """<div class="oval">
+                <font color="{}">
+                    <h3>{}</h3>
+                    <p>
+                        {}
+                    </p>
+                </font>
+            </div>"""
 
 def export():
-    title = c.titel.get("1.0", END)
-    content = c.inhalt.get("1.0", END)
-    to_export = SCHABL.format(title, content)
+    title = c.titel.get("1.0", END).rstrip()
+    content = c.inhalt.get("1.0", END).rstrip().replace("\n", "<br/>\n"+24*" ")
+    to_export = SCHABL.format(c.color, title, content)
     pyperclip.copy(to_export)
     py.alert((to_export if len(to_export) < 1000 else "Content too long")+"\n\nin die Zwischenablage kopiert.", "Kopiert")
+
+def color_():
+    c.color = c.colors[c.colors.index(c.color)+1 if c.color != c.colors[-1] else 0]
+    c.colorB.config(background=c.color)
 
 def quit_():
     quit(code="Exit")
@@ -28,16 +32,22 @@ c = Canvas(root, width=650, height=850)
 c.configure(bg="light blue")
 c.pack()
 
+c.colors = ["black", "red", "blue", "green", "yellow", "gold", "magenta", "light blue", "purple"]
+c.color = "black"
+
 c.create_text(325, 60, text="  Buero Guide  \nContent Creator", font=("Verdana", "30", "bold"))
-c.create_text(325, 840, text="Copyright LK 2024  -  Version 0.3.07", font=("Verdana", "10"))
+c.create_text(325, 840, text="Copyright LK 2024  -  Version 1.2.57", font=("Verdana", "10"))
 
 c.create_text(20, 200, text="Titel:", font=("Verdana", "20"), anchor="w")
 c.create_text(325, 270, text="Inhalt:", font=("Verdana", "25"))
 
 c.inhalt = Text(root, wrap=WORD, font=("Verdana", "16"))
-c.create_window(10, 250, height=500, width=630, window=c.inhalt, anchor="nw")
+c.create_window(10, 250, height=480, width=630, window=c.inhalt, anchor="nw")
 c.titel = Text(root, wrap="none", font=("Verdana", "18"))
 c.create_window(180, 200, height=40, width=420, window=c.titel, anchor="w")
+
+c.colorB = Button(master=root, command=color_, text="Farbe", background="black", relief="ridge")
+c.create_window(25, 740, anchor="nw", window=c.colorB, height=30, width=100)
 
 c.create_window(25, 775, anchor="nw", window=Button(master=root, command=export, text="Exportieren", background="light blue", relief="ridge"), height=40, width=275)
 c.create_window(350, 775, anchor="nw", window=Button(master=root, command=quit_, text="Beenden", background="light blue", relief="ridge"), height=40, width=275)
