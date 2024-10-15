@@ -110,6 +110,7 @@ button.likeButton {
     background-repeat: no-repeat;
     border: none;
     margin-bottom: 10px;
+    cursor: grab;
 }
 .login_button {
     background-color: white;
