@@ -9,12 +9,17 @@ SCHABL = """<div class="oval">
                         {}
                     </p>
                 </font>
+                <div class="like" id="{}" style="">?</div><button onclick="setLike('{}')" type="button" class="likeButton">&#128151;</button>
+                <script>
+                    checkLiked("{}");
+                </script>
             </div>"""
 
 def export():
     title = c.titel.get("1.0", END).rstrip()
     content = c.inhalt.get("1.0", END).rstrip().replace("\n", "<br/>\n"+24*" ")
-    to_export = SCHABL.format(c.color, title, content)
+    id_ = title.lower().replace(" ", "")
+    to_export = SCHABL.format(c.color, title, content, id_, id_, id_)
     pyperclip.copy(to_export)
     py.alert((to_export if len(to_export) < 1000 else "Content too long")+"\n\nin die Zwischenablage kopiert.", "Kopiert")
 
@@ -36,7 +41,7 @@ c.colors = ["black", "red", "blue", "green", "yellow", "gold", "magenta", "light
 c.color = "black"
 
 c.create_text(325, 60, text="  Buero Guide  \nContent Creator", font=("Verdana", "30", "bold"))
-c.create_text(325, 840, text="Copyright LK 2024  -  Version 1.2.57", font=("Verdana", "10"))
+c.create_text(325, 840, text="Copyright LK 2024  -  Version 2.0.0", font=("Verdana", "10"))
 
 c.create_text(20, 200, text="Titel:", font=("Verdana", "20"), anchor="w")
 c.create_text(325, 270, text="Inhalt:", font=("Verdana", "25"))

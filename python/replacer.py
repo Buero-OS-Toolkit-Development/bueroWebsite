@@ -1,6 +1,6 @@
 from naturalsize import listToInt, special_starter
 
-print("Booting replacer v1.2.58")
+print("Booting replacer v2.0.0")
 print("replacer is part of Leander Kafemanns project bueroWebsite.")
 path = "C:/Users/Leander/Documents/Python/verschlüsseln_gesamt/büro_webseite/index.html"
 with open(path, "r", encoding="utf-8") as f:
