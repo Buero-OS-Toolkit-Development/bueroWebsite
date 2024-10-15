@@ -44,19 +44,41 @@
             <h1 style="font-size: 48px;" id="home"><u>B&uuml;ro - der Guide</u></h1>
             <h2>Account</h2>
             <div class="oval">
-                <p>Hallo, <div id="name__">?</div>!</p>
+                <p>
+                    Hallo, <div id="name__" style="display:ruby;">?</div>!<br />
+                    Du bist eingeloggt mit dem Code <div id="code__" style="display:ruby;">?</div>!<br /><br />
+                    <button onclick="changeLoginButton()" type="button" class="login_button">&Auml;ndern</button><br />
+                    <div id="text__" style="display: ruby;"></div>
+                </p>
             </div>
             <script>
-                document.getElementById("name__").textContent = getCookie("username", document.cookie)
+                document.getElementById("name__").textContent = getCookie("username", document.cookie);
+                document.getElementById("code__").textContent = getCookie("code", document.cookie);
             </script>
             <h2>Aktuelles</h2>
+            <div class="oval">
+                <font color="black">
+                    <h3>BueroWebsite</h3>
+                    <p>
+                        <b>Was ist neu in V2.1?</b><br />
+                        <br />
+                        Version 2.1 dieser Webseite ist erschienen!<br />
+                        Die meisten Neuerungen sind auf GitHub zu finden - <br />
+                        wesentlich ist jedoch der neue Account-Bereich ganz oben auf dieser Seite!
+                    </p>
+                </font>
+                <div class="like" id="buerowebsite" style="">?</div><button onclick="setLike('buerowebsite')" type="button" class="likeButton">&#128151;</button>
+                <script>
+                    checkLiked("buerowebsite");
+                </script>
+            </div>
             <div class="oval">
                 <font color="red">
                     <h3>Aktuelles</h3>
                     <p>
-                        Die Eintr&auml;ge dieser Sektion sind jetzt zu echten Artikeln geworden!<br/>
-                        Du kannst sie jetzt liken!<br/>
-                        <br/>
+                        Die Eintr&auml;ge dieser Sektion sind jetzt zu echten Artikeln geworden!<br />
+                        Du kannst sie jetzt liken!<br />
+                        <br />
                         Daf&uuml;r musst du dich nur mit deinem B&uuml;ro-Code hier einloggen, und schon kannst auch du mitmachen!
                     </p>
                 </font>
@@ -69,8 +91,8 @@
                 <font color="black">
                     <h3>LKWEB</h3>
                     <p>
-                        <b>Was ist neu in LKWEB 2.11?</b><br/>
-                        Dieser Code l&auml;uft auf unseren Servern.<br/>
+                        <b>Was ist neu in LKWEB 2.11?</b><br />
+                        Dieser Code l&auml;uft auf unseren Servern.<br />
                         Neu ist Unterst&uuml;tzung f&uuml;r das Liken auf dieser Seite.
                     </p>
                 </font>
@@ -615,7 +637,7 @@
     </div>
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Diese Seite ben&ouml;tigt JavaScript. Bitte aktivieren Sie es, falls nicht bereits geschehen - Copyright Leander Kafemann 2024 - BueroWebKit-Version 2.0.1
+            Diese Seite ben&ouml;tigt JavaScript. Bitte aktivieren Sie es, falls nicht bereits geschehen - Copyright Leander Kafemann 2024 - BueroWebKit-Version 2.1.0
         </p>
     </div>
 </body>
