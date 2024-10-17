@@ -7,17 +7,18 @@
 -->
 <head>
     <title>B&uuml;ro-der Guide</title>
-    <meta name="author" content="Leander Kafemann"/>
-    <link rel="stylesheet" href="./styling/style.css"/>
-    <link rel="stylesheet" href="./styling/box.css"/>
-    <link rel="manifest" href="./manifest.json"/>
-    <link rel="icon" type="image/png" href="./images/logo_Python.png"/>
+    <meta name="author" content="Leander Kafemann" />
+    <link rel="stylesheet" href="./styling/style.css" />
+    <link rel="stylesheet" href="./styling/box.css" />
+    <link rel="stylesheet" href="./styling/like.css" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="icon" type="image/png" href="./images/logo_Python.png" />
     <script type="text/javascript" src="./js/cookies.js"></script>
     <script type="text/javascript" src="./js/login.js"></script>
     <script type="text/javascript" src="./js/get_like.js"></script>
     <script type="text/javascript" src="./js/set_like.js"></script>
-    <meta charset="utf-8"/>
-    <meta name="google-site-verification" content="7B0CF-ClfZaLgOrvs32NkRIFktgrLNCGxIwQPBNUqBs"/>
+    <meta charset="utf-8" />
+    <meta name="google-site-verification" content="7B0CF-ClfZaLgOrvs32NkRIFktgrLNCGxIwQPBNUqBs" />
 </head>
 <body>
     <script>
@@ -46,9 +47,9 @@
             <div class="oval">
                 <p>
                     Hallo, <div id="name__" style="display:ruby;">?</div>!<br />
-                    Du bist eingeloggt mit dem Code <div id="code__" style="display:ruby;">?</div>!<br /><br />
+                    Du bist eingeloggt mit dem Code <div id="code__" style="display:inline;">?</div>!<br /><br />
                     <button onclick="changeLoginButton()" type="button" class="login_button">&Auml;ndern</button><br />
-                    <div id="text__" style="display: ruby;"></div>
+                    <div id="text__" style="display: inline;"></div>
                 </p>
             </div>
             <script>
@@ -60,31 +61,16 @@
                 <font color="black">
                     <h3>BueroWebsite</h3>
                     <p>
-                        <b>Was ist neu in V2.1?</b><br />
+                        <b>Was ist neu in V2.2?</b><br />
                         <br />
-                        Version 2.1 dieser Webseite ist erschienen!<br />
+                        Version 2.2 dieser Webseite ist erschienen!<br />
                         Die meisten Neuerungen sind auf GitHub zu finden - <br />
-                        wesentlich ist jedoch der neue Account-Bereich ganz oben auf dieser Seite!
+                        wesentlich ist jedoch, dass die Nutzung dieser Seite jetzt auch ohne Account möglich ist!
                     </p>
                 </font>
                 <div class="like" id="buerowebsite" style="">?</div><button onclick="setLike('buerowebsite')" type="button" class="likeButton">&#128151;</button>
                 <script>
                     checkLiked("buerowebsite");
-                </script>
-            </div>
-            <div class="oval">
-                <font color="red">
-                    <h3>Aktuelles</h3>
-                    <p>
-                        Die Eintr&auml;ge dieser Sektion sind jetzt zu echten Artikeln geworden!<br />
-                        Du kannst sie jetzt liken!<br />
-                        <br />
-                        Daf&uuml;r musst du dich nur mit deinem B&uuml;ro-Code hier einloggen, und schon kannst auch du mitmachen!
-                    </p>
-                </font>
-                <div class="like" id="aktuelles" style="">?</div><button onclick="setLike('aktuelles')" type="button" class="likeButton">&#128151;</button>
-                <script>
-                    checkLiked("aktuelles");
                 </script>
             </div>
             <div class="oval">
@@ -634,10 +620,16 @@
                 <a href="mailto:leander@kafemann.berlin?subject=Kundenservice">Kundenservice</a><br/>
             </p>
         </div>
+        <div style="display: block;">
+            <h2>Hinweise</h2>
+            <p>
+                Diese Seite ben&ouml;tigt JavaScript - bitte aktivieren Sie es, falls nicht bereits geschehen.
+            </p>
+        </div>
     </div>
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Diese Seite ben&ouml;tigt JavaScript. Bitte aktivieren Sie es, falls nicht bereits geschehen - Copyright Leander Kafemann 2024 - BueroWebKit-Version 2.1.0
+            Copyright Leander Kafemann 2024 - BueroWebKit-Version 2.2.0
         </p>
     </div>
 </body>
