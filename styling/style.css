@@ -103,7 +103,7 @@ summary {
 div.like {
     color: darkgrey;
     font-size: large;
-    display: ruby;
+    display: inline;
 }
 button.likeButton {
     background-color: Transparent;
