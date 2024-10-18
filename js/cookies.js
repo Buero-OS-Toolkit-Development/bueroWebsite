@@ -17,6 +17,9 @@ function getCookie(cname, cookieObject) {
     return "";
 }
 function setCookie(cname, cvalue, exdays) {
+    if (getCookie(cname, document.cookie) != "") {
+        document.cookie = cname+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;SameSite=None; Secure";
+    }
     const d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
     let expires = "expires=" + d.toUTCString();
