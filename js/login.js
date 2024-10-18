@@ -4,9 +4,13 @@
 function usernameCheck() {
     if (getCookie("username", document.cookie) == "") {
         setCookie("username", "NoNameGiven", 7);
+    } else {
+        setCookie("username", getCookie("username", document.cookie), 7);
     }
     if (getCookie("code", document.cookie) == "") {
         setCookie("code", "NoCodeGiven", 7);
+    } else {
+        setCookie("code", getCookie("code", document.cookie), 7);
     }
 }
 function changeLogin() {

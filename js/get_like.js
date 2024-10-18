@@ -12,15 +12,20 @@ async function formatLikes(contentHeader) {
 }
 async function checkLiked(contentHeader) {
     let name_ = getCookie("username", document.cookie);
+    let response_ = await fetch("https://lkunited.pythonanywhere.com/webResources/checkLiked?username=" + name_ + "&contentHeader=" + contentHeader);
+    let response_text = await response_.text();
+    if (response_text == "True") {
+        document.getElementById(contentHeader).style = "color: red;";
+    } else {
+        document.getElementById(contentHeader).style = "color: darkgrey;";
+    }    
+}
+function getContent(contentHeader) {
+    let name_ = getCookie("username", document.cookie);
     if (name_ != "NoNameGiven") {
-        let response_ = await fetch("https://lkunited.pythonanywhere.com/webResources/checkLiked?username=" + name_ + "&contentHeader=" + contentHeader);
-        let response_text = await response_.text();
-        if (response_text == "True") {
-            document.getElementById(contentHeader).style = "color: red;";
-        } else {
-            document.getElementById(contentHeader).style = "color: darkgrey;";
-        }
+        checkLiked(contentHeader);
         formatLikes(contentHeader);
+        formatComments(contentHeader);
     } else {
         document.getElementById(contentHeader).style = "color: black;";
     }
