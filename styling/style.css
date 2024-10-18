@@ -104,8 +104,9 @@ div.vHover {
     filter: blur(6px);
     display: inline;
     background-color: gainsboro;
+    transition-duration: 1s;
 }
 div.vHover:hover {
     filter: none;
-    background-color: none;
+    background-color: inherit;
 }

@@ -11,22 +11,9 @@ button.likeButton {
     margin-bottom: 10px;
     cursor: grab;
 }
-
-.login_button {
-    background-color: white;
-    border: 2px solid silver;
-    border-radius: 4px;
-    color: black;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 150px;
-    height: 25px;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    font-family: Verdana, sans-serif;
-}
-
-.login_button:hover {
-    width: 200px;
-    border: 2px solid black;
+.commentText {
+    display: block;
+    text-align: left;
+    margin-left: 6%;
+    font-size: small;
 }

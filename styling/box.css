@@ -14,4 +14,27 @@
     margin-right: 20%;
     margin-top: 10px;
     margin-bottom: 10px;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+    border-width: 10px;
+}
+.oval:hover {
+    width: 62%;
+    margin-left: 19%;
+    margin-right: 19%;
+}
+.commentOval {
+    width: 90%;
+    display: block;
+    background-color: ghostwhite;
+    border-radius: 10px;
+    align-content: center;
+    text-align: center;
+    align-self: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    border-width: 10px;
+    float: right;
 }
