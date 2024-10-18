@@ -100,3 +100,10 @@ details {
 summary {
     text-align: center;
 }
+div.vHover {
+    visibility: hidden;
+    background-color: gainsboro;
+}
+div.vHover:hover {
+    visibility: visible;
+}
