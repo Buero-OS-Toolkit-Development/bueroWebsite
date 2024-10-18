@@ -9,6 +9,6 @@ async function setLike(contentHeader) {
         await fetch("https://lkunited.pythonanywhere.com/webResources/alterLikes?username=" + name_ + "&code=" + code + "&contentHeader=" + contentHeader);
         checkLiked(contentHeader);
     } else {
-        alert("Sie müssen eingeloggt sein, um Beiträge liken zu können.");
+        alert("Loggen Sie sich ein, um Artikel zu liken.");
     }
 }
