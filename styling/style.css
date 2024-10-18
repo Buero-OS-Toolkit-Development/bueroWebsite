@@ -101,9 +101,9 @@ summary {
     text-align: center;
 }
 div.vHover {
-    visibility: hidden;
-    background-color: gainsboro;
+    filter: blur(6px);
+    display: inline;
 }
 div.vHover:hover {
-    visibility: visible;
+    filter: none;
 }
