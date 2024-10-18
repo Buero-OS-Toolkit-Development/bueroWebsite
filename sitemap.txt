@@ -1,11 +1,1 @@
 https://leanderkafemann.github.io/bueroWebsite/
-https://leanderkafemann.github.io/bueroWebsite/styling/style.css
-https://leanderkafemann.github.io/bueroWebsite/styling/like.css
-https://leanderkafemann.github.io/bueroWebsite/styling/box.css
-https://leanderkafemann.github.io/bueroWebsite/manifest.json
-https://leanderkafemann.github.io/bueroWebsite/images/logo_Python.png
-https://leanderkafemann.github.io/bueroWebsite/images/logo.png
-https://leanderkafemann.github.io/bueroWebsite/js/cookies.js
-https://leanderkafemann.github.io/bueroWebsite/js/login.js
-https://leanderkafemann.github.io/bueroWebsite/js/get_like.js
-https://leanderkafemann.github.io/bueroWebsite/js/set_like.js

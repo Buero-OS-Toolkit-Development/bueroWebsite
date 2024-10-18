@@ -7,19 +7,21 @@
 -->
 <head>
     <title>B&uuml;ro-der Guide</title>
-    <meta name="author" content="Leander Kafemann"/>
-    <meta name="keywords" content="Leander Kafemann büro Guide LKunited King Lele"/>
-    <link rel="stylesheet" href="./styling/style.css"/>
-    <link rel="stylesheet" href="./styling/box.css"/>
-    <link rel="stylesheet" href="./styling/like.css"/>
-    <link rel="manifest" href="./manifest.json"/>
-    <link rel="icon" type="image/png" href="./images/logo_Python.png"/>
+    <meta name="author" content="Leander Kafemann" />
+    <meta name="keywords" content="Leander Kafemann büro Guide LKunited King Lele" />
+    <link rel="stylesheet" href="./styling/style.css" />
+    <link rel="stylesheet" href="./styling/box.css" />
+    <link rel="stylesheet" href="./styling/like.css" />
+    <link rel="stylesheet" href="./styling/forms.css" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="icon" type="image/png" href="./images/logo_Python.png" />
     <script type="text/javascript" src="./js/cookies.js"></script>
     <script type="text/javascript" src="./js/login.js"></script>
     <script type="text/javascript" src="./js/get_like.js"></script>
     <script type="text/javascript" src="./js/set_like.js"></script>
-    <meta charset="utf-8"/>
-    <meta name="google-site-verification" content="7B0CF-ClfZaLgOrvs32NkRIFktgrLNCGxIwQPBNUqBs"/>
+    <script type="text/javascript" src="./js/comment.js"></script>
+    <meta charset="utf-8" />
+    <meta name="google-site-verification" content="7B0CF-ClfZaLgOrvs32NkRIFktgrLNCGxIwQPBNUqBs" />
 </head>
 <body>
     <script>
@@ -47,10 +49,10 @@
             <h2>Account</h2>
             <div class="oval">
                 <p>
-                    Hallo, <div id="name__" style="display:inline;">?</div>!<br/>
-                    Du bist eingeloggt mit dem Code <div id="code__" style="display:inline;" class="vHover">?</div>!<br/><br/>
-                    <button onclick="changeLoginButton()" type="button" class="login_button">&Auml;ndern</button><br/>
-                    <div id="text__" style="display: inline;"></div>
+                    Hallo, <div id="name__" style="display:inline;">?</div>!<br />
+                    Du bist eingeloggt mit dem Code <div id="code__" style="display:inline;" class="vHover">?</div>!<br /><br />
+                    <button onclick="changeLoginButton()" type="button" class="login_button">&Auml;ndern</button><br />
+                    <div id="text__" style="display: inline;"></div><br />
                 </p>
             </div>
             <script>
@@ -59,34 +61,64 @@
             </script>
             <h2>Aktuelles</h2>
             <div class="oval">
-                <font color="black">
-                    <h3>BueroWebsite</h3>
+                <font color="blue">
+                    <h3>Aktuelles</h3>
                     <p>
-                        <b>Was ist neu in V2.2?</b><br/>
-                        <br/>
-                        Version 2.2 dieser Webseite ist erschienen!<br/>
-                        Die meisten Neuerungen sind auf GitHub zu finden - <br/>
-                        wesentlich ist jedoch, dass die Nutzung dieser Seite jetzt auch ohne Account m&ouml;glich ist!
+                        Im Rahmen des Upgrades zu bueroWebsite 3.0 wurde ein neues Feature eingeführt:<br />
+                        Kommentare.<br />
+                        <br />
+                        Du kannst jetzt mit deinem BüroOnline-Konto hier Beiträge nicht nur liken, sondern auch kommentieren.<br />
+                        <br />
+                        Leg gleich los und verrate uns hier, was du vom neuen Feature hältst.
                     </p>
                 </font>
-                <div class="like" id="buerowebsite" style="">?</div><button onclick="setLike('buerowebsite')" type="button" class="likeButton">&#128151;</button>
+                <div class="like" id="aktuelles" style="">?</div><button onclick="setLike('aktuelles')" type="button" class="likeButton">&#128151;</button>
+                <div id="aktuellesComments"></div>
+                <input type="text" id="aktuellesCommentText" placeholder="Kommentieren..." /><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('aktuelles')" />
                 <script>
-                    checkLiked("buerowebsite");
+                    getContent("aktuelles");
                 </script>
             </div>
             <div class="oval">
                 <font color="black">
                     <h3>LKWEB</h3>
                     <p>
-                        <b>Was ist neu in LKWEB 2.11?</b><br/>
-                        Dieser Code l&auml;uft auf unseren Servern.<br/>
-                        Neu ist Unterst&uuml;tzung f&uuml;r das Liken auf dieser Seite.<br/><br/>
-                        Die aktuellste Version ist 2.11.2.
+                        <b>Was ist neu in LKWEB 2.12?</b><br />
+                        <br />
+                        LKWEB ist der Code, der auf unseren Servern läuft<br />
+                        und hauptsächlich der Webaktivität von Büro und weiteren Services dient.<br />
+                        <br />
+                        Neu in Version 2.12 ist die Unterstützung für Kommentare von dieser Seite.<br />
+                        Zudem wurden einige Bugs behoben und die Effizienz gesteigert.
                     </p>
                 </font>
                 <div class="like" id="lkweb" style="">?</div><button onclick="setLike('lkweb')" type="button" class="likeButton">&#128151;</button>
+                <div id="lkwebComments"></div>
+                <input type="text" id="lkwebCommentText" placeholder="Kommentieren..." /><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('lkweb')" />
                 <script>
-                    checkLiked("lkweb");
+                    getContent("lkweb");
+                </script>
+            </div>
+            <div class="oval">
+                <font color="black">
+                    <h3>Setup</h3>
+                    <p>
+                        <b>Was ist neu in BüroSetup 14?</b><br />
+                        <br />
+                        Dies ist der Installer für Büro.<br />
+                        <br />
+                        Neu ist ein verbesserter Dialog mit dem Nutzer.<br />
+                        Damit gehen aber auch mehr Installer-Funktionen einher.
+                    </p>
+                </font>
+                <div class="like" id="setup" style="">?</div><button onclick="setLike('setup')" type="button" class="likeButton">&#128151;</button>
+                <div id="setupComments"></div>
+                <input type="text" id="setupCommentText" placeholder="Kommentieren..." /><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('setup')" />
+                <script>
+                    getContent("setup");
                 </script>
             </div>
         </div>
@@ -97,6 +129,7 @@
                 Sie k&ouml;nnen hier erfahren, wie Sie B&uuml;ro schnell und problemlos
                 <a href="#installation">installieren</a>
                 und nutzen.<br/>
+                Zudem können Sie hier mit der Büro Community diskutieren.<br />
                 <br/>B&uuml;ro ist ein Computer-Utils-Programm von Leander Kafemann, <br/>
                 das viele
                 <a href="#features">Features</a>
@@ -113,7 +146,7 @@
                 <a href="./data/systemupdate[neue Datei4].zip">Hintergrundsystem (V4)</a> (Updater f&uuml;r System)
                 herunter.<br/>
                 Laden Sie unseren
-                <a href="./data/setup[neue Datei13].zip">Installer (V13)</a>
+                <a href="./data/setup[neue Datei14].zip">Installer (V14)</a>
                 herunter.<br/>
                 Entpacken Sie den Installer in einen neuen Ordner und verschieben Sie die anderen Zips dahin.<br/>
                 F&uuml;hren Sie nun den Installer aus und folgen Sie seinen Anweisungen.<br/>
@@ -627,13 +660,17 @@
                         Diese Website, B&uuml;ro oder Leander Kafemann haften nicht f&uuml;r jegliche Sch&auml;den.<br />
                         Mit der Nutzung von B&uuml;ro oder jeglichen Paketen oder Services erkl&auml;ren Sie sich einverstanden mit den Bedingungen und Risiken.
                     </p>
+                    <p>
+                        Sie erklären sich mit der Nutzung auch damit einverstanden,<br />
+                        dass Daten über Ihr Nutzungsverhalten auf unseren Servern gespeichert werden.
+                    </p>
                 </details>
             </p>
         </div>
     </div>
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2024 - BueroWebKit-Version 2.2.4
+            Copyright Leander Kafemann 2024 - BueroWebKit-Version 3.0.0
         </p>
     </div>
 </body>
