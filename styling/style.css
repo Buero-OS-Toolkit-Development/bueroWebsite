@@ -103,7 +103,9 @@ summary {
 div.vHover {
     filter: blur(6px);
     display: inline;
+    background-color: gainsboro;
 }
 div.vHover:hover {
     filter: none;
+    background-color: none;
 }
