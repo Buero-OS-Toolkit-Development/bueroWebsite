@@ -13,11 +13,7 @@ async function comment(contentHeader) {
         if (r_t == "") {
             formatComments(contentHeader);
         } else {
-            if (r_t == "Authentification error.") {
-                alert("Fehler beim Authentifizieren.");
-            } else if (r_t == "Cooldown error.") {
-                alert("Sie haben zu viele Kommentare zu diesem Beitrag gesendet.");
-            }
+            alert("Kommentieren fehlgeschlagen:\n" + r_t);
         }
     } else {
         alert("Loggen Sie sich ein, um Kommentare zu senden.");
