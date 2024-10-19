@@ -41,11 +41,11 @@ c = Canvas(root, width=650, height=850)
 c.configure(bg="light blue")
 c.pack()
 
-c.colors = ["black", "red", "blue", "green", "yellow", "gold", "magenta", "light blue", "purple"]
+c.colors = ["black", "red", "blue", "green", "yellow", "gold", "magenta", "purple", "white"]
 c.color = "black"
 
 c.create_text(325, 60, text="  Büro Guide  \nContent Creator", font=("Verdana", "30", "bold"))
-c.create_text(325, 840, text="Copyright LK 2024  -  Version 3.0.0", font=("Verdana", "10"))
+c.create_text(325, 840, text="Copyright LK 2024  -  Version 3.1.1", font=("Verdana", "10"))
 
 c.create_text(20, 200, text="Titel:", font=("Verdana", "20"), anchor="w")
 c.create_text(325, 270, text="Inhalt:", font=("Verdana", "25"))
