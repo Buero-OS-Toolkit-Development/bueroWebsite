@@ -36,20 +36,14 @@ async function formatComments(contentHeader) {
             } else {
                 timeList[0] = "am " + timeList[0];
             }
-            subst += "<div class='commentText'><i>" + author + "</i> schrieb <i>" + timeList[0] + " um " + timeList[1] + " Uhr</i>:</div><div class='commentOval'>" + comment + "</div>";
+            let tD = getTimeDiff(getTimeString().split(", ")[1], timeList[1]);
+            if (tD < 60) {
+                timeList[1] = " vor " + tD.toString() + " Minuten";
+            } else {
+                timeList[1] = " um " + timeList[1] + " Uhr";
+            }
+            subst += "<div class='commentText'><i>" + author + "</i> schrieb <i>" + timeList[0] + timeList[1] + "</i>:</div><div class='commentOval'>" + comment + "</div>";
         }
     }
     document.getElementById(contentHeader + "Comments").innerHTML = subst;
-}
-function getTimeString(onlyDate = false) {
-    let timeO = new Date();
-    let timeStr = "";
-    let timeStrList = timeO.toString().split(" ");
-    timeStr += timeStrList[2] + ".";
-    let monthInt = timeO.getMonth() + 1;
-    timeStr += monthInt.toString() + "." + timeStrList[3]
-    if (onlyDate == false) {
-        timeStr += ", " + timeStrList[4];
-    }
-    return timeStr;
 }
