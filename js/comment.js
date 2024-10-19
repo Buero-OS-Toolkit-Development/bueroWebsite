@@ -8,8 +8,17 @@ async function comment(contentHeader) {
     let name_ = getCookie("username", document.cookie);
     if (name_ != "NoNameGiven") {
         document.getElementById(contentHeader + "CommentText").value = "";
-        await fetch("https://lkunited.pythonanywhere.com/webResources/sendComment?contentHeader=" + contentHeader + "&username=" + name_ + "&code=" + getCookie("code", document.cookie) + "&comment=" + comment);
-        formatComments(contentHeader);
+        let r_ = await fetch("https://lkunited.pythonanywhere.com/webResources/sendComment?contentHeader=" + contentHeader + "&username=" + name_ + "&code=" + getCookie("code", document.cookie) + "&comment=" + comment);
+        let r_t = await r_.text();
+        if (r_t == "") {
+            formatComments(contentHeader);
+        } else {
+            if (r_t == "Authentification error.") {
+                alert("Fehler beim Authentifizieren.");
+            } else if (r_t == "Cooldown error.") {
+                alert("Sie haben zu viele Kommentare zu diesem Beitrag gesendet.");
+            }
+        }
     } else {
         alert("Loggen Sie sich ein, um Kommentare zu senden.");
     }
@@ -28,5 +37,5 @@ async function formatComments(contentHeader) {
             subst += "<div class='commentText'><i>" + author + "</i> schrieb:</div><div class='commentOval'>" + comment + "</div>";
         }
     }
-    document.getElementById(contentHeader + "Comments").setHTMLUnsafe(subst)
+    document.getElementById(contentHeader + "Comments").innerHTML = subst;
 }

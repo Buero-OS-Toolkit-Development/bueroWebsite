@@ -8,6 +8,7 @@ async function setLike(contentHeader) {
         let code = getCookie("code", document.cookie);
         await fetch("https://lkunited.pythonanywhere.com/webResources/alterLikes?username=" + name_ + "&code=" + code + "&contentHeader=" + contentHeader);
         checkLiked(contentHeader);
+        formatLikes(contentHeader);
     } else {
         alert("Loggen Sie sich ein, um Artikel zu liken.");
     }
