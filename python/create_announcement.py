@@ -11,13 +11,12 @@ SCHABL = """<div class="oval">
                 </font>
                 <div class="like" id="{}" style="">?</div><button onclick="setLike('{}')" type="button" class="likeButton">&#128151;</button>
                 <div id="{}Comments"></div>
-                <input type="text" id="{}CommentText" placeholder="Kommentieren..."/><br />
+                <textarea id="{}CommentText" placeholder="Kommentieren..."></textarea><br />
                 <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('{}')" />
                 <script>
                     getContent("{}");
                 </script>
             </div>"""
-#TODO: form implementieren
 
 def export():
     title = c.titel.get("1.0", END).rstrip()
@@ -45,7 +44,7 @@ c.colors = ["black", "red", "blue", "green", "yellow", "gold", "magenta", "purpl
 c.color = "black"
 
 c.create_text(325, 60, text="  Büro Guide  \nContent Creator", font=("Verdana", "30", "bold"))
-c.create_text(325, 840, text="Copyright LK 2024  -  Version 3.1.1", font=("Verdana", "10"))
+c.create_text(325, 840, text="Copyright LK 2024  -  Version 3.1.2", font=("Verdana", "10"))
 
 c.create_text(20, 200, text="Titel:", font=("Verdana", "20"), anchor="w")
 c.create_text(325, 270, text="Inhalt:", font=("Verdana", "25"))
