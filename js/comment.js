@@ -30,19 +30,44 @@ async function formatComments(contentHeader) {
             let comments_ = comments[i].split("#*#");
             let author = comments_[0];
             let comment = comments_[1];
-            let timeList = comments_[2].split(", ");
-            if (timeList[0] == getTimeString(true)) {
-                timeList[0] = "heute";
+            let time = comments_[2];
+            let timeText = "";
+            let tD = getTimeDiff(getTimeString(), time);
+            if (tD == 0) {
+                timeText = "jetzt";
+            } else if (tD < 60) {
+                if (tD == 1) {
+                    timeText = "vor einer Minute";
+                } else {
+                    timeText = "vor " + tD.toString() + " Minuten";
+                }
+            } else if (tD < 60 * 24) {
+                let hrs = 0;
+                while (tD >= 60) {
+                    hrs += 1;
+                    tD -= 60;
+                }
+                if (hrs == 1) {
+                    timeText = "vor einer Stunde";
+                } else {
+                    timeText = "vor " + hrs.toString() + " Stunden";
+                }
+            } else if (tD < 60 * 24 * 7) {
+                let days = 0;
+                while (tD >= 60 * 24) {
+                    days += 1;
+                    tD -= 60 * 24;
+                }
+                if (days == 1) {
+                    timeText = "vor einem Tag";
+                } else {
+                    timeText = "vor " + days.toString() + " Tagen";
+                }
             } else {
-                timeList[0] = "am " + timeList[0];
+                let time_ = time.split(", ");
+                timeText = "am " + time_[0] + " um " + time_[1] + " Uhr";
             }
-            let tD = getTimeDiff(getTimeString().split(", ")[1], timeList[1]);
-            if (tD < 60) {
-                timeList[1] = " vor " + tD.toString() + " Minuten";
-            } else {
-                timeList[1] = " um " + timeList[1] + " Uhr";
-            }
-            subst += "<div class='commentText'><i>" + author + "</i> schrieb <i>" + timeList[0] + timeList[1] + "</i>:</div><div class='commentOval'>" + comment + "</div>";
+            subst += "<div class='commentText'><i>" + author + "</i> schrieb <i>" + timeText + "</i>:</div><div class='commentOval'>" + comment + "</div>";
         }
     }
     document.getElementById(contentHeader + "Comments").innerHTML = subst;
