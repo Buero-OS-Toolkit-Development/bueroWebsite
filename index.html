@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="de-de">
 <!--
-    Dieser Code wurde ausschließlich von Leander Kafemann entwickelt.
+    Dieser Code wurde ausschlie&szlig;lich von Leander Kafemann entwickelt.
     Die Verwendung von Style- und Manifestdateien ist erlaubt,
     nicht jedoch die von Pythonskripten oder HTML-Dateien.
 -->
 <head>
     <title>B&uuml;ro-der Guide</title>
-    <meta name="author" content="Leander Kafemann" />
-    <meta name="keywords" content="Leander Kafemann büro Guide LKunited King Lele" />
-    <link rel="stylesheet" href="./styling/style.css" />
-    <link rel="stylesheet" href="./styling/box.css" />
-    <link rel="stylesheet" href="./styling/like.css" />
-    <link rel="stylesheet" href="./styling/forms.css" />
-    <link rel="manifest" href="./manifest.json" />
-    <link rel="icon" type="image/png" href="./images/logo_Python.png" />
+    <meta name="author" content="Leander Kafemann"/>
+    <meta name="keywords" content="Leander Kafemann büro Guide LKunited King Lele"/>
+    <link rel="stylesheet" href="./styling/style.css"/>
+    <link rel="stylesheet" href="./styling/box.css"/>
+    <link rel="stylesheet" href="./styling/like.css"/>
+    <link rel="stylesheet" href="./styling/forms.css"/>
+    <link rel="manifest" href="./manifest.json"/>
+    <link rel="icon" type="image/png" href="./images/logo_Python.png"/>
     <script type="text/javascript" src="./js/cookies.js"></script>
     <script type="text/javascript" src="./js/login.js"></script>
     <script type="text/javascript" src="./js/get_like.js"></script>
     <script type="text/javascript" src="./js/set_like.js"></script>
     <script type="text/javascript" src="./js/comment.js"></script>
-    <meta charset="utf-8" />
-    <meta name="google-site-verification" content="7B0CF-ClfZaLgOrvs32NkRIFktgrLNCGxIwQPBNUqBs" />
+    <meta charset="utf-8"/>
+    <meta name="google-site-verification" content="7B0CF-ClfZaLgOrvs32NkRIFktgrLNCGxIwQPBNUqBs"/>
 </head>
 <body>
+    <noscript>
+        <h1 style="color: red;">This site requires JS.</h1>
+    </noscript>
     <script>
         usernameCheck();
     </script>
@@ -49,10 +52,10 @@
             <h2>Account</h2>
             <div class="oval">
                 <p>
-                    Hallo, <div id="name__" style="display:inline;">?</div>!<br />
-                    Du bist eingeloggt mit dem Code <div id="code__" style="display:inline;" class="vHover">?</div>!<br /><br />
-                    <button onclick="changeLoginButton()" type="button" class="login_button">&Auml;ndern</button><br />
-                    <div id="text__" style="display: inline;"></div><br />
+                    Hallo, <div id="name__" style="display:inline;">?</div>!<br/>
+                    Du bist eingeloggt mit dem Code <div id="code__" style="display:inline;" class="vHover">?</div>!<br/><br/>
+                    <button onclick="changeLoginButton()" type="button" class="login_button">&Auml;ndern</button><br/>
+                    <div id="text__" style="display: inline;"></div><br/>
                 </p>
             </div>
             <script>
@@ -61,21 +64,39 @@
             </script>
             <h2>Aktuelles</h2>
             <div class="oval">
+                <font color="green">
+                    <h3>BueroWebsite</h3>
+                    <p>
+                        Ganz neu hier:<br/>
+                        Beim Senden eines Kommentares wird jetzt auch die Sendezeit gespeichert!<br/>
+                        <br/>
+                        Sag uns doch gleich hier, wie du das findest!
+                    </p>
+                </font>
+                <div class="like" id="buerowebsite" style="">?</div><button onclick="setLike('buerowebsite')" type="button" class="likeButton">&#128151;</button>
+                <div id="buerowebsiteComments"></div>
+                <input type="text" id="buerowebsiteCommentText" placeholder="Kommentieren..."/><br/>
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('buerowebsite')"/>
+                <script>
+                    getContent("buerowebsite");
+                </script>
+            </div>
+            <div class="oval">
                 <font color="blue">
                     <h3>Aktuelles</h3>
                     <p>
-                        Im Rahmen des Upgrades zu bueroWebsite 3.0 wurde ein neues Feature eingeführt:<br />
-                        Kommentare.<br />
-                        <br />
-                        Du kannst jetzt mit deinem BüroOnline-Konto hier Beiträge nicht nur liken, sondern auch kommentieren.<br />
-                        <br />
-                        Leg gleich los und verrate uns hier, was du vom neuen Feature hältst.
+                        Im Rahmen des Upgrades zu bueroWebsite 3.0 wurde ein neues Feature eingef&uuml;hrt:<br/>
+                        Kommentare.<br/>
+                        <br/>
+                        Du kannst jetzt mit deinem B&uuml;roOnline-Konto hier Beitr&auml;ge nicht nur liken, sondern auch kommentieren.<br/>
+                        <br/>
+                        Leg gleich los und verrate uns hier, was du vom neuen Feature h&auml;ltst.
                     </p>
                 </font>
                 <div class="like" id="aktuelles" style="">?</div><button onclick="setLike('aktuelles')" type="button" class="likeButton">&#128151;</button>
                 <div id="aktuellesComments"></div>
-                <input type="text" id="aktuellesCommentText" placeholder="Kommentieren..." /><br />
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('aktuelles')" />
+                <input type="text" id="aktuellesCommentText" placeholder="Kommentieren..."/><br/>
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('aktuelles')"/>
                 <script>
                     getContent("aktuelles");
                 </script>
@@ -84,19 +105,19 @@
                 <font color="black">
                     <h3>LKWEB</h3>
                     <p>
-                        <b>Was ist neu in LKWEB 2.12?</b><br />
-                        <br />
-                        LKWEB ist der Code, der auf unseren Servern läuft<br />
-                        und hauptsächlich der Webaktivität von Büro und weiteren Services dient.<br />
-                        <br />
-                        Neu in Version 2.12 ist die Unterstützung für Kommentare von dieser Seite.<br />
+                        <b>Was ist neu in LKWEB 2.12?</b><br/>
+                        <br/>
+                        LKWEB ist der Code, der auf unseren Servern l&auml;uft<br/>
+                        und haupts&auml;chlich der Webaktivit&auml;t von B&uuml;ro und weiteren Services dient.<br/>
+                        <br/>
+                        Neu in Version 2.12 ist die Unterst&uuml;tzung f&uuml;r Kommentare von dieser Seite.<br/>
                         Zudem wurden einige Bugs behoben und die Effizienz gesteigert.
                     </p>
                 </font>
                 <div class="like" id="lkweb" style="">?</div><button onclick="setLike('lkweb')" type="button" class="likeButton">&#128151;</button>
                 <div id="lkwebComments"></div>
-                <input type="text" id="lkwebCommentText" placeholder="Kommentieren..." /><br />
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('lkweb')" />
+                <input type="text" id="lkwebCommentText" placeholder="Kommentieren..."/><br/>
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('lkweb')"/>
                 <script>
                     getContent("lkweb");
                 </script>
@@ -105,18 +126,18 @@
                 <font color="black">
                     <h3>Setup</h3>
                     <p>
-                        <b>Was ist neu in BüroSetup 14?</b><br />
-                        <br />
-                        Dies ist der Installer für Büro.<br />
-                        <br />
-                        Neu ist ein verbesserter Dialog mit dem Nutzer.<br />
+                        <b>Was ist neu in B&uuml;roSetup 14?</b><br/>
+                        <br/>
+                        Dies ist der Installer f&uuml;r B&uuml;ro.<br/>
+                        <br/>
+                        Neu ist ein verbesserter Dialog mit dem Nutzer.<br/>
                         Damit gehen aber auch mehr Installer-Funktionen einher.
                     </p>
                 </font>
                 <div class="like" id="setup" style="">?</div><button onclick="setLike('setup')" type="button" class="likeButton">&#128151;</button>
                 <div id="setupComments"></div>
-                <input type="text" id="setupCommentText" placeholder="Kommentieren..." /><br />
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('setup')" />
+                <input type="text" id="setupCommentText" placeholder="Kommentieren..."/><br/>
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('setup')"/>
                 <script>
                     getContent("setup");
                 </script>
@@ -129,7 +150,7 @@
                 Sie k&ouml;nnen hier erfahren, wie Sie B&uuml;ro schnell und problemlos
                 <a href="#installation">installieren</a>
                 und nutzen.<br/>
-                Zudem können Sie hier mit der Büro Community diskutieren.<br />
+                Zudem k&ouml;nnen Sie hier mit der B&uuml;ro Community diskutieren.<br/>
                 <br/>B&uuml;ro ist ein Computer-Utils-Programm von Leander Kafemann, <br/>
                 das viele
                 <a href="#features">Features</a>
@@ -651,18 +672,18 @@
         <div style="display: block;">
             <h2>Hinweise</h2>
             <p>
-                Diese Seite ben&ouml;tigt JavaScript - bitte aktivieren Sie es, falls nicht bereits geschehen.<br />
-                Mit der Nutzung dieser Seite erklären Sie sich mit der Nutzung externer Ressourcen wie Java-Bibliotheken einverstanden.<br />
-                Zudem stimmen Sie der Nutzung von Cookies zu.<br /><br />
+                Diese Seite ben&ouml;tigt JavaScript - bitte aktivieren Sie es, falls nicht bereits geschehen.<br/>
+                Mit der Nutzung dieser Seite erkl&auml;ren Sie sich mit der Nutzung externer Ressourcen wie Java-Bibliotheken einverstanden.<br/>
+                Zudem stimmen Sie der Nutzung von Cookies zu.<br/><br/>
                 <details>
                     <summary>AGB</summary>
                     <p>
-                        Diese Website, B&uuml;ro oder Leander Kafemann haften nicht f&uuml;r jegliche Sch&auml;den.<br />
+                        Diese Website, B&uuml;ro oder Leander Kafemann haften nicht f&uuml;r jegliche Sch&auml;den.<br/>
                         Mit der Nutzung von B&uuml;ro oder jeglichen Paketen oder Services erkl&auml;ren Sie sich einverstanden mit den Bedingungen und Risiken.
                     </p>
                     <p>
-                        Sie erklären sich mit der Nutzung auch damit einverstanden,<br />
-                        dass Daten über Ihr Nutzungsverhalten auf unseren Servern gespeichert werden.
+                        Sie erkl&auml;ren sich mit der Nutzung auch damit einverstanden,<br/>
+                        dass Daten &uuml;ber Ihr Nutzungsverhalten auf unseren Servern gespeichert werden.
                     </p>
                 </details>
             </p>
@@ -670,7 +691,7 @@
     </div>
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2024 - BueroWebKit-Version 3.0.0
+            Copyright Leander Kafemann 2024 - BueroWebKit-Version 3.1.0
         </p>
     </div>
 </body>
