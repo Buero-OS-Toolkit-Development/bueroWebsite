@@ -62,6 +62,9 @@
             <script>
                 document.getElementById("name__").textContent = getCookie("username", document.cookie);
                 document.getElementById("code__").textContent = getCookie("code", document.cookie);
+                if (getCookie("username", document.cookie) == "NoNameGiven") {
+                    document.getElementById("text__").textContent = "Sie sind nicht eingeloggt!";
+                }
             </script>
             <h2>Aktuelles</h2>
             <div class="oval">
@@ -709,7 +712,7 @@
     </div>
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2024 - BueroWebKit-Version 3.1.4
+            Copyright Leander Kafemann 2024 - BueroWebKit-Version 3.1.5
         </p>
     </div>
 </body>
