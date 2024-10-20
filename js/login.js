@@ -4,7 +4,6 @@
 function usernameCheck() {
     if (getCookie("username", document.cookie) == "") {
         setCookie("username", "NoNameGiven", 7);
-        document.getElementById("text__").textContent = "Sie sind nicht eingeloggt!";
     } else {
         setCookie("username", getCookie("username", document.cookie), 7);
     }
