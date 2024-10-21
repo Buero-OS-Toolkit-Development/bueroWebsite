@@ -30,6 +30,9 @@ def export():
     if c.underline:
         styling1 += "<u>"
         styling2 = "</u>"+styling2
+    if c.stroke:
+        styling1 += "<s>"
+        styling2 = "</s>"+styling2
     to_export = SCHABL.format(c.color, title, styling1, content, styling2, id_, id_, id_, id_, id_, id_)
     pyperclip.copy(to_export)
     py.alert((to_export if len(to_export) < 3000 else "Content too long")+"\n\nin die Zwischenablage kopiert.", "Kopiert")
@@ -43,9 +46,16 @@ def style_():
     c.styleB.config(font=("Verdana", "10", c.styling))
 
 def ul_():
-    c.underline = reverse(c.underline)
+    if c.stroke and c.underline:
+        c.underline = False; c.stroke = False
+    elif not c.stroke and not c.underline:
+        c.underline = True
+    elif c.underline and not c.stroke:
+        c.underline = False; c.stroke = True
+    elif not c.underline and c.stroke:
+        c.underline = True
     newFont = font.Font(root, c.ulB.cget("font"))
-    newFont.configure(underline=c.underline)
+    newFont.configure(underline=c.underline, overstrike=c.stroke)
     c.ulB.config(font=newFont)
 
 def quit_():
@@ -71,9 +81,10 @@ c.stylings = ["", "bold", "italic", "bold italic"]
 c.styling = ""
 
 c.underline = False
+c.stroke = False
 
 c.create_text(325, 60, text="  Büro Guide  \nContent Creator", font=("Verdana", "30", "bold"))
-c.create_text(325, 840, text="Copyright LK 2024  -  Version 3.1.3", font=("Verdana", "10"))
+c.create_text(325, 840, text="Copyright LK 2024  -  Version 3.1.6", font=("Verdana", "10"))
 
 c.create_text(20, 200, text="Titel:", font=("Verdana", "20"), anchor="w")
 c.create_text(325, 270, text="Inhalt:", font=("Verdana", "25"))
@@ -87,7 +98,7 @@ c.colorB = Button(master=root, command=color_, text="Farbe", background="black",
 c.create_window(25, 740, anchor="nw", window=c.colorB, height=30, width=100)
 c.styleB = Button(master=root, command=style_, text="Stil", background="light blue", relief="ridge", font=("Verdana", "10"))
 c.create_window(150, 740, anchor="nw", window=c.styleB, height=30, width=100)
-c.ulB = Button(master=root, command=ul_, text="Ul", background="light blue", relief="ridge", font=("Verdana", "10"))
+c.ulB = Button(master=root, command=ul_, text="Strich", background="light blue", relief="ridge", font=("Verdana", "10"))
 c.create_window(275, 740, anchor="nw", window=c.ulB, height=30, width=100)
 
 c.create_window(25, 775, anchor="nw", window=Button(master=root, command=export, text="Exportieren", background="light blue", relief="ridge"), height=40, width=180)
