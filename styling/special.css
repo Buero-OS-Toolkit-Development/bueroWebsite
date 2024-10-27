@@ -1,0 +1,18 @@
+/*
+    This file contents the styling for our Special.
+*/
+button.konfetti {
+    text-align: center;
+    font-size: 400px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    margin-bottom: 10px;
+    cursor: grab;
+}
+button.konfetti_ {
+    display: none;
+    border: 2px;
+    border-radius: 4px;
+    border-color: transparent;
+}
