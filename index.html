@@ -53,10 +53,10 @@
             <h2>Account</h2>
             <div class="oval">
                 <p>
-                    Hallo, <div id="name__" style="display:inline;">?</div>!<br />
-                    Du bist eingeloggt mit dem Code <div id="code__" style="display:inline;" class="vHover">?</div>!<br /><br />
-                    <button onclick="changeLoginButton()" type="button" class="login_button">&Auml;ndern</button><br />
-                    <div id="text__" style="display: inline;"></div><br />
+                    Hallo, <div id="name__" style="display:inline;">?</div>!<br/>
+                    Du bist eingeloggt mit dem Code <div id="code__" style="display:inline;" class="vHover">?</div>!<br/><br/>
+                    <button onclick="changeLoginButton()" type="button" class="login_button">&Auml;ndern</button><br/>
+                    <div id="text__" style="display: inline;"></div><br/>
                 </p>
             </div>
             <script>
@@ -68,19 +68,63 @@
             </script>
             <h2>Aktuelles</h2>
             <div class="oval">
+                <font color="magenta">
+                    <h3>Special</h3>
+                    <p>
+                        <b>
+                            Ein neues Special ist erschienen:<br/>
+                            <br/>
+                            Das B&uuml;ro2JSpecial, auch als JubiSpecial bekannt,<br/>
+                            da es zum 2-j&auml;hrigen Jubil&auml;um von B&uuml;ro erschienen ist.<br/>
+                            <br/>
+                            Auch auf dieser Seite gibt es ein Special:<br/>
+                            das <a href="./jubiSpecial/">JubiSpecial</a>.<br/>
+                            <br/>
+                            Machen Sie jetzt mit!
+                        </b>
+                    </p>
+                </font>
+                <div class="like" id="special" style="">?</div><button onclick="setLike('special')" type="button" class="likeButton">&#128151;</button>
+                <div id="specialComments"></div>
+                <textarea id="specialCommentText" placeholder="Kommentieren..."></textarea><br/>
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('special')"/>
+                <script>
+                    getContent("special");
+                </script>
+            </div>
+            <div class="oval">
+                <font color="black">
+                    <h3>Setup15</h3>
+                    <p>
+                        B&uuml;roSetup Version 15 ist da!<br/>
+                        Genie&szlig;en Sie jetzt neueste Technologien.<br/>
+                        <br/>
+                        Die grafische Oberfl&auml;che wurde geupdated.<br/>
+                        Zudem werden Sie jetzt nach Zustimmung zu unseren AGB gefragt.
+                    </p>
+                </font>
+                <div class="like" id="setup15" style="">?</div><button onclick="setLike('setup15')" type="button" class="likeButton">&#128151;</button>
+                <div id="setup15Comments"></div>
+                <textarea id="setup15CommentText" placeholder="Kommentieren..."></textarea><br/>
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('setup15')"/>
+                <script>
+                    getContent("setup15");
+                </script>
+            </div>
+            <div class="oval">
                 <font color="red">
-                    <h3>Büro4.0.19-Sicherheit</h3>
+                    <h3>B&uuml;ro4.0.19-Sicherheit</h3>
                     <p>
                         <b>
                             <u>
-                                An alle Nutzer:<br />
-                                Büro V4.0.19 ist erschienen.<br />
-                                Enthalten sind äußerst relevante Sicherheits-Fixes.<br />
-                                Die neue Version wird daher allen Nutzern empfohlen.<br />
-                                <br />
-                                Um eine optimale Server-Performance gewährleisten zu können,<br />
-                                werden ältere Versionen ab dem 25.10 um 13:15 nicht mehr unterstützt.<br />
-                                <br />
+                                An alle Nutzer:<br/>
+                                B&uuml;ro V4.0.19 ist erschienen.<br/>
+                                Enthalten sind &auml;u&szlig;erst relevante Sicherheits-Fixes.<br/>
+                                Die neue Version wird daher allen Nutzern empfohlen.<br/>
+                                <br/>
+                                Um eine optimale Server-Performance gew&auml;hrleisten zu k&ouml;nnen,<br/>
+                                werden &auml;ltere Versionen ab dem 25.10 um 13:15 nicht mehr unterst&uuml;tzt.<br/>
+                                <br/>
                                 Updaten Sie!
                             </u>
                         </b>
@@ -88,71 +132,10 @@
                 </font>
                 <div class="like" id="büro4.0.19-sicherheit" style="">?</div><button onclick="setLike('büro4.0.19-sicherheit')" type="button" class="likeButton">&#128151;</button>
                 <div id="büro4.0.19-sicherheitComments"></div>
-                <textarea id="büro4.0.19-sicherheitCommentText" placeholder="Kommentieren..."></textarea><br />
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('büro4.0.19-sicherheit')" />
+                <textarea id="büro4.0.19-sicherheitCommentText" placeholder="Kommentieren..."></textarea><br/>
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('büro4.0.19-sicherheit')"/>
                 <script>
                     getContent("büro4.0.19-sicherheit");
-                </script>
-            </div>
-            <div class="oval">
-                <font color="green">
-                    <h3>BueroWebsite</h3>
-                    <p>
-                        Ganz neu hier:<br />
-                        Beim Senden eines Kommentares wird jetzt auch die Sendezeit gespeichert!<br />
-                        <br />
-                        Sag uns doch gleich hier, wie du das findest!
-                    </p>
-                </font>
-                <div class="like" id="buerowebsite" style="">?</div><button onclick="setLike('buerowebsite')" type="button" class="likeButton">&#128151;</button>
-                <div id="buerowebsiteComments"></div>
-                <textarea id="buerowebsiteCommentText" placeholder="Kommentieren..."></textarea><br />
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('buerowebsite')" />
-                <script>
-                    getContent("buerowebsite");
-                </script>
-            </div>
-            <div class="oval">
-                <font color="blue">
-                    <h3>Aktuelles</h3>
-                    <p>
-                        Im Rahmen des Upgrades zu bueroWebsite 3.0 wurde ein neues Feature eingef&uuml;hrt:<br />
-                        Kommentare.<br />
-                        <br />
-                        Du kannst jetzt mit deinem B&uuml;roOnline-Konto hier Beitr&auml;ge nicht nur liken, sondern auch kommentieren.<br />
-                        <br />
-                        Leg gleich los und verrate uns hier, was du vom neuen Feature h&auml;ltst.
-                    </p>
-                </font>
-                <div class="like" id="aktuelles" style="">?</div><button onclick="setLike('aktuelles')" type="button" class="likeButton">&#128151;</button>
-                <div id="aktuellesComments"></div>
-                <textarea id="aktuellesCommentText" placeholder="Kommentieren..."></textarea><br />
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('aktuelles')" />
-                <script>
-                    getContent("aktuelles");
-                </script>
-            </div>
-            <div class="oval">
-                <font color="black">
-                    <h3>LKWEB</h3>
-                    <p>
-                        <b>Was ist neu in LKWEB 2.12?</b><br />
-                        <br />
-                        LKWEB ist der Code, der auf unseren Servern l&auml;uft<br />
-                        und haupts&auml;chlich der Webaktivit&auml;t von B&uuml;ro und weiteren Services dient.<br />
-                        <br />
-                        Neu in Version 2.12 ist die Unterst&uuml;tzung f&uuml;r Kommentare von dieser Seite.<br />
-                        Zudem wurden einige Bugs behoben und die Effizienz gesteigert.<br /><br />
-                        Mit Version 2.12.3 kommt zus&auml;tzlich noch die Unterst&uuml;tzung f&uuml;r ein neues Special...<br /><br />
-                        Aktuellste Version: 2.12.5
-                    </p>
-                </font>
-                <div class="like" id="lkweb" style="">?</div><button onclick="setLike('lkweb')" type="button" class="likeButton">&#128151;</button>
-                <div id="lkwebComments"></div>
-                <textarea id="lkwebCommentText" placeholder="Kommentieren..."></textarea><br />
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('lkweb')" />
-                <script>
-                    getContent("lkweb");
                 </script>
             </div>
         </div>
@@ -175,12 +158,12 @@
             <h3>Installation</h3>
             <p>
                 Laden Sie die neueste Version von
-                <a href="./data/büro4.0.19.zip">B&uuml;ro (V4.0.19)</a> (Hauptprogramm),
+                <a href="./data/büro4.0.20.zip">B&uuml;ro (V4.0.20)</a> (Hauptprogramm),
                 <a href="./data/system4.0.15.zip">System (V4.0.15)</a> (UpdateInstaller und Fehleranalyse)<br/>und
                 <a href="./data/systemupdate[neue Datei4].zip">Hintergrundsystem (V4)</a> (Updater f&uuml;r System)
                 herunter.<br/>
                 Laden Sie unseren
-                <a href="./data/setup[neue Datei14].zip">Installer (V14)</a>
+                <a href="./data/setup[neue Datei15].zip">Installer (V15)</a>
                 herunter.<br/>
                 Entpacken Sie den Installer in einen neuen Ordner und verschieben Sie die anderen Zips dahin.<br/>
                 F&uuml;hren Sie nun den Installer aus und folgen Sie seinen Anweisungen.<br/>
@@ -505,7 +488,7 @@
                 Lebensmittel ist ein Paket zum Ordnen von Lebensmitteln nach Lagerort,<br/>
                 sodass Sie nie wieder bereits gekaufte Lebensmittel vergessen.
             </p>
-            <h4><a href="./data/Rechnungen1.7.3.zip">Rechnungen (V1.7.3)</a></h4>
+            <h4><a href="./data/Rechnungen1.7.4.zip">Rechnungen (V1.7.4)</a></h4>
             <p>
                 Rechnungen ist ein Tool zum Einfachen Tracken von verdientem Geld.<br/>
                 Sie k&ouml;nnen Ihre Kunden und L&ouml;hne verwalten und live stoppen, wie viel Geld Sie verdienen.<br/>
@@ -515,7 +498,8 @@
                 Rechnungen zwischenspeichern und Stunden hinzuf&uuml;gen.<br/><br/>
                 <i>
                     Neu in dieser Version sind ein Bugfix beim Hinzuf&uuml;gen,<br/>
-                    damit hinzugef&uuml;gte Zeiteinheiten &uuml;ber einem Maximum direkt umgerechnet werden.
+                    damit Zeiteinheiten richtig angezeigt werden,<br/>
+                    sowie eine Optimierung der Web-Ansicht.
                 </i>
             </p>
             <h3>Unterhaltung</h3>
@@ -590,7 +574,7 @@
                 In diesem Bereich finden Sie Pakete, die Daten von Ihrer B&uuml;ro-Installation und Funktionen von B&uuml;ro mitnutzen.<br/>
                 Diese Daten sind vorrangig Ihr PREMIUM-Pass sowie Ihr Nutzername und Ihre DeviceID.
             </p>
-            <h4 id="bMail11"><a href="./data/mail1.1.4.zip">B&uuml;roMail (1.1.4)</a></h4>
+            <h4 id="bMail11"><a href="./data/mail1.1.5.zip">B&uuml;roMail (1.1.5)</a></h4>
             <p>
                 Mit B&uuml;roMail k&ouml;nnen Sie B&uuml;roMails senden und empfangen.<br/>
                 Senden Sie eine Mail mit unserem Hauptprogramm oder<br/>
@@ -598,15 +582,18 @@
                 Damit Sie diesen nicht vergessen, l&auml;sst sich B&uuml;ro nicht schlie&szlig;en, solange er l&auml;uft.<br/>
                 Au&szlig;erdem verf&uuml;gt B&uuml;roMail &uuml;ber Funktionen zum Konfigurieren von z.B. einer Antwort auf eine empfangene Mail.
                 <br/><br/><i>
-                    Neu in dieser Version sind eine effizientere Web-Interaktion sowie<br/>
-                    ein Verbesserungen beim Umgang mit einem BETA-Status.
+                    Neu in dieser Version ist ein Button neben dem Empf&auml;nger,<br/>
+                    um weitere Personen als solche hinzuzuf&uuml;gen.
                 </i>
             </p>
-            <h4 id="bb"><a href="./data/bank1.0.0.zip">B&uuml;roBank (1.0)</a></h4>
+            <h4 id="bb"><a href="./data/bank1.0.1.zip">B&uuml;roBank (1.0.1)</a></h4>
             <p>
                 Mit B&uuml;roBank sehen Sie blitzschnell Ihren Kontostand auf der B&uuml;roBank.<br/>
                 Sie k&ouml;nnen auch &Uuml;berweisungen t&auml;tigen oder mithilfe der TransaktionsID solche empfangen.<br/>
                 Au&szlig;erdem k&ouml;nnen Sie auch mobil in Ihrem Online-Konto &Uuml;berweisungen t&auml;tigen.<br/><br/>
+                <i>
+                    Neu in dieser Version ist eine effizientere Web-Interaktion.
+                </i>
             </p>
         </div>
         <div style="display: block">
@@ -721,7 +708,7 @@
     </div>
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2024 - BueroWebKit-Version 3.1.8
+            Copyright Leander Kafemann 2024 - BueroWebKit-Version 3.1.9
         </p>
     </div>
 </body>
