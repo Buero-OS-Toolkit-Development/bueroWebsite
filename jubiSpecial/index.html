@@ -2,35 +2,103 @@
 <html lang="de-de">
 <!--
     Dieser Code wurde exklusiv und allein von Leander Kafemann entwickelt.
-    Diese Seite ist ein Easter Egg zum BüroJubiläums Special.
+    Diese Seite ist ein Easter Egg zum B&uuml;roJubil&auml;ums Special.
 -->
 <head>
     <title>B&uuml;ro-Jubil&auml;umsspecial</title>
     <meta name="author" content="Leander Kafemann"/>
-    <meta name="keywords" content="Leander Kafemann büro Guide LKunited King Lele"/>
+    <meta name="keywords" content="Leander Kafemann bÃ¼ro Guide LKunited King Lele"/>
     <link rel="stylesheet" href="../styling/style.css"/>
     <link rel="stylesheet" href="../styling/box.css"/>
     <link rel="stylesheet" href="../styling/forms.css"/>
+    <link rel="stylesheet" href="../styling/special.css"/>
+    <link rel="stylesheet" href="../styling/like.css"/>
     <link rel="manifest" href="../manifest.json"/>
     <link rel="icon" type="image/png" href="../images/logo_Python.png"/>
     <script type="text/javascript" src="../js/cookies.js"></script>
     <script type="text/javascript" src="../js/login.js"></script>
     <script type="text/javascript" src="../js/time.js"></script>
+    <script type="text/javascript" src="../js/get_like.js"></script>
+    <script type="text/javascript" src="../js/set_like.js"></script>
+    <script type="text/javascript" src="../js/comment.js"></script>
+    <script type="text/javascript" src="../js/special.js"></script>
     <meta charset="utf-8"/>
 </head>
 <body>
     <noscript>
         <h1 style="color: red;">This site requires JavaScript.</h1>
     </noscript>
+    <script>
+        usernameCheck();
+    </script>
     <div class="navbar">
-        <img src="../images/logo.png" alt="logo" />
+        <a href="#"><img src="../images/logo.png" alt="logo"/></a>
         <nav>
             <ul>
-                <li><a href="../">< Zur&uuml;ck</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="../">&lt; Zur&uuml;ck</a></li>
             </ul>
         </nav>
     </div>
-    <h1 style="color:red;">Dieses Special ist noch nicht einsatzbereit.</h1>
+    <h1><u>B&uuml;ro Guide - Jubil&auml;ums-Special</u></h1>
+    <h3>Dies ist ein Special zum 2-j&auml;hrigen Jubil&auml;um von B&uuml;ro!</h3>
+    <h2>Account</h2>
+    <div class="oval">
+        <p>
+            Hallo, <div id="name__" style="display:inline;">?</div>!<br/>
+            Du bist eingeloggt mit dem Code <div id="code__" style="display:inline;" class="vHover">?</div>!<br/><br/>
+            <button onclick="changeLoginButton()" type="button" class="login_button">&Auml;ndern</button><br/>
+            <div id="text__" style="display: inline;"></div><br/>
+        </p>
+    </div>
+    <script>
+        document.getElementById("name__").textContent = getCookie("username", document.cookie);
+        document.getElementById("code__").textContent = getCookie("code", document.cookie);
+        if (getCookie("username", document.cookie) == "NoNameGiven") {
+            document.getElementById("text__").textContent = "Sie sind nicht eingeloggt!";
+        }
+    </script>
+    <h2>Special</h2>
+    <div class="oval">
+        <h3>JubiSpecial</h3>
+        <p>
+            Dies ist ein Special zum 2-j&auml;hrigen Jubil&auml;um von B&uuml;ro.<br/>
+            Feiere jetzt mit!
+        </p>
+        <p>
+            Klicken Sie auf das gro&szlig;e Konfetti.<br/>
+            Sodann werden einige Konfetti-Symbole hier versteckt.<br/>
+            Finden Sie alle, bevor die Zeit abl&auml;uft?<br/><br/>
+            F&uuml;r jedes gefundene Konfetti gibt es einen Punkt.<br/>
+            Wer bekommt die meisten Punkte?
+        </p>
+        <hr/>
+        <div>
+            Punkte: <div id="score__" style="display: inline; font-weight: bold;">0</div><br/>
+            Zeit: <div id="time__" style="display: inline; font-weight: bold;">10</div> Sekunden &uuml;brig<br/><br/>
+            Highscore: <div id="highscore__" style="display: inline; font-weight: bold;">?</div><br/><br/>
+            <div id="successText__"></div>
+            <button id="k1" class="konfetti_" onclick="reset_('k1')">&#127881;</button>
+            <button id="k2" class="konfetti_" onclick="reset_('k2')">&#127881;</button>
+            <button id="k3" class="konfetti_" onclick="reset_('k3')">&#127881;</button>
+            <button id="k4" class="konfetti_" onclick="reset_('k4')">&#127881;</button>
+            <button id="k5" class="konfetti_" onclick="reset_('k5')">&#127881;</button>
+            <button id="k6" class="konfetti_" onclick="reset_('k6')">&#127881;</button>
+            <button id="k7" class="konfetti_" onclick="reset_('k7')">&#127881;</button>
+            <button id="k8" class="konfetti_" onclick="reset_('k8')">&#127881;</button>
+            <button id="k9" class="konfetti_" onclick="reset_('k9')">&#127881;</button>
+            <button id="k10" class="konfetti_" onclick="reset_('k10')">&#127881;</button>
+            <button onclick="startKonfetti()" class="konfetti">&#127881;</button>
+        </div><hr/>
+        <div class="like" id="jubispecial" style="">?</div><button onclick="setLike('jubispecial')" type="button" class="likeButton">&#128151;</button>
+        <div id="jubispecialComments"></div>
+        <textarea id="jubispecialCommentText" placeholder="Kommentieren..."></textarea><br/>
+        <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('jubispecial')"/>
+        <script>
+            getContent("jubispecial");
+            getHighscore();
+        </script>
+    </div>
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
             Copyright Leander Kafemann 2024
