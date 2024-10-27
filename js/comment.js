@@ -67,7 +67,7 @@ async function formatComments(contentHeader) {
                 let time_ = time.split(", ");
                 timeText = "am " + time_[0] + " um " + time_[1] + " Uhr";
             }
-            subst += "<div class='commentText'><i>" + author + "</i> schrieb <i>" + timeText + "</i>:</div><div class='commentOval'>" + comment + "</div>";
+            subst += "<div class='commentText'><i>" + author + "</i> schrieb <i>" + timeText + "</i>:</div><div class='commentOval'>" + comment.replace("\n", "<br/>") + "</div>";
         }
     }
     document.getElementById(contentHeader + "Comments").innerHTML = subst;
