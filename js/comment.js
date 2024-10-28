@@ -7,13 +7,15 @@ async function comment(contentHeader) {
     let comment = document.getElementById(contentHeader + "CommentText").value;
     let name_ = getCookie("username", document.cookie);
     if (name_ != "NoNameGiven") {
-        document.getElementById(contentHeader + "CommentText").value = "";
-        let r_ = await fetch("https://lkunited.pythonanywhere.com/webResources/sendComment?contentHeader=" + contentHeader + "&username=" + name_ + "&code=" + getCookie("code", document.cookie) + "&comment=" + comment + "&time=" + getTimeString());
-        let r_t = await r_.text();
-        if (r_t == "") {
-            formatComments(contentHeader);
-        } else {
-            alert("Kommentieren fehlgeschlagen:\n" + r_t);
+        if (comment != "") {
+            document.getElementById(contentHeader + "CommentText").value = "";
+            let r_ = await fetch("https://lkunited.pythonanywhere.com/webResources/sendComment?contentHeader=" + contentHeader + "&username=" + name_ + "&code=" + getCookie("code", document.cookie) + "&comment=" + comment + "&time=" + getTimeString());
+            let r_t = await r_.text();
+            if (r_t == "") {
+                formatComments(contentHeader);
+            } else {
+                alert("Kommentieren fehlgeschlagen:\n" + r_t);
+            }
         }
     } else {
         alert("Loggen Sie sich ein, um Kommentare zu senden.");
