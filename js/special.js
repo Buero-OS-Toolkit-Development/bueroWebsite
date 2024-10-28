@@ -24,7 +24,7 @@ function startKonfetti() {
             let fS = 0;
             let obj = "";
             let c = "";
-            for (let i = 1; i < randomNumber(11, 1); i++) {
+            for (let i = 1; i < randomNumber(11, 3); i++) {
                 obj = document.getElementById("k"+i.toString());
                 obj.style.marginTop = randomNumber().toString() + "%";
                 obj.style.marginBottom = randomNumber().toString() + "%";
