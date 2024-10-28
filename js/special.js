@@ -24,7 +24,7 @@ function startKonfetti() {
             let fS = 0;
             let obj = "";
             let c = "";
-            for (let i = 1; i < randomNumber(11, 3); i++) {
+            for (let i = 1; i <= randomNumber(13, 4); i++) {
                 obj = document.getElementById("k"+i.toString());
                 obj.style.marginTop = randomNumber().toString() + "%";
                 obj.style.marginBottom = randomNumber().toString() + "%";
@@ -47,7 +47,7 @@ function startKonfetti() {
                     document.getElementById("score__").textContent = "0";
                     document.getElementById("successText__").textContent = "";
                     getHighscore();
-                    for (let i=1; i < 11; i++) {
+                    for (let i=1; i < 13; i++) {
                         reset("k"+i.toString());
                     }
                 }
@@ -110,7 +110,7 @@ async function setHighscore(score) {
 }
 function allUndisplayed() {
     let r = true;
-    for (let i = 1; i < 11; i++) {
+    for (let i = 1; i < 13; i++) {
         if (document.getElementById("k"+i.toString()).style.display != "none") {
             if (document.getElementById("k"+i.toString()).style.display != "") {
                 r = false;
