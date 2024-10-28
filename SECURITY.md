@@ -8,9 +8,7 @@ Supported versions of Büro Guide (this website):
 | ------- | ------------------ |
 | 3.1.x   | :white_check_mark: |
 | 3.0.x   | :x:                |
-| 2.2.x   | :x:                |
-| 2.1.x   | :x:                |
-| 2.0.x   | :x:                |
+| 2.x     | :x:                |
 | 1.x     | :x:                |
 | 0.x     | :x:                |
 
@@ -21,7 +19,6 @@ Supported versions of Büro:
 | 4.1--PRE| :x:                |
 | >4.0.19 | :white_check_mark: |
 | 4.0.x   | :x:                |
-| 3.6.9   | :x:                |
 | 3.6.x   | :x:                |
 | 3.5.x   | :x:                |
 | <3.5    | :x:                |
@@ -32,8 +29,7 @@ Supported versions of System:
 | ------- | ------------------ |
 | >4.0.14 | :white_check_mark: |
 | 4.0.x   | :x:                |
-| 3.6.4   | :x:                |
-| <3.6    | :x:                |
+| <4.0    | :x:                |
 
 Supported versions of Background System:
 
