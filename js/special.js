@@ -104,7 +104,7 @@ async function getHighscore() {
 async function setHighscore(score) {
     let r = await fetch("https://lkunited.pythonanywhere.com/webResources/setHighscore?username=" + getCookie("username", document.cookie) + "&code=" + getCookie("code", document.cookie) + "&score=" + score);
     let rt = await r.text();
-    if (rt != "") {
+    if (rt != "Successfully set highscore.") {
         alert("Ein Fehler ist aufgetreten:\n"+rt);
     }
 }
