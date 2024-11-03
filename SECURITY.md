@@ -44,6 +44,7 @@ Supported versions of Setup:
 
 | Version | Supported          |
 | ------- | ------------------ |
+| 16      | :white_check_mark: |
 | 15      | :white_check_mark: |
 | 14      | :white_check_mark: |
 | 13      | :white_check_mark: |
