@@ -53,10 +53,10 @@
             <h2>Account</h2>
             <div class="oval">
                 <p>
-                    Hallo, <div id="name__" style="display:inline;">?</div>!<br/>
-                    Du bist eingeloggt mit dem Code <div id="code__" style="display:inline;" class="vHover">?</div>!<br/><br/>
-                    <button onclick="changeLoginButton()" type="button" class="login_button">&Auml;ndern</button><br/>
-                    <div id="text__" style="display: inline;"></div><br/>
+                    Hallo, <div id="name__" style="display:inline;">?</div>!<br />
+                    Du bist eingeloggt mit dem Code <div id="code__" style="display:inline;" class="vHover">?</div>!<br /><br />
+                    <button onclick="changeLoginButton()" type="button" class="login_button">&Auml;ndern</button><br />
+                    <div id="text__" style="display: inline;"></div><br />
                 </p>
             </div>
             <script>
@@ -68,26 +68,46 @@
             </script>
             <h2>Aktuelles</h2>
             <div class="oval">
+                <font color="black">
+                    <h3>Systemupdate5</h3>
+                    <p>
+                        Version 5 des Paketes Hintergrundsystem ist erschienen!<br />
+                        <br />
+                        Betroffen ist die Systemupdate-Funktion.<br />
+                        Die grafische Oberfläche wurde verbessert.<br />
+                        <br />
+                        Installieren Sie das neue System jetzt manuell oder nutzen Sie Ihre alte, weiterhin unterstützte Version.
+                    </p>
+                </font>
+                <div class="like" id="systemupdate5" style="">?</div><button onclick="setLike('systemupdate5')" type="button" class="likeButton">&#128151;</button>
+                <div id="systemupdate5Comments"></div>
+                <textarea id="systemupdate5CommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('systemupdate5')" />
+                <script>
+                    getContent("systemupdate5");
+                </script>
+            </div>
+            <div class="oval">
                 <font color="magenta">
                     <h3>Special</h3>
                     <p>
                         <b>
-                            Ein neues Special ist erschienen:<br/>
-                            <br/>
-                            Das B&uuml;ro2JSpecial, auch als JubiSpecial bekannt,<br/>
-                            da es zum 2-j&auml;hrigen Jubil&auml;um von B&uuml;ro erschienen ist.<br/>
-                            <br/>
-                            Auch auf dieser Seite gibt es ein Special:<br/>
-                            das <a href="./jubiSpecial/">JubiSpecial</a>.<br/>
-                            <br/>
+                            Ein neues Special ist erschienen:<br />
+                            <br />
+                            Das B&uuml;ro2JSpecial, auch als JubiSpecial bekannt,<br />
+                            da es zum 2-j&auml;hrigen Jubil&auml;um von B&uuml;ro erschienen ist.<br />
+                            <br />
+                            Auch auf dieser Seite gibt es ein Special:<br />
+                            das <a href="./jubiSpecial/">JubiSpecial</a>.<br />
+                            <br />
                             Machen Sie jetzt mit!
                         </b>
                     </p>
                 </font>
                 <div class="like" id="special" style="">?</div><button onclick="setLike('special')" type="button" class="likeButton">&#128151;</button>
                 <div id="specialComments"></div>
-                <textarea id="specialCommentText" placeholder="Kommentieren..."></textarea><br/>
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('special')"/>
+                <textarea id="specialCommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('special')" />
                 <script>
                     getContent("special");
                 </script>
@@ -96,16 +116,16 @@
                 <font color="black">
                     <h3>Setup16</h3>
                     <p>
-                        B&uuml;roSetup Version 16 ist da!<br/>
-                        Genie&szlig;en Sie jetzt neueste Technologien.<br/><br/>
-                        Die grafische Oberfl&auml;che wurde geupdated.<br/>
+                        B&uuml;roSetup Version 16 ist da!<br />
+                        Genie&szlig;en Sie jetzt neueste Technologien.<br /><br />
+                        Die grafische Oberfl&auml;che wurde geupdated.<br />
                         Zudem wurde Zustimmung zu unseren AGB verbessert.
                     </p>
                 </font>
                 <div class="like" id="setup16" style="">?</div><button onclick="setLike('setup16')" type="button" class="likeButton">&#128151;</button>
                 <div id="setup16Comments"></div>
-                <textarea id="setup16CommentText" placeholder="Kommentieren..."></textarea><br/>
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('setup16')"/>
+                <textarea id="setup16CommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('setup16')" />
                 <script>
                     getContent("setup16");
                 </script>
@@ -130,9 +150,9 @@
             <h3>Installation</h3>
             <p>
                 Laden Sie die neueste Version von
-                <a href="./data/büro4.0.21.zip">B&uuml;ro (V4.0.21)</a> (Hauptprogramm),
-                <a href="./data/system4.0.20.zip">System (V4.0.20)</a> (UpdateInstaller und Fehleranalyse)<br/>und
-                <a href="./data/systemupdate[neue Datei4].zip">Hintergrundsystem (V4)</a> (Updater f&uuml;r System)
+                <a href="./data/büro4.0.22.zip">B&uuml;ro (V4.0.22)</a> (Hauptprogramm),
+                <a href="./data/system4.0.22.zip">System (V4.0.22)</a> (UpdateInstaller und Fehleranalyse)<br/>und
+                <a href="./data/systemupdate[neue Datei5].zip">Hintergrundsystem (V5)</a> (Updater f&uuml;r System)
                 herunter.<br/>
                 Laden Sie unseren
                 <a href="./data/setup[neue Datei16].zip">Installer (V16)</a>
@@ -680,7 +700,7 @@
     </div>
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2024 - BueroWebKit 3.1.14 - LKWEB 2.12.13
+            Copyright Leander Kafemann 2024 - BueroWebKit 3.1.15 - LKWEB 2.12.14
         </p>
     </div>
 </body>
