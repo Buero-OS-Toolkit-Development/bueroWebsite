@@ -87,7 +87,7 @@ function getTimeDiffString(time) {
         if (weeks == 1) {
             return "vor einer Woche";
         } else {
-            return "vor " + weeks.toString() + " Tagen"
+            return "vor " + weeks.toString() + " Wochen"
         }
     } else if (tD < 60 * 24 * 7 * 52) {
         let months = 0;
