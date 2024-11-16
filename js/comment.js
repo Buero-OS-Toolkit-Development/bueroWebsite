@@ -33,42 +33,7 @@ async function formatComments(contentHeader) {
             let author = comments_[0];
             let comment = comments_[1];
             let time = comments_[2];
-            let timeText = "";
-            let tD = getTimeDiff(getTimeString(), time);
-            if (tD == 0) {
-                timeText = "jetzt";
-            } else if (tD < 60) {
-                if (tD == 1) {
-                    timeText = "vor einer Minute";
-                } else {
-                    timeText = "vor " + tD.toString() + " Minuten";
-                }
-            } else if (tD < 60 * 24) {
-                let hrs = 0;
-                while (tD >= 60) {
-                    hrs += 1;
-                    tD -= 60;
-                }
-                if (hrs == 1) {
-                    timeText = "vor einer Stunde";
-                } else {
-                    timeText = "vor " + hrs.toString() + " Stunden";
-                }
-            } else if (tD < 60 * 24 * 7) {
-                let days = 0;
-                while (tD >= 60 * 24) {
-                    days += 1;
-                    tD -= 60 * 24;
-                }
-                if (days == 1) {
-                    timeText = "vor einem Tag";
-                } else {
-                    timeText = "vor " + days.toString() + " Tagen";
-                }
-            } else {
-                let time_ = time.split(", ");
-                timeText = "am " + time_[0] + " um " + time_[1] + " Uhr";
-            }
+            let timeText = getTimeDiffString(time);
             subst += "<div class='commentText'><i>" + author + "</i> schrieb <i>" + timeText + "</i>:</div><div class='commentOval'>" + comment.replace("\n", "<br/>") + "</div>";
         }
     }
