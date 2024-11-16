@@ -47,10 +47,9 @@ function abs(int) {
 }
 
 function getTimeDiffString(time) {
-    let timeText = "";
     let tD = getTimeDiff(getTimeString(), time);
     if (tD == 0) {
-        return = "jetzt";
+        return "jetzt";
     } else if (tD < 60) {
         if (tD == 1) {
             return "vor einer Minute";
