@@ -22,7 +22,7 @@ SCHABL = """<div class="oval">
 def export():
     title = c.titel.get("1.0", END).rstrip()
     content = c.inhalt.get("1.0", END).rstrip().replace("\n", "<br/>\n"+24*" ")
-    id_ = title.lower().replace(" ", "")
+    id_ = title.lower().replace(" ", "").replace(".", "_")
     styling1 = c.styling.replace(" ", "").replace("bold", "<b>").replace("italic", "<i>")
     styling2 = "<i><b>" if styling1 == "<b><i>" else styling1
     styling2 = styling2.replace("<", "</")
@@ -83,7 +83,7 @@ c.underline = False
 c.stroke = False
 
 c.create_text(325, 60, text="  Büro Guide  \nContent Creator", font=("Verdana", "30", "bold"))
-c.create_text(325, 840, text="Copyright LK 2024  -  Version 3.1.7", font=("Verdana", "10"))
+c.create_text(325, 840, text="Copyright LK 2024  -  Version 3.1.21", font=("Verdana", "10"))
 
 c.create_text(20, 200, text="Titel:", font=("Verdana", "20"), anchor="w")
 c.create_text(325, 270, text="Inhalt:", font=("Verdana", "25"))
