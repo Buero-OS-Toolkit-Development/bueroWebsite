@@ -27,14 +27,28 @@ async function formatComments(contentHeader) {
     let response_text = await response_.text();
     let comments = response_text.split("#**#");
     let subst = "";
+    let comments_ = "";
+    let author = "";
+    let comment = "";
+    let time = "";
+    let timeText = "";
+    let timeTextUnformat = "";
+    let idString = "";
+    let style = "";
     for (let i = 0; i < comments.length; i++) {
         if (comments[i] != "") {
-            let comments_ = comments[i].split("#*#");
-            let author = comments_[0];
-            let comment = comments_[1];
-            let time = comments_[2];
-            let timeText = getTimeDiffString(time);
-            subst += "<div class='commentText'><i>" + author + "</i> schrieb <i>" + timeText + "</i>:</div><div class='commentOval'>" + comment.replace("\n", "<br/>") + "</div>";
+            comments_ = comments[i].split("#*#");
+            author = comments_[0];
+            comment = comments_[1];
+            time = comments_[2];
+            timeTextUnformat = getTimeDiffString(time);
+            timeText = getTimeDiffString(time, true); 
+            idString = contentHeader + "CommentTimeInfo" + i.toString();
+            style = "." + idString + ":after {content:'" + timeText + "';}." + idString + ":hover:after {content:'" + timeTextUnformat + "';}." + idString + " {display: inline;}";
+            document.querySelector('*').style = style;
+            subst += "<div class='commentText'><i>" + author + "</i> schrieb <i>" +
+                "<div id='" + idString + "'>" + timeText + "</div></i>:</div><div class='commentOval'>" +
+                comment.replace("\n", "<br/>") + "</div>";
         }
     }
     document.getElementById(contentHeader + "Comments").innerHTML = subst;

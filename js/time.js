@@ -46,70 +46,74 @@ function abs(int) {
     return int;
 }
 
-function getTimeDiffString(time) {
-    let tD = getTimeDiff(getTimeString(), time);
-    if (tD == 0) {
-        return "jetzt";
-    } else if (tD < 60) {
-        if (tD == 1) {
-            return "vor einer Minute";
+function getTimeDiffString(time, format = false) {
+    if (format == true) {
+        let tD = getTimeDiff(getTimeString(), time);
+        if (tD == 0) {
+            return "jetzt";
+        } else if (tD < 60) {
+            if (tD == 1) {
+                return "vor einer Minute";
+            } else {
+                return "vor " + tD.toString() + " Minuten";
+            }
+        } else if (tD < 60 * 24) {
+            let hrs = 0;
+            while (tD >= 60) {
+                hrs += 1;
+                tD -= 60;
+            }
+            if (hrs == 1) {
+                return "vor einer Stunde";
+            } else {
+                return "vor " + hrs.toString() + " Stunden";
+            }
+        } else if (tD < 60 * 24 * 7) {
+            let days = 0;
+            while (tD >= 60 * 24) {
+                days += 1;
+                tD -= 60 * 24;
+            }
+            if (days == 1) {
+                return "vor einem Tag";
+            } else {
+                return "vor " + days.toString() + " Tagen";
+            }
+        } else if (tD < 60 * 24 * 7 * 4) {
+            let weeks = 0;
+            while (tD >= 60 * 24 * 7) {
+                weeks += 1;
+                tD -= 60 * 24 * 7;
+            }
+            if (weeks == 1) {
+                return "vor einer Woche";
+            } else {
+                return "vor " + weeks.toString() + " Wochen"
+            }
+        } else if (tD < 60 * 24 * 7 * 52) {
+            let months = 0;
+            while (tD >= 60 * 24 * 7 * 4) {
+                months += 1;
+                tD -= 60 * 24 * 7 * 4;
+            }
+            if (months = 1) {
+                return "vor einem Monat";
+            } else {
+                return "vor " + months.toString() + " Monaten";
+            }
         } else {
-            return "vor " + tD.toString() + " Minuten";
-        }
-    } else if (tD < 60 * 24) {
-        let hrs = 0;
-        while (tD >= 60) {
-            hrs += 1;
-            tD -= 60;
-        }
-        if (hrs == 1) {
-            return "vor einer Stunde";
-        } else {
-            return "vor " + hrs.toString() + " Stunden";
-        }
-    } else if (tD < 60 * 24 * 7) {
-        let days = 0;
-        while (tD >= 60 * 24) {
-            days += 1;
-            tD -= 60 * 24;
-        }
-        if (days == 1) {
-            return "vor einem Tag";
-        } else {
-            return "vor " + days.toString() + " Tagen";
-        }
-    } else if (tD < 60 * 24 * 7 * 4) {
-        let weeks = 0;
-        while (tD >= 60 * 24 * 7) {
-            weeks += 1;
-            tD -= 60 * 24 * 7;
-        }
-        if (weeks == 1) {
-            return "vor einer Woche";
-        } else {
-            return "vor " + weeks.toString() + " Wochen"
-        }
-    } else if (tD < 60 * 24 * 7 * 52) {
-        let months = 0;
-        while (tD >= 60 * 24 * 7 * 4) {
-            months += 1;
-            tD -= 60 * 24 * 7 * 4;
-        }
-        if (months = 1) {
-            return "vor einem Monat";
-        } else {
-            return "vor " + months.toString() + " Monaten";
+            let years = 0;
+            while (tD >= 60 * 24 * 7 * 52) {
+                years += 1;
+                tD -= 60 * 24 * 7 * 52;
+            }
+            if (years == 1) {
+                return "vor einem Jahr";
+            } else {
+                return "vor " + years.toString() + " Jahren";
+            }
         }
     } else {
-        let years = 0;
-        while (tD >= 60 * 24 * 7 * 52) {
-            years += 1;
-            tD -= 60 * 24 * 7 * 52;
-        }
-        if (years == 1) {
-            return "vor einem Jahr";
-        } else {
-            return "vor " + years.toString() + " Jahren";
-        }
+        return "am " + time.replace(", ", " um ") + " Uhr";
     }
 }
