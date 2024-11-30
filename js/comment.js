@@ -1,6 +1,8 @@
 /*
-    Functions for sending comments.
+    Functions for sending and recieving comments.
 */
+let cDict_ = [];
+
 async function comment(contentHeader) {
     let likes_old = document.getElementById(contentHeader).textContent;
     document.getElementById(contentHeader).textContent = "Kommentar wird versendet...";
@@ -22,6 +24,7 @@ async function comment(contentHeader) {
     }
     document.getElementById(contentHeader).textContent = likes_old;
 }
+
 async function formatComments(contentHeader) {
     let response_ = await fetch("https://lkunited.pythonanywhere.com/webResources/getComments?contentHeader=" + contentHeader);
     let response_text = await response_.text();
@@ -34,7 +37,7 @@ async function formatComments(contentHeader) {
     let timeText = "";
     let timeTextUnformat = "";
     let idString = "";
-    let style = "";
+    let newIDN = cDict_.length - 1;
     for (let i = 0; i < comments.length; i++) {
         if (comments[i] != "") {
             comments_ = comments[i].split("#*#");
@@ -44,12 +47,25 @@ async function formatComments(contentHeader) {
             timeTextUnformat = getTimeDiffString(time);
             timeText = getTimeDiffString(time, true); 
             idString = contentHeader + "CommentTimeInfo" + i.toString();
-            style = "." + idString + ":after {content:'" + timeText + "';}." + idString + ":hover:after {content:'" + timeTextUnformat + "';}." + idString + " {display: inline;}";
-            document.querySelector('*').style = style;
+            newIDN += 1;
+            cDict_[newIDN] = idString + "#**#" + timeTextUnformat + "#**#" + timeText;
             subst += "<div class='commentText'><i>" + author + "</i> schrieb <i>" +
-                "<div id='" + idString + "'>" + timeText + "</div></i>:</div><div class='commentOval'>" +
-                comment.replace("\n", "<br/>") + "</div>";
+            "<button class='commentTimeButton' onclick='reformatComment("+newIDN.toString()+")'><div id='" + idString + "'>" + timeText + "</div></button></i>:</div><div class='commentOval'>" +
+            comment.replace("\n", "<br/>") + "</div>";
         }
     }
     document.getElementById(contentHeader + "Comments").innerHTML = subst;
+}
+function reformatComment(id) {
+    let dictC = cDict_[id].split("#**#");
+    let id_ = dictC[0];
+    let reText1 = dictC[1];
+    let reText2 = dictC[2];
+    let reText = "";
+    if (document.getElementById(id_).textContent == reText1) {
+        reText = reText2;
+    } else {
+        reText = reText1;
+    }
+    document.getElementById(id_).textContent = reText;
 }
