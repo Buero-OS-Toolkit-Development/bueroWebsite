@@ -1,6 +1,6 @@
 /*
-    Stylesheet für die Büro-Webseite.
-    Büro ist ein Projekt von Leander Kafemann.
+    Stylesheet fÃ¼r die BÃ¼ro-Webseite.
+    BÃ¼ro ist ein Projekt von Leander Kafemann.
     Diese Seite wurde ebenfalls von Leander Kafemann entworfen.
 */
 html {
@@ -109,4 +109,16 @@ div.vHover {
 div.vHover:hover {
     filter: none;
     background-color: inherit;
+}
+button.commentTimeButton {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: medium;
+    margin: 0px;
+}
+button.commentTimeButton:hover {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: large;
 }
