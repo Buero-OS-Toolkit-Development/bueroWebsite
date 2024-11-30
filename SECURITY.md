@@ -6,8 +6,8 @@ Supported versions of Büro Guide (this website):
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 3.1.x   | :white_check_mark: |
-| 3.0.x   | :x:                |
+| 3.2.x   | :white_check_mark: |
+| 3.x     | :x:                |
 | 2.x     | :x:                |
 | 1.x     | :x:                |
 | 0.x     | :x:                |
@@ -17,7 +17,7 @@ Supported versions of Büro:
 | Version | Supported          |
 | ------- | ------------------ |
 | 4.1--PRE| :x:                |
-| >4.0.22 | :white_check_mark: |
+| >4.0.23 | :white_check_mark: |
 | 4.0.x   | :x:                |
 | 3.6.x   | :x:                |
 | 3.5.x   | :x:                |
