@@ -18,7 +18,7 @@ iframe:hover {
     border: 32px groove hotpink;
     border-radius: 60%;
     width: 800px;
-    height: 700px;
+    height: 800px;
     margin-left: 20%;
     margin-right: 20%;
     animation: spin 2s alternate-reverse infinite;
@@ -38,7 +38,7 @@ div.outer {
     height: 1000px;
 }
 h1.fix {
-    position: fixed;
+    position: absolute;
     color: white;
-    margin: 200px;
+    margin: 800px;
 }
