@@ -3,7 +3,7 @@ iframe {
     margin-right: 10%;
     height: 400px;
     width: 80%;
-    border: dotted;
+    border: dotted white;
     border-radius: 80px;
     transition-duration: 4s;
     background-color: black;
