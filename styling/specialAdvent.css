@@ -17,10 +17,12 @@ iframe:hover {
 .loader {
     border: 32px groove hotpink;
     border-radius: 60%;
-    width: 800px;
-    height: 800px;
+    width: 400px;
+    height: 400px;
     margin-left: 20%;
     margin-right: 20%;
+    margin-top: 50px;
+    margin-bottom: 200px;
     animation: spin 2s alternate-reverse infinite;
     position: center;
 }
@@ -35,10 +37,10 @@ iframe:hover {
 }
 div.outer {
     background-color: black;
-    height: 1000px;
+    height: 8000px;
 }
 h1.fix {
     position: absolute;
     color: white;
-    margin: 800px;
+    margin: 200px;
 }
