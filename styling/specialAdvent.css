@@ -42,6 +42,9 @@ html.black {
 h1.fix {
     position: absolute;
     text-align: center;
+    margin-left: 50%;
+    margin-right: 50%;
     color: white;
+    font-family: "Source Code Pro", monospace;
     /*margin: 200px;*/
 }
