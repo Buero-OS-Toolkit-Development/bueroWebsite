@@ -37,7 +37,8 @@ div.outer {
     background-color: black;
     height: 1000px;
 }
-h1 {
-    position: fixed center;
+h1.fix {
+    position: fixed;
     color: white;
+    margin: 200px;
 }
