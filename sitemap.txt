@@ -1,2 +1,3 @@
 https://leanderkafemann.github.io/bueroWebsite/
 https://leanderkafemann.github.io/bueroWebsite/jubiSpecial/
+https://leanderkafemann.github.io/bueroWebsite/advent/
