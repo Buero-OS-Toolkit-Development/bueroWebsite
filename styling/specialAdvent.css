@@ -21,6 +21,8 @@ iframe:hover {
     height: 300px;
     animation: spin 2s alternate-reverse infinite;
     background-color: ghostwhite;
+    color: ghostwhite;
+    position: center;
 }
 @keyframes spin {
     0% {
@@ -35,5 +37,5 @@ div.outer {
     background-color: black;
 }
 h1 {
-    position: fixed
+    position: fixed center;
 }
