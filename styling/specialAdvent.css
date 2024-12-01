@@ -15,13 +15,11 @@ iframe:hover {
     width: 85%;
 }
 .loader {
-    border: 16px groove hotpink;
+    border: 32px groove hotpink;
     border-radius: 60%;
     width: 300px;
     height: 300px;
     animation: spin 2s alternate-reverse infinite;
-    background-color: ghostwhite;
-    color: ghostwhite;
     position: center;
 }
 @keyframes spin {
@@ -38,4 +36,5 @@ div.outer {
 }
 h1 {
     position: fixed center;
+    color: white;
 }
