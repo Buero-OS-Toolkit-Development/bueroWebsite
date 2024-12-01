@@ -40,7 +40,7 @@ html.black {
     height: 800px;
 }
 h1.fix {
-    position: absolute;
+    position: center;
     color: white;
     /*margin: 200px;*/
 }
