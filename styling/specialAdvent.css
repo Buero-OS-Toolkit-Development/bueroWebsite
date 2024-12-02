@@ -45,10 +45,16 @@ html.black {
 h1.fix {
     position: absolute;
     text-align: center;
-    margin-left: 47%;
+    margin-left: 43.5%;
     margin-right: 45%;
     margin-bottom: 170px;
     color: white;
     font-family: "Source Code Pro", monospace;
     /*margin: 200px;*/
+}
+p.white {
+    color: ghostwhite;
+    text-align: center;
+    margin-left: 45%;
+    margin-right: 45%;
 }
