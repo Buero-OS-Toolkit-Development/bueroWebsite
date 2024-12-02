@@ -17,7 +17,7 @@ Supported versions of Büro:
 | Version | Supported          |
 | ------- | ------------------ |
 | 4.1--PRE| :x:                |
-| >4.0.23 | :white_check_mark: |
+| 4.1.x   | :white_check_mark: |
 | 4.0.x   | :x:                |
 | 3.6.x   | :x:                |
 | 3.5.x   | :x:                |
@@ -27,7 +27,7 @@ Supported versions of System:
 
 | Version | Supported          |
 | ------- | ------------------ |
-| >4.0.24 | :white_check_mark: |
+| >4.1.0  | :white_check_mark: |
 | 4.0.x   | :x:                |
 | <4.0    | :x:                |
 
