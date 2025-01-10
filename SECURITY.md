@@ -2,21 +2,11 @@
 
 ## Supported Versions of Büro or directly associated projects
 
-Supported versions of Büro Guide (this website):
-
-| Version | Supported          |
-| ------- | ------------------ |
-| 3.2.x   | :white_check_mark: |
-| 3.x     | :x:                |
-| 2.x     | :x:                |
-| 1.x     | :x:                |
-| 0.x     | :x:                |
-
 Supported versions of Büro:
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 4.1--PRE| :x:                |
+| 4.2--PRE| :x:                |
 | 4.1.x   | :white_check_mark: |
 | 4.0.x   | :x:                |
 | 3.6.x   | :x:                |
