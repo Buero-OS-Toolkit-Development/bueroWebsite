@@ -69,6 +69,23 @@
             <h2>Aktuelles</h2>
             <div class="oval">
                 <font color="black">
+                    <h3>Hintergrundsystem 6</h3>
+                    <p>
+                        Die neue Version des Systemupdaters behebt einige Abstürze und kann erstmals über Büro installiert werden (mindestens 4.1.3 erforderlich).<br />
+                        <br />
+                        <a href="./data/systemupdate6.zip">Hintergrundsystem (V6)</a>
+                    </p>
+                </font>
+                <div class="like" id="hintergrundsystem6" style="">?</div><button onclick="setLike('hintergrundsystem6')" type="button" class="likeButton">&#128151;</button>
+                <div id="hintergrundsystem6Comments"></div>
+                <textarea id="hintergrundsystem6CommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('hintergrundsystem6')" />
+                <script>
+                    getContent("hintergrundsystem6");
+                </script>
+            </div>
+            <div class="oval">
+                <font color="black">
                     <h3>BüroBank 1.2</h3>
                     <p>
                         Ein großes Update für die BüroBank ist erschienen!<br />
@@ -129,23 +146,6 @@
             </div>
             <div class="oval">
                 <font color="black">
-                    <h3>Musik 1.3</h3>
-                    <p>
-                        Eine neue Version von Musik ist wie angek&uuml;ndigt erschienen.<br />
-                        <br />
-                        Neu sind unter anderem neue Freiheiten bei der Wahl der Nutzernamen.<br />
-                        <br />
-                        Ab dem neuen Jahr wird Musik allerdings nicht mehr weiterentwickelt.
-                    </p>
-                </font>
-                <div class="like" id="musik1_3" style="">?</div><button onclick="setLike('musik1_3')" type="button" class="likeButton">&#128151;</button>
-                <div id="musik1_3Comments"></div>
-                <textarea id="musik1_3CommentText" placeholder="Kommentieren..."></textarea><br />
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('musik1_3')" />
-                <script>getContent("musik1_3");</script>
-            </div>
-            <div class="oval">
-                <font color="black">
                     <h3>LKWEB 2.13</h3>
                     <p>
                         Eine neue Version unserer Serverskripte (LKWEB) ist erschienen: 2.13.<br />
@@ -161,26 +161,6 @@
                 <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('lkweb2_13')" />
                 <script>
                     getContent("lkweb2_13");
-                </script>
-            </div>
-            <div class="oval">
-                <font color="black">
-                    <h3>Systemupdate5</h3>
-                    <p>
-                        Version 5 des Paketes Hintergrundsystem ist erschienen!<br />
-                        <br />
-                        Betroffen ist die Systemupdate-Funktion.<br />
-                        Die grafische Oberfl&auml;che wurde verbessert.<br />
-                        <br />
-                        Installieren Sie das neue System jetzt manuell oder nutzen Sie Ihre alte, weiterhin unterst&uuml;tzte Version.
-                    </p>
-                </font>
-                <div class="like" id="systemupdate5" style="">?</div><button onclick="setLike('systemupdate5')" type="button" class="likeButton">&#128151;</button>
-                <div id="systemupdate5Comments"></div>
-                <textarea id="systemupdate5CommentText" placeholder="Kommentieren..."></textarea><br />
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('systemupdate5')" />
-                <script>
-                    getContent("systemupdate5");
                 </script>
             </div>
             <div style="display: block;">
@@ -202,9 +182,9 @@
                 <h3>Installation</h3>
                 <p>
                     Laden Sie die neueste Version von
-                    <a href="./data/büro4.1.2.zip">B&uuml;ro (V4.1.2)</a> (Hauptprogramm),
-                    <a href="./data/system4.1.2.zip">System (V4.1.2)</a> (UpdateInstaller und Fehleranalyse)<br />und
-                    <a href="./data/systemupdate[neue Datei5].zip">Hintergrundsystem (V5)</a> (Updater f&uuml;r System)
+                    <a href="./data/büro4.1.3.zip">B&uuml;ro (V4.1.3)</a> (Hauptprogramm),
+                    <a href="./data/system4.1.3.zip">System (V4.1.3)</a> (UpdateInstaller und Fehleranalyse)<br />und
+                    <a href="./data/systemupdate6.zip">Hintergrundsystem (V6)</a> (Updater f&uuml;r System)
                     herunter.<br />
                     Laden Sie unseren
                     <a href="./data/setup[neue Datei16].zip">Installer (V16)</a>
@@ -631,7 +611,7 @@
                     Damit Sie diesen nicht vergessen, l&auml;sst sich B&uuml;ro nicht schlie&szlig;en, solange er l&auml;uft.<br />
                     Au&szlig;erdem verf&uuml;gt B&uuml;roMail &uuml;ber Funktionen zum Konfigurieren von z.B. einer Antwort auf eine empfangene Mail.
                     <br /><br /><i>
-                        Neue Tastenkombinationen wurden eingeführt:<br/>Enter zum Löschen der aktuellen Zeile oder Erstellen einer neuen Zeile und Tab zum Springen in das nächste Feld.
+                        Neue Tastenkombinationen wurden eingeführt:<br />Enter zum Löschen der aktuellen Zeile oder Erstellen einer neuen Zeile und Tab zum Springen in das nächste Feld.
                     </i>
                 </p>
                 <h4 id="bb"><a href="./data/bank1.2.0.zip">B&uuml;roBank (1.2)</a></h4>
@@ -724,7 +704,7 @@
                     Zum Entwickler:<br />
                     <a href="https://github.com/LeanderKafemann/bueroWebsite">GitHub-Repository dieser Seite</a><br />
                     <a href="https://github.com/LeanderKafemann">GitHub-Seite vom Entwickler</a><br />
-                    <a href="https://leanderkafemann.github.io/LateinTrainerPlus">LateinTrainerPlus</a><br/>
+                    <a href="https://leanderkafemann.github.io/LateinTrainerPlus">LateinTrainerPlus</a><br />
                     <a href="https://pypi.org/user/LK-Software/">PyPi-Seite vom Entwickler</a><br /><br />
                     Zu Python:<br />
                     <a href="https://www.python.org">Python Homepage</a><br />
@@ -756,45 +736,45 @@
                             dass Daten &uuml;ber Ihr Nutzungsverhalten auf unseren Servern gespeichert werden.
                         </p>
                         <p>
-                            Des Weiteren ist bei jeglichen Gewinnspielen der Rechtsweg ausgeschlossen.<br/>
-                            Teilnehmer benötigen einen Wohnsitz in Deutschland und müssen mindestens 16 Jahre alt sein.<br/>
-                            Wir behalten es uns vor, bestimmte Teilnehmer auszuschließen und erhobene Daten zu verarbeiten.<br/>
+                            Des Weiteren ist bei jeglichen Gewinnspielen der Rechtsweg ausgeschlossen.<br />
+                            Teilnehmer benötigen einen Wohnsitz in Deutschland und müssen mindestens 16 Jahre alt sein.<br />
+                            Wir behalten es uns vor, bestimmte Teilnehmer auszuschließen und erhobene Daten zu verarbeiten.<br />
                             Büro-Mitarbeiter sind ausdrücklich nicht ausgeschlossen, haben jedoch mitnichten Vorteile.
                         </p>
                         <p>
-                            Büro ist ein privates Projekt, dessen Code, sofern nicht anders gekennzeichnet, von Leander Kafemann entwickelt wurde.<br/>
-                            Büro haftet nicht für gegebenenfalls auftretende Schäden an Ihrem Gerät,<br/>
+                            Büro ist ein privates Projekt, dessen Code, sofern nicht anders gekennzeichnet, von Leander Kafemann entwickelt wurde.<br />
+                            Büro haftet nicht für gegebenenfalls auftretende Schäden an Ihrem Gerät,<br />
                             auch nicht, wenn diese auf Büro zurückzuführen sind.
                         </p>
                         <p>
-                            Von Büro erhobene Daten werden lokal gesichert und teilweise an Server unserer Partner PythonAnywhere bzw. GitHub gesendet.<br/>
+                            Von Büro erhobene Daten werden lokal gesichert und teilweise an Server unserer Partner PythonAnywhere bzw. GitHub gesendet.<br />
                             Wir behalten uns die Datenverarbeitung vor.
                         </p>
                         <p>
-                            Büro verschlüsselt einige Daten nicht.<br/>
-                            Wir empfehlen, Ihre Passwörter geheimzuhalten, um eine optimale Sicherheit zu gewährleisten.<br/>
-                            Sie können VPN-Netzwerke nutzen, um Ihre IP-Adresse zu schützen.<br/>
-                            Sofern möglich nutzt Büro HTTPS für die Datenübermittlung,<br/>
+                            Büro verschlüsselt einige Daten nicht.<br />
+                            Wir empfehlen, Ihre Passwörter geheimzuhalten, um eine optimale Sicherheit zu gewährleisten.<br />
+                            Sie können VPN-Netzwerke nutzen, um Ihre IP-Adresse zu schützen.<br />
+                            Sofern möglich nutzt Büro HTTPS für die Datenübermittlung,<br />
                             Sie sollten Ihr lokales Netzwerk aber dennoch gegen Drittzugriffe sichern.
                         </p>
                         <p>
-                            In BüroBank oder Büro geleistete Zahlungen sind mehrwerts-  und umsatzsteuerbefreit,<br/>
-                            sie fallen in den privaten Bereich.<br/>
+                            In BüroBank oder Büro geleistete Zahlungen sind mehrwerts-  und umsatzsteuerbefreit,<br />
+                            sie fallen in den privaten Bereich.<br />
                             Zahlungen sind nur bei vorheriger verifizierter Aufladung möglich.
                         </p>
                         <p>
-                            Büro distanziert sich ausdrücklich von Hackern und Produzenten von Bloat- oder Malware.<br/>
+                            Büro distanziert sich ausdrücklich von Hackern und Produzenten von Bloat- oder Malware.<br />
                             Sie können Büro vertrauen.
                         </p>
                     </details>
                 </p>
             </div>
-            <br/><br/><br/><br/><br/>
+            <br /><br /><br /><br /><br />
         </div>
     </div>
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2024-2025 - BueroWebKit 3.2.17 - LKWEB 2.13.14
+            Copyright Leander Kafemann 2024-2025 - BueroWebKit 3.2.18 - LKWEB 2.13.14
         </p>
     </div>
 </body>
