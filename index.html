@@ -69,6 +69,32 @@
             <h2>Aktuelles</h2>
             <div class="oval">
                 <font color="black">
+                    <h3>Büro 4.2</h3>
+                    <p>
+                        <b>
+                            Eine große neue Version von Büro ist erschienen!<br />
+                            <br />
+                            <img src="./images/büro4.2.png" class="photoElement" /><br />
+                            <br />
+                            Enthalten sind aufregende Neuerungen:<br />
+                            +überarbeitete DebugLogs<br />
+                            +Pakete werden als einzelne Instanzen ausgeführt<br />
+                            +1 Special<br />
+                            +1 Gewinnspiel<br />
+                            +7 Erfolge!
+                        </b>
+                    </p>
+                </font>
+                <div class="like" id="büro4_2" style="">?</div><button onclick="setLike('büro4_2')" type="button" class="likeButton">&#128151;</button>
+                <div id="büro4_2Comments"></div>
+                <textarea id="büro4_2CommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('büro4_2')" />
+                <script>
+                    getContent("büro4_2");
+                </script>
+            </div>
+            <div class="oval">
+                <font color="black">
                     <h3>Hintergrundsystem 6</h3>
                     <p>
                         Die neue Version des Systemupdaters behebt einige Abstürze und kann erstmals über Büro installiert werden (mindestens 4.1.3 erforderlich).<br />
@@ -182,7 +208,7 @@
                 <h3>Installation</h3>
                 <p>
                     Laden Sie die neueste Version von
-                    <a href="./data/büro4.1.3.zip">B&uuml;ro (V4.1.3)</a> (Hauptprogramm),
+                    <a href="./data/büro4.2.0.zip">B&uuml;ro (V4.2)</a> (Hauptprogramm),
                     <a href="./data/system4.1.3.zip">System (V4.1.3)</a> (UpdateInstaller und Fehleranalyse)<br />und
                     <a href="./data/systemupdate6.zip">Hintergrundsystem (V6)</a> (Updater f&uuml;r System)
                     herunter.<br />
@@ -628,7 +654,7 @@
                 <h2 id="marketing">Marketing-Bilder</h2>
                 <p>
                     <img src="./images/büroMail.png" class="photoElement" /><br />
-                    <img src="./images/büro4.2.png" class="photoElement" /><br />
+                    <img src="./images/büro4.3.png" class="photoElement" /><br />
                     <img src="./images/B&uuml;roBank.png" class="photoElement" /><br />
                 </p>
             </div>
@@ -774,7 +800,7 @@
     </div>
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2024-2025 - BueroWebKit 3.2.18 - LKWEB 2.13.14
+            Copyright Leander Kafemann 2024-2025 - BueroWebKit 3.2.19 - LKWEB 2.13.14
         </p>
     </div>
 </body>
