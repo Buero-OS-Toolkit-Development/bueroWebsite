@@ -7,8 +7,8 @@ Supported versions of Büro:
 | Version | Supported          |
 | ------- | ------------------ |
 | 4.3--PRE| :x:                |
-| 4.1.x   | :white_check_mark: |
 | 4.2.x   | :white_check_mark: |
+| 4.1.x   | :white_check_mark: |
 | 4.0.x   | :x:                |
 | 3.6.x   | :x:                |
 | <3.6    | :x:                |
@@ -29,7 +29,7 @@ Supported versions of Background System:
 | 6       | :white_check_mark: |
 | 5       | :white_check_mark: |
 | 4       | :white_check_mark: |
-| 3       | :white_check_mark: |
+| 3       | :x:                |
 | <3      | :x:                |
 
 Supported versions of Setup:
