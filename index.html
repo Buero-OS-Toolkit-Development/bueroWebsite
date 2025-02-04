@@ -69,6 +69,45 @@
             <h2>Aktuelles</h2>
             <div class="oval">
                 <font color="black">
+                    <h3>LateinTrainerPlus</h3>
+                    <p>
+                        <b>
+                            Der neue Online-Dienst ist endlich da!<br />
+                            <br />
+                            LateinTrainerPlus bietet neue Tools zum bekannten LateinTrainer und wird momentan noch ausgebaut.<br />
+                            <br />
+                            Solche Funktionen sind zum Beispiel Ranglisten.<br />
+                            <br />
+                            Installieren Sie den Desktopagenten, der Ihre Punkte, Ihren Streak und Weiteres ermittelt,<br />
+                            in Büro 4.2.2 oder neuer.<br />
+                            <br />
+                            <a href="https://leanderkafemann.github.io/LateinTrainerPlus/#">LateinTrainerPlus</a>
+                        </b>
+                    </p>
+                </font>
+                <div class="like" id="lateintrainerplus" style="">?</div><button onclick="setLike('lateintrainerplus')" type="button" class="likeButton">&#128151;</button>
+                <div id="lateintrainerplusComments"></div>
+                <textarea id="lateintrainerplusCommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('lateintrainerplus')" />
+                <script>getContent("lateintrainerplus");</script>
+            </div>
+            <div class="oval">
+                <font color="black">
+                    <h3>LKWEB 2.14</h3>
+                    <p>
+                        Die neue Version unserer Serverskripte LKWEB ist da!<br />
+                        <br />
+                        Neu ist neben Bugfixes die Unterstützung von LateinTrainerPlus.
+                    </p>
+                </font>
+                <div class="like" id="lkweb2_14" style="">?</div><button onclick="setLike('lkweb2_14')" type="button" class="likeButton">&#128151;</button>
+                <div id="lkweb2_14Comments"></div>
+                <textarea id="lkweb2_14CommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('lkweb2_14')" />
+                <script>getContent("lkweb2_14");</script>
+            </div>
+            <div class="oval">
+                <font color="black">
                     <h3>Büro 4.2</h3>
                     <p>
                         <b>
@@ -167,8 +206,8 @@
                 <h3>Installation</h3>
                 <p>
                     Laden Sie die neueste Version von
-                    <a href="./data/büro4.2.1.zip">B&uuml;ro (V4.2.1)</a> (Hauptprogramm),
-                    <a href="./data/system4.2.1.zip">System (V4.2.1)</a> (UpdateInstaller und Fehleranalyse)<br />und
+                    <a href="./data/büro4.2.2.zip">B&uuml;ro (V4.2.2)</a> (Hauptprogramm),
+                    <a href="./data/system4.2.2.zip">System (V4.2.2)</a> (UpdateInstaller und Fehleranalyse)<br />und
                     <a href="./data/systemupdate6.zip">Hintergrundsystem (V6)</a> (Updater f&uuml;r System)
                     herunter.<br />
                     Laden Sie unseren
@@ -580,6 +619,12 @@
                     Testen Sie Ihr Wissen in diesem Quiz, dessen Fragen regelm&auml;&szlig;ig aktualisiert werden!<br /><br />
                     <i>Neu in dieser Version ist eine Meldung, wenn alle Fragen richtig beantwortet wurden.</i>
                 </p>
+                <h4><a href="./data/ltp1.0.0.zip">LTP Agent (V1.0)</a></h4>
+                <p>
+                    Der Desktop-Agent zu <a href="https://leanderkafemann.github.io/LateinTrainerPlus/#">LateinTrainerPlus</a>.<br />
+                    Er ermittelt Ihre Punkte etc. und lädt sie hoch.<br /><br />
+                    <i><!--Noch nicht--></i>
+                </p>
                 <h3>Plugins</h3>
                 <p>
                     In diesem Bereich finden Sie Pakete, die Daten von Ihrer B&uuml;ro-Installation und Funktionen von B&uuml;ro mitnutzen.<br />
@@ -756,7 +801,7 @@
     </div>
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2024-2025 - BueroWebKit 3.2.21 - LKWEB 2.13.14
+            Copyright Leander Kafemann 2024-2025 - BueroWebKit 3.2.22 - LKWEB 2.14.0
         </p>
     </div>
 </body>
