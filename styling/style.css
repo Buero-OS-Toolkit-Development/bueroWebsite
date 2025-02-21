@@ -122,3 +122,18 @@ button.commentTimeButton:hover {
     margin-right: 10px;
     font-size: large;
 }
+button.buttonSwitchMP {
+    background-color: transparent;
+    outline: none;
+    transition-duration: 0.5s;
+    border: black dashed 0.5px;
+    border-radius: 8px;
+    height: 42px;
+    font-family: Verdana, sans-serif;
+    position: absolute;
+    margin-top: 3px;
+    -webkit-transition: 0.5s;
+}
+button.buttonSwitchMP:hover {
+    background: radial-gradient(red, #e5e5e5);
+}
