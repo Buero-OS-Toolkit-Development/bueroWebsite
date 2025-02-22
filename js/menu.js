@@ -1,6 +1,4 @@
-﻿function renameMenuPoints() {
-    let menuTitlesShort = ["🏠", "🛈", "🡇", "🔧", "📦", "🖼", "💻", "🔗", "☎"];
-    let menuTitlesLong = ["Home", "Über", "Installation", "Features", "Pakete", "Bilder", "Entwickler", "Weblinks", "Kontakt"]
+﻿function renameMenuPointsAgent(menuTitlesShort, menuTitlesLong) {    
     if (getCookie("rearranged", document.cookie) == "true") {
         setCookie("rearranged", "false", 7);
         for (let i = 0; i < menuTitlesLong.length; i++) {
@@ -14,4 +12,10 @@
         }
         document.getElementById("buttonSwitchMP").textContent = "Texte";
     }
+}
+
+function renameMenuPoints() {
+    let menuTitlesShort = ["🏠", "🛈", "🡇", "🔧", "📦", "🖼", "💻", "🔗", "☎"];
+    let menuTitlesLong = ["Home", "Über", "Installation", "Features", "Pakete", "Bilder", "Entwickler", "Weblinks", "Kontakt"];
+    renameMenuPointsAgent(menuTitlesShort, menuTitlesLong);
 }
