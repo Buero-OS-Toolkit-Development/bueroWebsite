@@ -22,7 +22,7 @@ SCHABL = """<div class="oval">
 def export():
     title = c.titel.get("1.0", END).rstrip()
     content = c.inhalt.get("1.0", END).rstrip().replace("\n", "<br/>\n"+24*" ")
-    id_ = title.lower().replace(" ", "").replace(".", "_")
+    id_ = title.lower().replace(" ", "").replace(".", "_").replace("ü", "ue")
     styling1 = c.styling.replace(" ", "").replace("bold", "<b>").replace("italic", "<i>")
     styling2 = "<i><b>" if styling1 == "<b><i>" else styling1
     styling2 = styling2.replace("<", "</")
@@ -73,7 +73,7 @@ c = Canvas(root, width=650, height=850)
 c.configure(bg="light blue")
 c.pack()
 
-c.colors = ["black", "red", "blue", "green", "yellow", "gold", "magenta", "purple", "white", "grey"]
+c.colors = ["black", "red", "blue", "green", "yellow", "gold", "magenta", "purple", "white", "grey", "cyan", "bisque", "salmon"]
 c.color = "black"
 
 c.stylings = ["", "bold", "italic", "bold italic"]
@@ -83,7 +83,7 @@ c.underline = False
 c.stroke = False
 
 c.create_text(325, 60, text="  Büro Guide  \nContent Creator", font=("Verdana", "30", "bold"))
-c.create_text(325, 840, text="Copyright LK 2024  -  Version 3.1.21", font=("Verdana", "10"))
+c.create_text(325, 840, text="Copyright LK 2024-2025  -  Version 3.3.1", font=("Verdana", "10"))
 
 c.create_text(20, 200, text="Titel:", font=("Verdana", "20"), anchor="w")
 c.create_text(325, 270, text="Inhalt:", font=("Verdana", "25"))
