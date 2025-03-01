@@ -78,6 +78,22 @@
             <h2>Aktuelles</h2>
             <div class="oval">
                 <font color="black">
+                    <h3>Setup 17</h3>
+                    <p>
+                        <b>
+                            BüroSetup 17 macht die Installation von Büro einfacher denn je.<br />
+                            Außerdem hat BüroSetup jetzt ein eingenes GitHub-Repository.
+                        </b>
+                    </p>
+                </font>
+                <div class="like" id="setup17" style="">?</div><button onclick="setLike('setup17')" type="button" class="likeButton">&#128151;</button>
+                <div id="setup17Comments"></div>
+                <textarea id="setup17CommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('setup17')" />
+                <script>getContent("setup17");</script>
+            </div>
+            <div class="oval">
+                <font color="black">
                     <h3>BueroWebkit 3.3</h3>
                     <p>
                         <b>
@@ -191,11 +207,11 @@
                 <p>
                     Laden Sie die neueste Version von
                     <a href="./data/büro4.2.5.zip">B&uuml;ro (V4.2.5)</a> (Hauptprogramm),
-                    <a href="./data/system4.2.2.zip">System (V4.2.2)</a> (UpdateInstaller und Fehleranalyse)<br />und
+                    <a href="./data/system4.2.5.zip">System (V4.2.5)</a> (UpdateInstaller und Fehleranalyse)<br />und
                     <a href="./data/systemupdate6.zip">Hintergrundsystem (V6)</a> (Updater f&uuml;r System)
                     herunter.<br />
                     Laden Sie unseren
-                    <a href="./data/setup[neue Datei16].zip">Installer (V16)</a>
+                    <a href="./data/setup[neue Datei17].zip">Installer (V17)</a>
                     herunter.<br />
                     Entpacken Sie den Installer in einen neuen Ordner und verschieben Sie die anderen Zips dahin.<br />
                     F&uuml;hren Sie nun den Installer aus und folgen Sie seinen Anweisungen.<br />
@@ -603,13 +619,13 @@
                     Testen Sie Ihr Wissen in diesem Quiz, dessen Fragen regelm&auml;&szlig;ig aktualisiert werden!<br /><br />
                     <i>Neu in dieser Version ist eine Meldung, wenn alle Fragen richtig beantwortet wurden.</i>
                 </p>
-                <h4><a href="./data/ltp1.0.2.zip">LTP Agent (V1.0.2)</a></h4>
+                <h4><a href="./data/ltp1.0.3.zip">LTP Agent (V1.0.3)</a></h4>
                 <p>
                     Der Desktop-Agent zu <a href="https://leanderkafemann.github.io/LateinTrainerPlus/#">LateinTrainerPlus</a>.<br />
                     Er ermittelt Ihre Punkte etc. und l&auml;dt sie hoch.<br /><br />
                     <b>Der LTP Agent nutzt B&uuml;ro-Ressourcen wie die bueroUtils und Ihren Nutzernamen sowie Ihre DeviceID.</b><br /><br />
                     <i>
-                        Ein Button zum schnellen Beenden des Programmes wurde hinzugef&uuml;gt.
+                        Eine Nachricht während des Bootvorganges wurde hinzugefügt.
                     </i>
                 </p>
                 <h3>Plugins</h3>
@@ -790,7 +806,7 @@
     </div>
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2024-2025 - BueroWebKit 3.3.1 - LKWEB 2.14.4
+            Copyright Leander Kafemann 2024-2025 - BueroWebKit 3.3.2 - LKWEB 2.14.4
         </p>
     </div>
 </body>
