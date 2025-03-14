@@ -74,6 +74,7 @@
                 if (getCookie("rearranged", document.cookie) == "") {
                     setCookie("rearranged", "true", 3);
                 } else if (getCookie("rearranged", document.cookie) == "false") {
+                    setCookie("rearranged", "true", 7);
                     renameMenuPoints();
                 } else {
                     console.log("MenuPoints correct");
@@ -645,14 +646,14 @@
                     Testen Sie Ihr Wissen in diesem Quiz, dessen Fragen regelm&auml;&szlig;ig aktualisiert werden!<br /><br />
                     <i>Neu in dieser Version ist eine Meldung, wenn alle Fragen richtig beantwortet wurden.</i>
                 </p>
-                <h4><a href="./data/ltp1.0.3.zip">LTP Agent (V1.0.3)</a></h4>
+                <h4><a href="./data/ltp1.0.4.zip">LTP Agent (V1.0.4)</a></h4>
                 <p>
                     Der Desktop-Agent zu <a href="https://leanderkafemann.github.io/LateinTrainerPlus/#">LateinTrainerPlus</a>.<br />
                     Er ermittelt Ihre Punkte etc. und l&auml;dt sie hoch.<br /><br />
-                    <b>Der LTP Agent nutzt B&uuml;ro-Ressourcen wie die bueroUtils und Ihren Nutzernamen sowie Ihre DeviceID.</b><br /><br />
                     <i>
-                        Eine Nachricht während des Bootvorganges wurde hinzugefügt.
-                    </i>
+                        Ein Fehler beim Teilen wurde behoben.
+                    </i><br /><br />
+                    <b>Der LTP Agent nutzt B&uuml;ro-Ressourcen wie die bueroUtils und Ihren Nutzernamen sowie Ihre DeviceID.</b>
                 </p>
                 <h3>Plugins</h3>
                 <p>
@@ -679,12 +680,12 @@
                         Viele kleinere Verbesserungen wurden get&auml;tigt.
                     </i>
                 </p>
-                <h4 id="bonusFile"><a href="./data/bonus0.3.0.zip">BüroBonus (PREVIEW BETA 0.3)</a></h4>
+                <h4 id="bonusFile"><a href="./data/bonus0.3.1.zip">BüroBonus (PREVIEW BETA 0.3.1)</a></h4>
                 <p>
                     BüroBonus ist ein Paket im Entwicklungsstadium.<br />
                     BETA-Mitglieder können diese PREVIEW-Version herunterladen und die aktuellen Neuerungen testen.<br /><br />
                     <i>
-                        Ein AntiCheat-System wurde in erster, rudimentärer Form hinzugefügt.
+                        Fehler bei Beenden, Bepunktung und Teilen wurden behoben.
                     </i><br /><br />
                     <b>Achtung: BüroBonus wird noch entwickelt!</b>
                 </p>
@@ -841,7 +842,7 @@
     </div>
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2024-2025 - BueroWebKit 3.3.5 - LKWEB 2.14.7
+            Copyright Leander Kafemann 2024-2025 - BueroWebKit 3.3.6 - LKWEB 2.14.7
         </p>
     </div>
 </body>
