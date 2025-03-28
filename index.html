@@ -70,6 +70,9 @@
                 document.getElementById("code__").textContent = getCookie("code", document.cookie);
                 if (getCookie("username", document.cookie) == "NoNameGiven") {
                     document.getElementById("text__").textContent = "Sie sind nicht eingeloggt!";
+                } else {
+                    renewCookie("username");
+                    renewCookie("code")
                 }
                 if (getCookie("rearranged", document.cookie) == "") {
                     setCookie("rearranged", "true", 3);
@@ -77,6 +80,7 @@
                     setCookie("rearranged", "true", 7);
                     renameMenuPoints();
                 } else {
+                    renewCookie("rearranged")
                     console.log("MenuPoints correct");
                 }
             </script>
@@ -228,8 +232,8 @@
                 <h3>Installation</h3>
                 <p>
                     Laden Sie die neueste Version von
-                    <a href="./data/büro4.2.6.zip">B&uuml;ro (V4.2.6)</a> (Hauptprogramm),
-                    <a href="./data/system4.2.6.zip">System (V4.2.6)</a> (UpdateInstaller und Fehleranalyse)<br />und
+                    <a href="./data/büro4.2.7.zip">B&uuml;ro (V4.2.7)</a> (Hauptprogramm),
+                    <a href="./data/system4.2.7.zip">System (V4.2.7)</a> (UpdateInstaller und Fehleranalyse)<br />und
                     <a href="./data/systemupdate6.zip">Hintergrundsystem (V6)</a> (Updater f&uuml;r System)
                     herunter.<br />
                     Laden Sie unseren
@@ -646,12 +650,12 @@
                     Testen Sie Ihr Wissen in diesem Quiz, dessen Fragen regelm&auml;&szlig;ig aktualisiert werden!<br /><br />
                     <i>Neu in dieser Version ist eine Meldung, wenn alle Fragen richtig beantwortet wurden.</i>
                 </p>
-                <h4><a href="./data/ltp1.0.4.zip">LTP Agent (V1.0.4)</a></h4>
+                <h4><a href="./data/ltp1.0.5.zip">LTP Agent (V1.0.5)</a></h4>
                 <p>
                     Der Desktop-Agent zu <a href="https://leanderkafemann.github.io/LateinTrainerPlus/#">LateinTrainerPlus</a>.<br />
                     Er ermittelt Ihre Punkte etc. und l&auml;dt sie hoch.<br /><br />
                     <i>
-                        Ein Fehler beim Teilen wurde behoben.
+                        Der LTP Agent ist nun kompatibel mit den neuesten Versionen von Numpy und PyautoGUI.
                     </i><br /><br />
                     <b>Der LTP Agent nutzt B&uuml;ro-Ressourcen wie die bueroUtils und Ihren Nutzernamen sowie Ihre DeviceID.</b>
                 </p>
@@ -660,24 +664,24 @@
                     In diesem Bereich finden Sie Pakete, die Daten von Ihrer B&uuml;ro-Installation und Funktionen von B&uuml;ro mitnutzen und &auml;ndern k&ouml;nnen.<br />
                     Diese Daten sind vorrangig Ihr PREMIUM-Pass sowie Ihr Nutzername und Ihre DeviceID.
                 </p>
-                <h4 id="bMail11"><a href="./data/mail1.2.9.zip">B&uuml;roMail (1.2.9)</a></h4>
+                <h4 id="bMail11"><a href="./data/mail1.2.10.zip">B&uuml;roMail (1.2.10)</a></h4>
                 <p>
                     Mit B&uuml;roMail k&ouml;nnen Sie B&uuml;roMails senden und empfangen.<br />
                     Senden Sie eine Mail mit unserem Hauptprogramm oder<br />
                     starten Sie den BackgroundAgent, der Ihren Posteingang im Hintergrund pr&uuml;ft.<br />
                     Damit Sie diesen nicht vergessen, l&auml;sst sich B&uuml;ro nicht schlie&szlig;en, solange er l&auml;uft.<br />
-                    Au&szlig;erdem verf&uuml;gt B&uuml;roMail &uuml;ber Funktionen zum Konfigurieren von z.B. einer Antwort auf eine empfangene Mail.
-                    <br /><br /><i>
-                        Viele kleinere Vorg&auml;nge wurden optimiert.
+                    Au&szlig;erdem verf&uuml;gt B&uuml;roMail &uuml;ber Funktionen zum Konfigurieren von z.B. einer Antwort auf eine empfangene Mail.<br /><br />
+                    <i>
+                        BüroMail ist nun kompatibel mit den neuesten Versionen von Numpy und PyautoGUI.
                     </i>
                 </p>
-                <h4 id="bb"><a href="./data/bank1.2.1.zip">B&uuml;roBank (1.2.1)</a></h4>
+                <h4 id="bb"><a href="./data/bank1.2.2.zip">B&uuml;roBank (1.2.2)</a></h4>
                 <p>
                     Mit B&uuml;roBank sehen Sie blitzschnell Ihren Kontostand auf der B&uuml;roBank.<br />
                     Sie k&ouml;nnen auch &Uuml;berweisungen t&auml;tigen oder mithilfe der TransaktionsID solche empfangen.<br />
                     Au&szlig;erdem k&ouml;nnen Sie auch mobil in Ihrem Online-Konto &Uuml;berweisungen t&auml;tigen.<br /><br />
                     <i>
-                        Viele kleinere Verbesserungen wurden get&auml;tigt.
+                        BüroBank ist nun kompatibel mit den neuesten Versionen von Numpy und PyautoGUI.
                     </i>
                 </p>
                 <h4 id="bonusFile"><a href="./data/bonus0.3.1.zip">BüroBonus (PREVIEW BETA 0.3.1)</a></h4>
@@ -751,6 +755,7 @@
                 -PreMails f&uuml;r B&uuml;roMail erstellen (Funktion bueroUtils.createPreMail)<br />
                 -Pre&Uuml;berweisungen f&uuml;r B&uuml;roBank erstellen (Funktion bueroUtils.createPreBank)<br />
                 -Schnellzahlungen/-mails (bueroUtils.shareViaMail / bueroUtils.payViaBank)<br />
+                -Unterdrücken von Outputs mit der Klasse bueroUtils.outputSuppressor<br/>
                 -u.v.m.<br />
                 Zus&auml;tzlich k&ouml;nnen Sie die folgenden, zwingend installierten Module nutzen:<br />
                 'pip', 'colorama', 'easygui', 'eyed3', 'datetime', 'keyboard', 'naturalsize',<br />
@@ -842,7 +847,7 @@
     </div>
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2024-2025 - BueroWebKit 3.3.6 - LKWEB 2.14.7
+            Copyright Leander Kafemann 2024-2025 - BueroWebKit 3.3.7 - LKWEB 2.14.8
         </p>
     </div>
 </body>
