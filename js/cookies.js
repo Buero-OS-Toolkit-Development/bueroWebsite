@@ -25,3 +25,7 @@ function setCookie(cname, cvalue, exdays) {
     let expires = "expires=" + d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/;SameSite=None; Secure";
 }
+
+function renewCookie(cname, exdays = 7) {
+    setCookie(cname, getCookie(cname, document.cookie), exdays)
+}
