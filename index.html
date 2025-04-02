@@ -87,6 +87,41 @@
             <h2>Aktuelles</h2>
             <div class="oval">
                 <font color="black">
+                    <h3>Kaffee Manager</h3>
+                    <p>
+                        <b>
+                            Ein neues Paket für Büro ist erschienen!<br />
+                            Der Kaffee Manager hilft Ihnen beim Ordnen Ihrer Kaffees und behält für Sie den Überblick!
+                        </b>
+                    </p>
+                </font>
+                <div class="like" id="kaffeemanager" style="">?</div><button onclick="setLike('kaffeemanager')" type="button" class="likeButton">&#128151;</button>
+                <div id="kaffeemanagerComments"></div>
+                <textarea id="kaffeemanagerCommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('kaffeemanager')" />
+                <script>
+                    getContent("kaffeemanager");
+                </script>
+            </div>
+            <div class="oval">
+                <font color="black">
+                    <h3>BüroBonus Beta 2</h3>
+                    <p>
+                        Eine weitere Beta unseres kommenden Paketes BüroBonus ist erschienen.<br />
+                        <br />
+                        Sie können nun neue Funktionen wie Upgrades für Ihren Account testen.
+                    </p>
+                </font>
+                <div class="like" id="buerobonusbeta2" style="">?</div><button onclick="setLike('buerobonusbeta2')" type="button" class="likeButton">&#128151;</button>
+                <div id="buerobonusbeta2Comments"></div>
+                <textarea id="buerobonusbeta2CommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('buerobonusbeta2')" />
+                <script>
+                    getContent("buerobonusbeta2");
+                </script>
+            </div>
+            <div class="oval">
+                <font color="black">
                     <h3>abstrakte Verzerrungen 1.3</h3>
                     <p>
                         Ein weiteres Paket geht in die wohlverdiente Rente: <br />
@@ -120,22 +155,6 @@
                 <script>
                     getContent("buerobonusbeta1");
                 </script>
-            </div>
-            <div class="oval">
-                <font color="black">
-                    <h3>Setup 17</h3>
-                    <p>
-                        <b>
-                            BüroSetup 17 macht die Installation von Büro einfacher denn je.<br />
-                            Außerdem hat BüroSetup jetzt ein eingenes GitHub-Repository.
-                        </b>
-                    </p>
-                </font>
-                <div class="like" id="setup17" style="">?</div><button onclick="setLike('setup17')" type="button" class="likeButton">&#128151;</button>
-                <div id="setup17Comments"></div>
-                <textarea id="setup17CommentText" placeholder="Kommentieren..."></textarea><br />
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('setup17')" />
-                <script>getContent("setup17");</script>
             </div>
             <div class="oval">
                 <font color="black">
@@ -196,23 +215,6 @@
                 <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('lkweb2_14')" />
                 <script>getContent("lkweb2_14");</script>
             </div>
-            <div class="oval">
-                <font color="black">
-                    <h3>Hintergrundsystem 6</h3>
-                    <p>
-                        Die neue Version des Systemupdaters behebt einige Abst&uuml;rze und kann erstmals &uuml;ber B&uuml;ro installiert werden (mindestens 4.1.3 erforderlich).<br />
-                        <br />
-                        <a href="./data/systemupdate6.zip">Hintergrundsystem (V6)</a>
-                    </p>
-                </font>
-                <div class="like" id="hintergrundsystem6" style="">?</div><button onclick="setLike('hintergrundsystem6')" type="button" class="likeButton">&#128151;</button>
-                <div id="hintergrundsystem6Comments"></div>
-                <textarea id="hintergrundsystem6CommentText" placeholder="Kommentieren..."></textarea><br />
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('hintergrundsystem6')" />
-                <script>
-                    getContent("hintergrundsystem6");
-                </script>
-            </div>
             <div style="display: block;">
                 <h2 id="&uuml;berDieseSeite">&Uuml;ber diese Seite</h2>
                 <p>
@@ -232,8 +234,8 @@
                 <h3>Installation</h3>
                 <p>
                     Laden Sie die neueste Version von
-                    <a href="./data/büro4.2.7.zip">B&uuml;ro (V4.2.7)</a> (Hauptprogramm),
-                    <a href="./data/system4.2.7.zip">System (V4.2.7)</a> (UpdateInstaller und Fehleranalyse)<br />und
+                    <a href="./data/büro4.2.8.zip">B&uuml;ro (V4.2.8)</a> (Hauptprogramm),
+                    <a href="./data/system4.2.8.zip">System (V4.2.8)</a> (UpdateInstaller und Fehleranalyse)<br />und
                     <a href="./data/systemupdate6.zip">Hintergrundsystem (V6)</a> (Updater f&uuml;r System)
                     herunter.<br />
                     Laden Sie unseren
@@ -575,6 +577,16 @@
                         Sie k&ouml;nnen Ihrer Rechnung jetzt eine individuelle Bemerkung anf&uuml;gen.
                     </i>
                 </p>
+                <h4><a href="./data/kaffee1.0.0.zip">Kaffee Manager (1.0)</a></h4>
+                <p>
+                    Der Kaffee Manager sammelt alle von Ihnen getrunkenen Kaffees in einer Datenbank.<br />
+                    Sie können Daten wie die Röstung oder die Beschreibung angeben,<br />
+                    aber auch eigene Bewertungen hinzufügen.<br /><br />
+                    <i>
+                        Dies ist die erste öffentliche Version des Kaffee Managers.
+                    </i><br /><br />
+                    <b>Der Kaffee Manager nutzt die bueroUtils.</b>
+                </p>
                 <h3>Unterhaltung</h3>
                 <p>
                     G&ouml;nnen Sie sich eine Auszeit und spielen Sie eines unserer tollen Spiele!
@@ -684,12 +696,13 @@
                         BüroBank ist nun kompatibel mit den neuesten Versionen von Numpy und PyautoGUI.
                     </i>
                 </p>
-                <h4 id="bonusFile"><a href="./data/bonus0.3.1.zip">BüroBonus (PREVIEW BETA 0.3.1)</a></h4>
+                <h4 id="bonusFile"><a href="./data/bonus0.4.0.zip">BüroBonus (PREVIEW BETA 0.4)</a></h4>
                 <p>
                     BüroBonus ist ein Paket im Entwicklungsstadium.<br />
                     BETA-Mitglieder können diese PREVIEW-Version herunterladen und die aktuellen Neuerungen testen.<br /><br />
                     <i>
-                        Fehler bei Beenden, Bepunktung und Teilen wurden behoben.
+                        Die Möglichkeit, Upgrades für die Punkteobergrenze und den Punktezuwachs zu kaufen,<br />
+                        wurde hinzugefügt.
                     </i><br /><br />
                     <b>Achtung: BüroBonus wird noch entwickelt!</b>
                 </p>
@@ -755,7 +768,7 @@
                 -PreMails f&uuml;r B&uuml;roMail erstellen (Funktion bueroUtils.createPreMail)<br />
                 -Pre&Uuml;berweisungen f&uuml;r B&uuml;roBank erstellen (Funktion bueroUtils.createPreBank)<br />
                 -Schnellzahlungen/-mails (bueroUtils.shareViaMail / bueroUtils.payViaBank)<br />
-                -Unterdrücken von Outputs mit der Klasse bueroUtils.outputSuppressor<br/>
+                -Unterdrücken von Outputs mit der Klasse bueroUtils.outputSuppressor<br />
                 -u.v.m.<br />
                 Zus&auml;tzlich k&ouml;nnen Sie die folgenden, zwingend installierten Module nutzen:<br />
                 'pip', 'colorama', 'easygui', 'eyed3', 'datetime', 'keyboard', 'naturalsize',<br />
@@ -847,7 +860,7 @@
     </div>
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2024-2025 - BueroWebKit 3.3.7 - LKWEB 2.14.8
+            Copyright Leander Kafemann 2024-2025 - BueroWebKit 3.3.8 - LKWEB 2.14.8
         </p>
     </div>
 </body>
