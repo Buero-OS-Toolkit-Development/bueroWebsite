@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de-de">
+<!--
+    Dieser Code wurde exklusiv und allein von Leander Kafemann entwickelt.
+    Diese Seite ist ein Easter Egg.
+-->
+<head>
+    <title>B&uuml;ro-Osterspecial</title>
+    <meta name="author" content="Leander Kafemann" />
+    <meta name="keywords" content="Leander Kafemann büro Guide LKunited King Lele" />
+    <link rel="stylesheet" href="../styling/style.css" />
+    <link rel="stylesheet" href="../styling/box.css" />
+    <link rel="stylesheet" href="../styling/forms.css" />
+    <link rel="stylesheet" href="../styling/specialAdvent.css" />
+    <link rel="stylesheet" href="../styling/like.css" />
+    <link rel="manifest" href="../manifest.json" />
+    <link rel="icon" type="image/png" href="../images/logo_Python.png" />
+    <script type="text/javascript" src="../js/cookies.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+    <script type="text/javascript" src="../js/time.js"></script>
+    <script type="text/javascript" src="../js/get_like.js"></script>
+    <script type="text/javascript" src="../js/set_like.js"></script>
+    <script type="text/javascript" src="../js/comment.js"></script>
+    <script type="text/javascript" src="../js/menu.js"></script>
+    <script type="text/javascript" src="../js/easter.js"></script>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <noscript>
+        <h1 style="color: red;">This site requires JavaScript.</h1>
+    </noscript>
+    <script>
+        usernameCheck();
+        checkIntegrityES();
+    </script>
+    <div class="navbar">
+        <a href="#"><img src="../images/logo.png" alt="logo" /></a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="../">&lt; Zur&uuml;ck</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1><u>B&uuml;ro Guide - OsterSpecial</u></h1>
+    <h3>Dies ist ein Special zu Ostern 2025!</h3>
+    <h2>Account</h2>
+    <div class="oval">
+        <p>
+            Hallo, <div id="name__" style="display:inline;">?</div>!<br />
+            Du bist eingeloggt mit dem Code <div id="code__" style="display:inline;" class="vHover">?</div>!<br /><br />
+            <button onclick="changeLoginButton()" type="button" class="login_button">&Auml;ndern</button><br />
+            <div id="text__" style="display: inline;"></div><br />
+        </p>
+    </div>
+    <script>
+        document.getElementById("name__").textContent = getCookie("username", document.cookie);
+        document.getElementById("code__").textContent = getCookie("code", document.cookie);
+        if (getCookie("username", document.cookie) == "NoNameGiven") {
+            document.getElementById("text__").textContent = "Sie sind nicht eingeloggt!";
+        }
+    </script>
+    <h2>Special</h2>
+    <div class="oval">
+        <h3>OsterSpecial</h3>
+        <p>
+            Dies ist ein Special zu Ostern 2025.<br />
+            Feiere jetzt mit!
+        </p>
+        <p>
+            Sie haben das Osterei im Büro Guide entdeckt!<br />
+            Herzlichen Glückwunsch!<br />
+            Ihre Belohnung erhalten Sie unten.
+        </p>
+        <hr />
+        <div class="like" id="osterspecial" style="">?</div><button onclick="setLike('osterspecial')" type="button" class="likeButton">&#128151;</button>
+        <div id="osterspecialComments"></div>
+        <textarea id="osterspecialCommentText" placeholder="Kommentieren..."></textarea><br />
+        <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('osterspecial')" />
+        <script>
+            getContent("osterspecial");
+        </script>
+        <iframe src="https://lkunited.pythonanywhere.com/websiteDrafts/easterSpecial"></iframe>
+    </div>
+    <div class="footer" id="footer" style="text-align: center;">
+        <p class="footerText">
+            Copyright Leander Kafemann 2025
+        </p>
+    </div>
+    <!--<script>
+        alert("Dieses Special war zeitlich begrenzt und ist momentan nicht verfügbar.");
+        history.back();
+    </script>--><!--nach Ende der Nutzung abschalten-->
+</body>
+</html>
