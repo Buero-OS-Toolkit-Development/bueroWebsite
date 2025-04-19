@@ -1,6 +1,6 @@
 function accessEasterSpecial() {
     var x = Math.round(Math.random() * (9999 - 1000)) + 1000;
-    alert("EasterEgg gefunden! Geben Sie sogleich die EasterEggPIN " + x + " ein!");
+    alert("EasterEgg gefunden!\nGeben Sie sogleich die EasterEggPIN " + x + " ein!");
     setCookie("eePIN", x, 1);
     location.href = "https://leanderkafemann.github.io/bueroWebsite/easterSpecial";
 }
