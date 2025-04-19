@@ -60,10 +60,10 @@
             <h2>Account</h2>
             <div class="oval">
                 <p>
-                    Hallo, <div id="name__" style="display:inline;">?</div>!<br/>
-                    Du bist eingeloggt mit dem Code <div id="code__" style="display:inline;" class="vHover">?</div>!<br/><br/>
-                    <button onclick="changeLoginButton()" type="button" class="login_button">&Auml;ndern</button><br/>
-                    <div id="text__" style="display: inline;"></div><br/>
+                    Hallo, <div id="name__" style="display:inline;">?</div>!<br />
+                    Du bist eingeloggt mit dem Code <div id="code__" style="display:inline;" class="vHover">?</div>!<br /><br />
+                    <button onclick="changeLoginButton()" type="button" class="login_button">&Auml;ndern</button><br />
+                    <div id="text__" style="display: inline;"></div><br />
                 </p>
             </div>
             <script>
@@ -87,22 +87,50 @@
             </script>
             <h2>Aktuelles</h2>
             <div class="oval">
+                <font color="magenta">
+                    <h3>Ostern 2025</h3>
+                    <p>
+                        <b>
+                            <u>
+                                Liebe Nutzer,<br />
+                                <br />
+                                erst einmal frohe Ostern 2025!<br />
+                                Wir waren nicht untätig und haben viele Updates für Sie vorbereitet,<br />
+                                die in den kommenden Tagen erscheinen werden.<br />
+                                Es gibt zum Beispiel neue Erfolge für Büro!<br />
+                                <br />
+                                In den kommenden Tagen können Sie auf dieser Webseite zusätzlich ein Osterei mit einer Überraschung für Sie entdecken.<br />
+                                <br />
+                                Viel Spaß und viel Glück!
+                            </u>
+                        </b>
+                    </p>
+                </font>
+                <div class="like" id="ostern2025" style="">?</div><button onclick="setLike('ostern2025')" type="button" class="likeButton">&#128151;</button>
+                <div id="ostern2025Comments"></div>
+                <textarea id="ostern2025CommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('ostern2025')" />
+                <script>
+                    getContent("ostern2025");
+                </script>
+            </div>
+            <div class="oval">
                 <font color="black">
                     <h3>B&uuml;roBonus</h3>
                     <p>
                         <b>
-                            Ein neues Paket f&uuml;r B&uuml;ro ist erschienen!<br/>
-                            <br/>
-                            Sammeln Sie mit B&uuml;roBonus Bonuspunkte basierend auf Ihren Erfolgen, Ihrem PREMIUM-Status u.v.m.!<br/>
-                            Kaufen Sie Upgrades, um noch mehr Punkte zu sammeln<br/>
+                            Ein neues Paket f&uuml;r B&uuml;ro ist erschienen!<br />
+                            <br />
+                            Sammeln Sie mit B&uuml;roBonus Bonuspunkte basierend auf Ihren Erfolgen, Ihrem PREMIUM-Status u.v.m.!<br />
+                            Kaufen Sie Upgrades, um noch mehr Punkte zu sammeln<br />
                             und erwerben Sie im Shop Belohnungen wie gratis PREMIUM!
                         </b>
                     </p>
                 </font>
                 <div class="like" id="buerobonus" style="">?</div><button onclick="setLike('buerobonus')" type="button" class="likeButton">&#128151;</button>
                 <div id="buerobonusComments"></div>
-                <textarea id="buerobonusCommentText" placeholder="Kommentieren..."></textarea><br/>
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('buerobonus')"/>
+                <textarea id="buerobonusCommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('buerobonus')" />
                 <script>
                     getContent("buerobonus");
                 </script>
@@ -111,18 +139,18 @@
                 <font color="black">
                     <h3>LKWEB 2.15</h3>
                     <p>
-                        LKWEB 2.15 ist da!<br/>
-                        <br/>
-                        Neuerungen sind eine &uuml;berarbeitete Version der Codegenerierung,<br/>
-                        die kryptografisch sicherer ist.<br/>
-                        Alle Pakete k&ouml;nnen weiter wie gew&ouml;hnlich verwendet werden.<br/>
+                        LKWEB 2.15 ist da!<br />
+                        <br />
+                        Neuerungen sind eine &uuml;berarbeitete Version der Codegenerierung,<br />
+                        die kryptografisch sicherer ist.<br />
+                        Alle Pakete k&ouml;nnen weiter wie gew&ouml;hnlich verwendet werden.<br />
                         Au&szlig;erdem bringt das Update Support f&uuml;r das neueste B&uuml;ro-Plugin: B&uuml;roBonus!
                     </p>
                 </font>
                 <div class="like" id="lkweb2_15" style="">?</div><button onclick="setLike('lkweb2_15')" type="button" class="likeButton">&#128151;</button>
                 <div id="lkweb2_15Comments"></div>
-                <textarea id="lkweb2_15CommentText" placeholder="Kommentieren..."></textarea><br/>
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('lkweb2_15')"/>
+                <textarea id="lkweb2_15CommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('lkweb2_15')" />
                 <script>
                     getContent("lkweb2_15");
                 </script>
@@ -132,70 +160,36 @@
                     <h3>Kaffee Manager</h3>
                     <p>
                         <b>
-                            Ein neues Paket f&uuml;r B&uuml;ro ist erschienen!<br/>
+                            Ein neues Paket f&uuml;r B&uuml;ro ist erschienen!<br />
                             Der Kaffee Manager hilft Ihnen beim Ordnen Ihrer Kaffees und beh&auml;lt f&uuml;r Sie den &Uuml;berblick!
                         </b>
                     </p>
                 </font>
                 <div class="like" id="kaffeemanager" style="">?</div><button onclick="setLike('kaffeemanager')" type="button" class="likeButton">&#128151;</button>
                 <div id="kaffeemanagerComments"></div>
-                <textarea id="kaffeemanagerCommentText" placeholder="Kommentieren..."></textarea><br/>
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('kaffeemanager')"/>
+                <textarea id="kaffeemanagerCommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('kaffeemanager')" />
                 <script>
                     getContent("kaffeemanager");
                 </script>
             </div>
             <div class="oval">
                 <font color="black">
-                    <h3>B&uuml;roBonus Beta 2</h3>
-                    <p>
-                        Eine weitere Beta unseres kommenden Paketes B&uuml;roBonus ist erschienen.<br/>
-                        <br/>
-                        Sie k&ouml;nnen nun neue Funktionen wie Upgrades f&uuml;r Ihren Account testen.
-                    </p>
-                </font>
-                <div class="like" id="buerobonusbeta2" style="">?</div><button onclick="setLike('buerobonusbeta2')" type="button" class="likeButton">&#128151;</button>
-                <div id="buerobonusbeta2Comments"></div>
-                <textarea id="buerobonusbeta2CommentText" placeholder="Kommentieren..."></textarea><br/>
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('buerobonusbeta2')"/>
-                <script>
-                    getContent("buerobonusbeta2");
-                </script>
-            </div>
-            <div class="oval">
-                <font color="black">
                     <h3>abstrakte Verzerrungen 1.3</h3>
                     <p>
-                        Ein weiteres Paket geht in die wohlverdiente Rente: <br/>
-                        f&uuml;r abstrakte Verzerrungen ist mit 1.3 das vorerst letzte gro&szlig;e Update erschienen.<br/>
-                        <br/>
-                        Dieses Update behebt bekannte Fehler bei Darstellung und Performance und bietet erstmals die M&ouml;glichkeit,<br/>
+                        Ein weiteres Paket geht in die wohlverdiente Rente: <br />
+                        f&uuml;r abstrakte Verzerrungen ist mit 1.3 das vorerst letzte gro&szlig;e Update erschienen.<br />
+                        <br />
+                        Dieses Update behebt bekannte Fehler bei Darstellung und Performance und bietet erstmals die M&ouml;glichkeit,<br />
                         die zu verwendende Kamera selbst zu w&auml;hlen.
                     </p>
                 </font>
                 <div class="like" id="abstrakteverzerrungen1_3" style="">?</div><button onclick="setLike('abstrakteverzerrungen1_3')" type="button" class="likeButton">&#128151;</button>
                 <div id="abstrakteverzerrungen1_3Comments"></div>
-                <textarea id="abstrakteverzerrungen1_3CommentText" placeholder="Kommentieren..."></textarea><br/>
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('abstrakteverzerrungen1_3')"/>
+                <textarea id="abstrakteverzerrungen1_3CommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('abstrakteverzerrungen1_3')" />
                 <script>
                     getContent("abstrakteverzerrungen1_3");
-                </script>
-            </div>
-            <div class="oval">
-                <font color="black">
-                    <h3>B&uuml;roBonus BETA 1</h3>
-                    <p>
-                        Schon bald wird ein drittes Plugin f&uuml;r B&uuml;ro verf&uuml;gbar werden: B&uuml;roBonus.<br/>
-                        <br/>
-                        BETA-Mitglieder k&ouml;nnen unsere erste PREVIEW-Version (PRE--0.3) <a href='#bonusFile'>hier</a> testen.
-                    </p>
-                </font>
-                <div class="like" id="buerobonusbeta1" style="">?</div><button onclick="setLike('buerobonusbeta1')" type="button" class="likeButton">&#128151;</button>
-                <div id="buerobonusbeta1Comments"></div>
-                <textarea id="buerobonusbeta1CommentText" placeholder="Kommentieren..."></textarea><br/>
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('buerobonusbeta1')"/>
-                <script>
-                    getContent("buerobonusbeta1");
                 </script>
             </div>
             <div class="oval">
@@ -203,16 +197,16 @@
                     <h3>BueroWebkit 3.3</h3>
                     <p>
                         <b>
-                            Der n&auml;chste gro&szlig;e Schritt des BueroWebKit ist getan!<br/>
-                            <br/>
+                            Der n&auml;chste gro&szlig;e Schritt des BueroWebKit ist getan!<br />
+                            <br />
                             Auf dieser Webseite werden die Men&uuml;optionen jetzt wahlweise als Symbole oder Texte dargestellt.
                         </b>
                     </p>
                 </font>
                 <div class="like" id="buerowebkit3_3" style="">?</div><button onclick="setLike('buerowebkit3_3')" type="button" class="likeButton">&#128151;</button>
                 <div id="buerowebkit3_3Comments"></div>
-                <textarea id="buerowebkit3_3CommentText" placeholder="Kommentieren..."></textarea><br/>
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('buerowebkit3_3')"/>
+                <textarea id="buerowebkit3_3CommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('buerowebkit3_3')" />
                 <script>
                     getContent("buerowebkit3_3");
                 </script>
@@ -220,12 +214,12 @@
             <div style="display: block;">
                 <h2 id="&uuml;berDieseSeite">&Uuml;ber diese Seite</h2>
                 <p>
-                    Dies ist ein interaktiver Guide zu B&uuml;ro.<br/>
+                    Dies ist ein interaktiver Guide zu B&uuml;ro.<br />
                     Sie k&ouml;nnen hier erfahren, wie Sie B&uuml;ro schnell und problemlos
                     <a href="#installation">installieren</a>
-                    und nutzen.<br/>
-                    Zudem k&ouml;nnen Sie hier mit der B&uuml;ro Community diskutieren.<br/>
-                    <br/>B&uuml;ro ist ein Computer-Utils-Programm von Leander Kafemann, <br/>
+                    und nutzen.<br />
+                    Zudem k&ouml;nnen Sie hier mit der B&uuml;ro Community diskutieren.<br />
+                    <br />B&uuml;ro ist ein Computer-Utils-Programm von Leander Kafemann, <br />
                     das viele
                     <a href="#features">Features</a>
                     mitbringt, die Sie in Ihrem Alltag unterst&uuml;tzen.
@@ -237,86 +231,86 @@
                 <p>
                     Laden Sie die neueste Version von
                     <a href="./data/büro4.2.10.zip">B&uuml;ro (V4.2.10)</a> (Hauptprogramm),
-                    <a href="./data/system4.2.10.zip">System (V4.2.10)</a> (UpdateInstaller und Fehleranalyse)<br/>und
+                    <a href="./data/system4.2.10.zip">System (V4.2.10)</a> (UpdateInstaller und Fehleranalyse)<br />und
                     <a href="./data/systemupdate6.zip">Hintergrundsystem (V6)</a> (Updater f&uuml;r System)
-                    herunter.<br/>
+                    herunter.<br />
                     Laden Sie unseren
                     <a href="./data/setup[neue Datei17].zip">Installer (V17)</a>
-                    herunter.<br/>
-                    Entpacken Sie den Installer in einen neuen Ordner und verschieben Sie die anderen Zips dahin.<br/>
-                    F&uuml;hren Sie nun den Installer aus und folgen Sie seinen Anweisungen.<br/>
-                    Sobald B&uuml;ro fertig installiert ist, versucht der Installer, Ihre Installation zu starten.<br/>
-                    Sollte dabei ein Feher auftreten, starten Sie die Fehleranalyse durch Doppelklick auf fehleranalyse.py.<br/>
-                    Danach und in Zukunft starten Sie B&uuml;ro durch Doppelklicken auf büro.py.<br/><br/>
-                    Hinweise:<br/>
-                    Bitte beachten Sie, dass B&uuml;ro in Python geschrieben wurde und<br/>
-                    daher sowohl Windows als auch Python zur Installation notwendig sind.<br/>
-                    In unserer <a href="#weblinks">Weblinks</a>-Sektion finden Sie einen Link zur Python-Installation.<br/><br/>
-                    Tipp f&uuml;r Profis:<br/>
-                    Sobald Sie B&uuml;ro installiert und gestartet haben, k&ouml;nnen Sie sich online einloggen und<br/>
+                    herunter.<br />
+                    Entpacken Sie den Installer in einen neuen Ordner und verschieben Sie die anderen Zips dahin.<br />
+                    F&uuml;hren Sie nun den Installer aus und folgen Sie seinen Anweisungen.<br />
+                    Sobald B&uuml;ro fertig installiert ist, versucht der Installer, Ihre Installation zu starten.<br />
+                    Sollte dabei ein Feher auftreten, starten Sie die Fehleranalyse durch Doppelklick auf fehleranalyse.py.<br />
+                    Danach und in Zukunft starten Sie B&uuml;ro durch Doppelklicken auf büro.py.<br /><br />
+                    Hinweise:<br />
+                    Bitte beachten Sie, dass B&uuml;ro in Python geschrieben<button onclick="accessEasterSpecial()"><img src="./easterSpecial/egg_image.jpg" width="15" height="15" /></button> wurde und<br />
+                    daher sowohl Windows als auch Python zur Installation notwendig sind.<br />
+                    In unserer <a href="#weblinks">Weblinks</a>-Sektion finden Sie einen Link zur Python-Installation.<br /><br />
+                    Tipp f&uuml;r Profis:<br />
+                    Sobald Sie B&uuml;ro installiert und gestartet haben, k&ouml;nnen Sie sich online einloggen und<br />
                     die neuesten Eventdaten herunterladen und mit der Fehleranalyse hinzuf&uuml;gen.
                 </p>
                 <h3>Erste Schritte</h3>
                 <p>
-                    Beim ersten Starten von B&uuml;ro werden Sie nach einer PIN gefragt.<br/>
-                    Legen Sie sich hier eine beliebige PIN an und speichern Sie den Wiederherstellungsschl&uuml;ssel,<br/>
-                    der Ihnen angezeigt wird, sicher ab.<br/><br/>
-                    Als N&auml;chstes ist es empfehlenswert, sich einen statischen Benutzernamen anzulegen.<br/>
-                    Sobald Sie die Fehleranalyse einmal ausf&uuml;hren, wird Ihnen ein zuf&auml;lliger statischer Name zugewiesen,<br/>
-                    sonst &auml;ndert sich dieser bei jedem Starten von B&uuml;ro.<br/>
-                    Sie k&ouml;nnen aber auch einen eigenen Namen w&auml;hlen, indem Sie vom Startmen&uuml; &uuml;ber Konfigurieren und Account zum Punkt Nutzernamen &auml;ndern gelangen.<br/><br/>
-                    Au&szlig;erdem empfehlen wir das Einspielen der Erfolge.<br/>
-                    Diese m&uuml;ssen Sie daf&uuml;r zun&auml;chst einmal herunterladen. Besuchen Sie daf&uuml;r Ihr Online-Konto,<br/>
-                    &uuml;ber das Sie &uuml;brigens noch viele weitere Dinge tun k&ouml;nnen (Konfigurieren -> B&uuml;roOnline -> Online einloggen).<br/>
-                    Dort finden Sie den Men&uuml;punkt Erfolge herunterladen. Bet&auml;tigen Sie diesen.<br/>
-                    Entpacken Sie die heruntergeladene ZIP-Datei in Ihr B&uuml;ro-Verzeichnis und starten Sie die Fehleranalyse.<br/>
-                    Geben Sie Erfolge fehlen ein und kontrollieren Sie, dass die Anzahl an implementierten Erfolgen, die die Fehleranalyse anzeigt,<br/>
-                    der Anzahl an entpackten Dateien entspricht.<br/>
+                    Beim ersten Starten von B&uuml;ro werden Sie nach einer PIN gefragt.<br />
+                    Legen Sie sich hier eine beliebige PIN an und speichern Sie den Wiederherstellungsschl&uuml;ssel,<br />
+                    der Ihnen angezeigt wird, sicher ab.<br /><br />
+                    Als N&auml;chstes ist es empfehlenswert, sich einen statischen Benutzernamen anzulegen.<br />
+                    Sobald Sie die Fehleranalyse einmal ausf&uuml;hren, wird Ihnen ein zuf&auml;lliger statischer Name zugewiesen,<br />
+                    sonst &auml;ndert sich dieser bei jedem Starten von B&uuml;ro.<br />
+                    Sie k&ouml;nnen aber auch einen eigenen Namen w&auml;hlen, indem Sie vom Startmen&uuml; &uuml;ber Konfigurieren und Account zum Punkt Nutzernamen &auml;ndern gelangen.<br /><br />
+                    Au&szlig;erdem empfehlen wir das Einspielen der Erfolge.<br />
+                    Diese m&uuml;ssen Sie daf&uuml;r zun&auml;chst einmal herunterladen. Besuchen Sie daf&uuml;r Ihr Online-Konto,<br />
+                    &uuml;ber das Sie &uuml;brigens noch viele weitere Dinge tun k&ouml;nnen (Konfigurieren -> B&uuml;roOnline -> Online einloggen).<br />
+                    Dort finden Sie den Men&uuml;punkt Erfolge herunterladen. Bet&auml;tigen Sie diesen.<br />
+                    Entpacken Sie die heruntergeladene ZIP-Datei in Ihr B&uuml;ro-Verzeichnis und starten Sie die Fehleranalyse.<br />
+                    Geben Sie Erfolge fehlen ein und kontrollieren Sie, dass die Anzahl an implementierten Erfolgen, die die Fehleranalyse anzeigt,<br />
+                    der Anzahl an entpackten Dateien entspricht.<br />
                     Diese Dateien wurden jetzt in ein anderes Verzeichnis verschoben und sind f&uuml;r B&uuml;ro zug&auml;nglich.
                 </p>
             </div>
             <div style="display: block;">
                 <h2 id="features">Features</h2>
                 <p>
-                    Die Hauptfeatures von B&uuml;ro sind:<br/>
-                    -einfaches Verwalten von verschiedenen unterst&uuml;tzten Paketen<br/>
-                    -Emulieren dieser Pakete in einer gesch&uuml;tzten Umgebung<br/>
-                    -erweitertes Konfigurieren von Einstellungen zu diesen Paketen<br/>
-                    -Verwalten eines Online-Kontos und Bereitstellen von Authentifizierungsfunktionen f&uuml;r einige Pakete<br/><br/>
+                    Die Hauptfeatures von B&uuml;ro sind:<br />
+                    -einfaches Verwalten von verschiedenen unterst&uuml;tzten Paketen<br />
+                    -Emulieren dieser Pakete in einer gesch&uuml;tzten Umgebung<br />
+                    -erweitertes Konfigurieren von Einstellungen zu diesen Paketen<br />
+                    -Verwalten eines Online-Kontos und Bereitstellen von Authentifizierungsfunktionen f&uuml;r einige Pakete<br /><br />
                     Zudem verf&uuml;gt B&uuml;ro &uuml;ber einige weitere Funktionen wie einer Notizfunktion.
                 </p>
                 <h3>Bootvorgang</h3>
                 <p>
-                    W&auml;hrend des Bootvorgangs werden verschiedene Aufgaben ausgef&uuml;hrt.<br/>
-                    Die aktuelle Aufgabe und der Fortschritt werden Ihnen jeweils angezeigt.<br/>
-                    Zudem wird Ihr Account mit Ihrer DeviceID online registriert und Ihre DeviceID ggf. erneuert.<br/>
-                    Zuletzt wird Ihnen eine von unserem Server heruntergeladene Nachricht angezeigt, die sich h&auml;ufig &auml;ndert.<br/>
-                    Au&szlig;erdem k&ouml;nnen Ihnen Specials angezeigt werden.<br/>
-                    Falls Sie eine BETA-Version installiert haben, werden Sie auch gefragt, <br/>
+                    W&auml;hrend des Bootvorgangs werden verschiedene Aufgaben ausgef&uuml;hrt.<br />
+                    Die aktuelle Aufgabe und der Fortschritt werden Ihnen jeweils angezeigt.<br />
+                    Zudem wird Ihr Account mit Ihrer DeviceID online registriert und Ihre DeviceID ggf. erneuert.<br />
+                    Zuletzt wird Ihnen eine von unserem Server heruntergeladene Nachricht angezeigt, die sich h&auml;ufig &auml;ndert.<br />
+                    Au&szlig;erdem k&ouml;nnen Ihnen Specials angezeigt werden.<br />
+                    Falls Sie eine BETA-Version installiert haben, werden Sie auch gefragt, <br />
                     ob Sie Feedback einreichen wollen.
                 </p>
                 <h3>Startmen&uuml;</h3>
                 <p>
-                    Das Startmen&uuml; ist das Fenster, das sich immer direkt nach dem Start von B&uuml;ro &ouml;ffnet.<br/>
-                    Von dort erreichen Sie alle Ihre Pakete und Einstellungen.<br/>
+                    Das Startmen&uuml; ist das Fenster, das sich immer direkt nach dem Start von B&uuml;ro &ouml;ffnet.<br />
+                    Von dort erreichen Sie alle Ihre Pakete und Einstellungen.<br />
                     Im Fenstertitel finden Sie Ihre aktuelle Version.
                 </p>
                 <h4 id="bereiche">Bereiche</h4>
                 <p>
                     Wir haben unsere installierbaren
                     <a href="#pakete">Pakete</a>
-                    in verschiedene Bereiche gegliedert.<br/>
+                    in verschiedene Bereiche gegliedert.<br />
                     Diese Bereiche sind Werkzeuge, Unterhaltung, Medien, Lernen und Plugins.
                 </p>
                 <h4>Weitere Buttons</h4>
                 <p>
-                    Standardm&auml;&szlig;ig werden Ihnen zus&auml;tzlich immer noch Konfigurieren, <br/>
-                    der Zugang zu Ihren Einstellungen, <br/>
-                    und Quit, was B&uuml;ro beendet, angezeigt.<br/>
+                    Standardm&auml;&szlig;ig werden Ihnen zus&auml;tzlich immer noch Konfigurieren, <br />
+                    der Zugang zu Ihren Einstellungen, <br />
+                    und Quit, was B&uuml;ro beendet, angezeigt.<br />
                     Zudem k&ouml;nnen Sie im Konfigurieren-Bereich weitere Buttons hinzuf&uuml;gen.
                 </p>
                 <p>
-                    Die folgenden Bereiche finden Sie, wenn Sie auf Konfigurieren klicken.<br/>
+                    Die folgenden Bereiche finden Sie, wenn Sie auf Konfigurieren klicken.<br />
                     Der &Uuml;bersichtlichkeit halber sind auch alle Einstellungen in Bereiche gegliedert.
                 </p>
                 <h3>Tools</h3>
@@ -325,34 +319,34 @@
                 </p>
                 <h4>Updates</h4>
                 <p>
-                    B&uuml;ro verf&uuml;gt &uuml;ber drei Wege, um Ihre Installation zu &auml;ndern.<br/>
-                    Update installiert ein Update f&uuml;r ein bereits installiertes Paket oder B&uuml;ro.<br/>
-                    Upgrade installiert ein neues Paket.<br/>
-                    Systemupdate installiert ein Update f&uuml;r das B&uuml;ro-System<br/>
+                    B&uuml;ro verf&uuml;gt &uuml;ber drei Wege, um Ihre Installation zu &auml;ndern.<br />
+                    Update installiert ein Update f&uuml;r ein bereits installiertes Paket oder B&uuml;ro.<br />
+                    Upgrade installiert ein neues Paket.<br />
+                    Systemupdate installiert ein Update f&uuml;r das B&uuml;ro-System<br />
                     (dazu geh&ouml;ren die Fehleranalyse sowie die Update-Datei selbst).
                 </p>
                 <h4>Updates herunterladen</h4>
                 <p>
-                    B&uuml;ro kann zwei verschiedene Arten von Updates von unserem Server herunterladen,<br/>
-                    sodass sie danach von Ihnen installiert werden k&ouml;nnen.<br/>
-                    Normale Updates sind Updates f&uuml;r Ihre B&uuml;ro-Installation.<br/>
-                    Bitte beachten Sie dabei, dass keine neuen Event-Daten (Specials, Gewinnspiele, ...)<br/>
-                    mitinstalliert werden (in per Mail versendeten Updates sind sie enthalten).<br/>
-                    BETA-Updates sind Updates zu Versionen, die noch nicht f&uuml;r alle Nutzer verf&uuml;gbar sind,<br/>
-                    da sie sich in einer Testphase befinden.<br/>
-                    Um sie zu installieren, m&uuml;ssen Sie f&uuml;r das BETA-Programm angemeldet sein.<br/>
+                    B&uuml;ro kann zwei verschiedene Arten von Updates von unserem Server herunterladen,<br />
+                    sodass sie danach von Ihnen installiert werden k&ouml;nnen.<br />
+                    Normale Updates sind Updates f&uuml;r Ihre B&uuml;ro-Installation.<br />
+                    Bitte beachten Sie dabei, dass keine neuen Event-Daten (Specials, Gewinnspiele, ...)<br />
+                    mitinstalliert werden (in per Mail versendeten Updates sind sie enthalten).<br />
+                    BETA-Updates sind Updates zu Versionen, die noch nicht f&uuml;r alle Nutzer verf&uuml;gbar sind,<br />
+                    da sie sich in einer Testphase befinden.<br />
+                    Um sie zu installieren, m&uuml;ssen Sie f&uuml;r das BETA-Programm angemeldet sein.<br />
                     Au&szlig;erdem sollten Sie BETA-Feedback zu den BETA-Funktionen einreichen.
                 </p>
                 <h4>Aktualisieren</h4>
                 <p>
-                    Aktualisieren ist der einfachste Weg, Ihre Installation abseits von Updates auf den neuesten Stand zu bringen.<br/>
-                    Die Funktion aktualisiert alle Python-Module, die Sie installiert haben,<br/>
+                    Aktualisieren ist der einfachste Weg, Ihre Installation abseits von Updates auf den neuesten Stand zu bringen.<br />
+                    Die Funktion aktualisiert alle Python-Module, die Sie installiert haben,<br />
                     und l&ouml;scht veraltete Gewinnspiele, Specials etc..
                 </p>
                 <h4>Notizen</h4>
                 <p>
-                    In Notizen k&ouml;nnen Sie einen Text eingeben, der gespeichert wird, und den Sie mit dieser Funktion abrufen k&ouml;nnen.<br/>
-                    Bitte beachten Sie aber, dass Ihre Notiz nicht verschl&uuml;sselt wird, <br/>
+                    In Notizen k&ouml;nnen Sie einen Text eingeben, der gespeichert wird, und den Sie mit dieser Funktion abrufen k&ouml;nnen.<br />
+                    Bitte beachten Sie aber, dass Ihre Notiz nicht verschl&uuml;sselt wird, <br />
                     also in Klartext auf Ihrer Festplatte zu finden ist.
                 </p>
                 <h3>Informationen</h3>
@@ -361,67 +355,67 @@
                 </p>
                 <h4>Infos</h4>
                 <p>
-                    Es gibt drei Men&uuml;punkte mit Info im Namen.<br/>
-                    Die VersionInfo gibt Auskunft &uuml;ber die Version aller installierten Pakete sowie die jeweils neueste verf&uuml;gbare Version.<br/>
-                    Die UpgradeInfo sagt Ihnen, welche Pakete Sie noch hinzuf&uuml;gen k&ouml;nnen.<br/>
-                    Die B&uuml;roUpdateInfo l&auml;dt den Namen der neuesten Version herunter und &uuml;berpr&uuml;ft,<br/>
+                    Es gibt drei Men&uuml;punkte mit Info im Namen.<br />
+                    Die VersionInfo gibt Auskunft &uuml;ber die Version aller installierten Pakete sowie die jeweils neueste verf&uuml;gbare Version.<br />
+                    Die UpgradeInfo sagt Ihnen, welche Pakete Sie noch hinzuf&uuml;gen k&ouml;nnen.<br />
+                    Die B&uuml;roUpdateInfo l&auml;dt den Namen der neuesten Version herunter und &uuml;berpr&uuml;ft,<br />
                     ob Sie auf dieser Version sind. Zudem gibt sie Auskunft &uuml;ber die neueste BETA-Version.
                 </p>
                 <h4>Infos &uuml;ber aktuelle Installation</h4>
                 <p>
-                    Des Weiteren geben Ihnen einige Funktionen Informationen &uuml;ber Ihre aktuelle Installation.<br/>
-                    In What's New? erfahren Sie die Neuerungen in Ihrer Version.<br/>
-                    Der BETA-Testinhalte-Punkt nennt Ihnen in BETA-Versionen, was die BETA-Funktionen sind.<br/>
+                    Des Weiteren geben Ihnen einige Funktionen Informationen &uuml;ber Ihre aktuelle Installation.<br />
+                    In What's New? erfahren Sie die Neuerungen in Ihrer Version.<br />
+                    Der BETA-Testinhalte-Punkt nennt Ihnen in BETA-Versionen, was die BETA-Funktionen sind.<br />
                     In Tipps sind diverse aktuelle Tipps zur Verbesserung Ihrer Erfahrung enthalten.
                 </p>
                 <h4>Weitere Infos</h4>
                 <p>
-                    In Coming Soon... erfahren Sie Einiges &uuml;ber laufende Projekte und bald erscheindende Pakete.<br/>
+                    In Coming Soon... erfahren Sie Einiges &uuml;ber laufende Projekte und bald erscheindende Pakete.<br />
                     In Sonderangebote gibt es einige zeitlich begrenzte Angebote, &uuml;ber die Sie B&uuml;ro PREMIUM erhalten k&ouml;nnen.
                 </p>
                 <h3>Shopping & Weiteres</h3>
                 <p>
-                    In Shopping & Weiteres sind einige Shopping-Optionen sowie <br/>
+                    In Shopping & Weiteres sind einige Shopping-Optionen sowie <br />
                     Optionen, die sich keiner festen Kategorie zuordnen lie&szlig;en, enthalten.
                 </p>
                 <h4>Service-Optionen</h4>
                 <p id="einsenden">
-                    Sie k&ouml;nnen mit einigen Optionen unseren Service per Mail kontaktieren.<br/>
-                    Mit Anfordern k&ouml;nnen Sie eine spezifische Version eines Paketes anfordern oder, wenn es verf&uuml;gbar ist, herunterladen.<br/>
-                    Releases abonnieren sendet eine Mail, die Sie unserem Update-Newsletter hinzuf&uuml;gt.<br/>
-                    Feedback & Funktionsvorschl&auml;ge sendet uns einen von Ihnen eingegebenen Text,<br/>
+                    Sie k&ouml;nnen mit einigen Optionen unseren Service per Mail kontaktieren.<br />
+                    Mit Anfordern k&ouml;nnen Sie eine spezifische Version eines Paketes anfordern oder, wenn es verf&uuml;gbar ist, herunterladen.<br />
+                    Releases abonnieren sendet eine Mail, die Sie unserem Update-Newsletter hinzuf&uuml;gt.<br />
+                    Feedback & Funktionsvorschl&auml;ge sendet uns einen von Ihnen eingegebenen Text,<br />
                     indem Sie Feedback &auml;u&szlig;ern oder Funktionsvorschl&auml;ge t&auml;tigen k&ouml;nnen.
                 </p>
                 <h4>Gewinnspiele</h4>
                 <p>
-                    In dieser Option k&ouml;nnen Sie an installierten Gewinnspielen<br/>
-                    (neue Gewinnspiele werden &uuml;ber herk&ouml;mmliche Updates hinzugef&uuml;gt)<br/>
-                    teilnehmen oder diese l&ouml;schen.<br/>
-                    Ihnen wird jeweils der einzigartige Gewinnspielcode angezeigt.<br/>
-                    Bei der Teilnahme f&uuml;gt B&uuml;ro automatisch Informationen zur <br/>
+                    In dieser Option k&ouml;nnen Sie an installierten Gewinnspielen<br />
+                    (neue Gewinnspiele werden &uuml;ber herk&ouml;mmliche Updates hinzugef&uuml;gt)<br />
+                    teilnehmen oder diese l&ouml;schen.<br />
+                    Ihnen wird jeweils der einzigartige Gewinnspielcode angezeigt.<br />
+                    Bei der Teilnahme f&uuml;gt B&uuml;ro automatisch Informationen zur <br />
                     Verifizierung Ihrer Person hinzu.
                 </p>
                 <h4>B&uuml;ro PREMIUM</h4>
                 <p>
-                    B&uuml;ro PREMIUM ist ein kostenpflichtiges Abonnement von Zusatzfunktionen f&uuml;r B&uuml;ro,<br/>
-                    das &uuml;ber Ihren PREMIUM-Pass gesteuert wird und u.a. verhindert,<br/>
-                    dass Ihnen beim Zugriff auf das Startmen&uuml; Werbung angezeigt wird.<br/>
-                    Des Weiteren wird B&uuml;ro PREMIUM f&uuml;r einige Pakete wie B&uuml;roMail ben&ouml;tigt.<br/>
-                    Die Funktion gibt Ihnen Auskunft dar&uuml;ber, ob und f&uuml;r wie lange Sie PREMIUM gebucht haben.<br/>
-                    Des Weiteren gibt Sie Ihnen die M&ouml;glichkeit, einen PREMIUM-Pass per Mail anzufordern, &uuml;ber B&uuml;roBank zu buchen <br/>
-                    oder &uuml;ber einen Gutscheincode oder den PREMIUM-Text zu erstellen.<br/>
-                    Gutscheincodes k&ouml;nnen immer wieder genutzt werden, <br/>
-                    zeigen jedoch immer auf denselben Pass.<br/>
+                    B&uuml;ro PREMIUM ist ein kostenpflichtiges Abonnement von Zusatzfunktionen f&uuml;r B&uuml;ro,<br />
+                    das &uuml;ber Ihren PREMIUM-Pass gesteuert wird und u.a. verhindert,<br />
+                    dass Ihnen beim Zugriff auf das Startmen&uuml; Werbung angezeigt wird.<br />
+                    Des Weiteren wird B&uuml;ro PREMIUM f&uuml;r einige Pakete wie B&uuml;roMail ben&ouml;tigt.<br />
+                    Die Funktion gibt Ihnen Auskunft dar&uuml;ber, ob und f&uuml;r wie lange Sie PREMIUM gebucht haben.<br />
+                    Des Weiteren gibt Sie Ihnen die M&ouml;glichkeit, einen PREMIUM-Pass per Mail anzufordern, &uuml;ber B&uuml;roBank zu buchen <br />
+                    oder &uuml;ber einen Gutscheincode oder den PREMIUM-Text zu erstellen.<br />
+                    Gutscheincodes k&ouml;nnen immer wieder genutzt werden, <br />
+                    zeigen jedoch immer auf denselben Pass.<br />
                     Ihr Pass muss immer noch mit Ihrem Nutzernamen vervollst&auml;ndigt werden.
                 </p>
                 <h4>AGB</h4>
                 <p>
-                    Unsere AGB enthalten einige rechtliche Spezifikationen, <br/>
-                    die verhindern, dass wir f&uuml;r Sch&auml;den an Ihrem Ger&auml;t haften,<br/>
-                    solange wir ausdr&uuml;cklich davor gewarnt haben.<br/>
-                    Sie best&auml;tigen unsere AGB bei der Installation in einem Best&auml;tigungsfenster.<br/>
-                    Sie k&ouml;nnen unsere AGB hier ablehnen,<br/>
-                    haben danach jedoch keinen Zugriff mehr auf die Konfiguration,<br/>
+                    Unsere AGB enthalten einige rechtliche Spezifikationen, <br />
+                    die verhindern, dass wir f&uuml;r Sch&auml;den an Ihrem Ger&auml;t haften,<br />
+                    solange wir ausdr&uuml;cklich davor gewarnt haben.<br />
+                    Sie best&auml;tigen unsere AGB bei der Installation in einem Best&auml;tigungsfenster.<br />
+                    Sie k&ouml;nnen unsere AGB hier ablehnen,<br />
+                    haben danach jedoch keinen Zugriff mehr auf die Konfiguration,<br />
                     wenn Sie die AGB nicht wieder best&auml;tigen.
                 </p>
                 <h3>Account</h3>
@@ -430,20 +424,20 @@
                 </p>
                 <h4>Ihre PIN</h4>
                 <p>
-                    Sie ben&ouml;tigen Ihre B&uuml;ro-PIN, um verschiedene Aktionen, die z.B. gespeicherte Einstellungen oder Installationen &auml;ndern,<br/>
-                    zu verifizieren.<br/>
-                    Sie k&ouml;nnen Ihre PIN &auml;ndern oder auch (de-)aktivieren.<br/>
+                    Sie ben&ouml;tigen Ihre B&uuml;ro-PIN, um verschiedene Aktionen, die z.B. gespeicherte Einstellungen oder Installationen &auml;ndern,<br />
+                    zu verifizieren.<br />
+                    Sie k&ouml;nnen Ihre PIN &auml;ndern oder auch (de-)aktivieren.<br />
                     Ist Ihre PIN deaktiviert, m&uuml;ssen Sie beim erneuten Aktivieren auch eine neue PIN erstellen.
                 </p>
                 <h4>Nutzernamen</h4>
                 <p>
-                    Jeder B&uuml;ro-Nutzer hat einen eigenen, einzigartigen Nutzernamen.<br/>
-                    Sie k&ouml;nnen Ihren Nutzernamen selbst festlegen und &auml;ndern, jedoch nur zu noch nicht bereits vergebenen Nutzernamen.<br/>
+                    Jeder B&uuml;ro-Nutzer hat einen eigenen, einzigartigen Nutzernamen.<br />
+                    Sie k&ouml;nnen Ihren Nutzernamen selbst festlegen und &auml;ndern, jedoch nur zu noch nicht bereits vergebenen Nutzernamen.<br />
                     Sie k&ouml;nnen sich im Account-Bereich auch Ihren Nutzernamen anzeigen lassen.
                 </p>
                 <h4>Das BETA-Programm</h4>
                 <p>
-                    Das B&uuml;ro BETA-Programm umfasst einige Funktionen f&uuml;r Nutzer, die neue Features schon vorab testen wollen.<br/>
+                    Das B&uuml;ro BETA-Programm umfasst einige Funktionen f&uuml;r Nutzer, die neue Features schon vorab testen wollen.<br />
                     Sie k&ouml;nnen hier Ihre BETA-Mitgliedschaft verwalten.
                 </p>
                 <h3>B&uuml;roOnline</h3>
@@ -452,15 +446,15 @@
                 </p>
                 <h4>Ihre DeviceID</h4>
                 <p>
-                    Bei jedem Start von B&uuml;ro wird automatisch Ihre DeviceID hochgeladen.<br/>
-                    Diese hat Ihr Ger&auml;t einmalig.<br/>
-                    Sie k&ouml;nnen Ihre DeviceID hier statisch machen, sodass sie nicht bei jedem Start von B&uuml;ro ge&auml;ndert wird.<br/>
-                    Falls Ihre DeviceID statisch ist, sollten Sie sie regelm&auml;&szlig;ig mit der gleichnamigen Funktion aktualisieren,<br/>
+                    Bei jedem Start von B&uuml;ro wird automatisch Ihre DeviceID hochgeladen.<br />
+                    Diese hat Ihr Ger&auml;t einmalig.<br />
+                    Sie k&ouml;nnen Ihre DeviceID hier statisch machen, sodass sie nicht bei jedem Start von B&uuml;ro ge&auml;ndert wird.<br />
+                    Falls Ihre DeviceID statisch ist, sollten Sie sie regelm&auml;&szlig;ig mit der gleichnamigen Funktion aktualisieren,<br />
                     da Ihre DeviceID auch auf Ihrer aktuellen Version von B&uuml;ro basiert.
                 </p>
                 <h4>Ihr Online-Konto</h4>
                 <p>
-                    Auf Basis Ihrer DeviceID k&ouml;nnen Sie B&uuml;ro einen Best&auml;tigungscode f&uuml;r Ihr Online-Login erstellen lassen,<br/>
+                    Auf Basis Ihrer DeviceID k&ouml;nnen Sie B&uuml;ro einen Best&auml;tigungscode f&uuml;r Ihr Online-Login erstellen lassen,<br />
                     oder Sie erstellen diesen Code selbst mobil (ohne B&uuml;ro) mithilfe Ihrer DeviceID.
                 </p>
                 <h3>F&uuml;r dich</h3>
@@ -469,47 +463,47 @@
                 </p>
                 <h4>Statusbalken</h4>
                 <p>
-                    B&uuml;ro zeigt Ihnen des &Ouml;fteren Statusbalken an, um Ihnen zu zeigen, wie weit es z.B. mit der Installation eines Updates ist.<br/>
+                    B&uuml;ro zeigt Ihnen des &Ouml;fteren Statusbalken an, um Ihnen zu zeigen, wie weit es z.B. mit der Installation eines Updates ist.<br />
                     Die Farben dieses Statusbalken k&ouml;nnen Sie ver&auml;ndern - Genaueres erkl&auml;rt Ihnen das Tool selbst.
                 </p>
                 <h4>Startmen&uuml;</h4>
                 <p>
-                    Sie k&ouml;nnen auch einzelne, besonders h&auml;ufig genutzte Installationen direkt an Ihr Startmen&uuml; anheften,<br/>
+                    Sie k&ouml;nnen auch einzelne, besonders h&auml;ufig genutzte Installationen direkt an Ihr Startmen&uuml; anheften,<br />
                     sodass Sie nicht durch die einzelnen Bereiche scrollen m&uuml;ssen.
                 </p>
                 <h4>Erfolge</h4>
                 <p>
-                    Erfolge werden Ihnen f&uuml;r bestimmte Meilensteine in Zusammenhang mit Ihrer Installation verliehen.<br/>
-                    Sie k&ouml;nnen hier sowohl ansehen, welche Erfolge Sie bereits freigeschaltet haben, als auch,<br/>
+                    Erfolge werden Ihnen f&uuml;r bestimmte Meilensteine in Zusammenhang mit Ihrer Installation verliehen.<br />
+                    Sie k&ouml;nnen hier sowohl ansehen, welche Erfolge Sie bereits freigeschaltet haben, als auch,<br />
                     welche Erfolge Ihnen noch fehlen und wie weit Sie in Bezug auf diese sind.
                 </p>
                 <h3>Debug</h3>
                 <p>
-                    Im Debug-Bereich gibt es einige Einstellungen zu Debugging-Informationen und M&ouml;glichkeiten,<br/>
+                    Im Debug-Bereich gibt es einige Einstellungen zu Debugging-Informationen und M&ouml;glichkeiten,<br />
                     Fehler zu melden und zu beheben.
                 </p>
                 <h4>schnelle Fehleranalyse</h4>
                 <p>
-                    Sie k&ouml;nnen auch von hier aus die schnelle Fehleranalyse starten.<br/>
-                    Diese behebt Standart-Fehler und bietet Ihnen die M&ouml;glichkeit,<br/>
-                    DebugLogs einzusenden, Ihre PIN zur&uuml;ckzusetzen oder Erfolge etc. hinzuzuf&uuml;gen.<br/>
+                    Sie k&ouml;nnen auch von hier aus die schnelle Fehleranalyse starten.<br />
+                    Diese behebt Standart-Fehler und bietet Ihnen die M&ouml;glichkeit,<br />
+                    DebugLogs einzusenden, Ihre PIN zur&uuml;ckzusetzen oder Erfolge etc. hinzuzuf&uuml;gen.<br />
                     DebugLog &uuml;bermitteln, PIN vergessen und Erfolge aktualisieren verweisen daher auch auf die Fehleranalyse.
                 </p>
                 <h4>PREMIUM funktioniert nicht</h4>
                 <p>
-                    Falls PREMIUM nicht funktioniert, obwohl es nicht abgelaufen ist,<br/>
-                    liegt das wahrscheinlich an einer routinierten Sicherheits&auml;nderung des PREMIUM-Codes<br/>
-                    und Ihnen wurde bereits ein neuer Pass zugesandt.<br/>
+                    Falls PREMIUM nicht funktioniert, obwohl es nicht abgelaufen ist,<br />
+                    liegt das wahrscheinlich an einer routinierten Sicherheits&auml;nderung des PREMIUM-Codes<br />
+                    und Ihnen wurde bereits ein neuer Pass zugesandt.<br />
                     Sollte das nicht der Fall sein, k&ouml;nnen Sie das hier reklamieren.
                 </p>
                 <h4>DebugLogs</h4>
                 <p>
-                    DebugLogs werden standartm&auml;&szlig;ig automatisch erstellt und speichern Schritte und Daten zur Reproduktion jedes Zustandes,<br/>
-                    der Ihnen begegnet.<br/>
-                    Dies hilft uns im Falle eines von Ihnen gemeldeten Fehlers, zu verstehen, warum dieser Fehler aufgetreten ist.<br/>
-                    Jedoch sind in den DebugLogs auch teilweise sensible Daten zu PREMIUM, PIN und Netzwerkstatus gesammelt.<br/>
-                    Diese sind unter Umst&auml;nden zwar relevant f&uuml;r den Fehler, aber dennoch werden sie auch ohne Fehler gesammelt.<br/>
-                    Da die DebugLogs aus diesem Grund nur lokal gespeichert werden, verbrauchen sie aber auch Speicherplatz.<br/>
+                    DebugLogs werden standartm&auml;&szlig;ig automatisch erstellt und speichern Schritte und Daten zur Reproduktion jedes Zustandes,<br />
+                    der Ihnen begegnet.<br />
+                    Dies hilft uns im Falle eines von Ihnen gemeldeten Fehlers, zu verstehen, warum dieser Fehler aufgetreten ist.<br />
+                    Jedoch sind in den DebugLogs auch teilweise sensible Daten zu PREMIUM, PIN und Netzwerkstatus gesammelt.<br />
+                    Diese sind unter Umst&auml;nden zwar relevant f&uuml;r den Fehler, aber dennoch werden sie auch ohne Fehler gesammelt.<br />
+                    Da die DebugLogs aus diesem Grund nur lokal gespeichert werden, verbrauchen sie aber auch Speicherplatz.<br />
                     Daher k&ouml;nnen Sie DebugLogs hier tempor&auml;r oder dauerhaft deaktivieren.
                 </p>
                 <h3>Speicherplatz</h3>
@@ -518,24 +512,24 @@
                 </p>
                 <h4>SpeicherInfo</h4>
                 <p>
-                    Die SpeicherInfo errechnet den belegten Speicherplatz Ihrer Installationen und schl&uuml;sselt diesen weitestgehend auf.<br/>
+                    Die SpeicherInfo errechnet den belegten Speicherplatz Ihrer Installationen und schl&uuml;sselt diesen weitestgehend auf.<br />
                     Sie markiert auch die Minima und Maxima jeder Kategorie.
                 </p>
                 <h4>Deinstallieren</h4>
                 <p>
-                    Mit dieser Funktion k&ouml;nnen Sie bereits installierte Pakete etc. wieder deinstallieren.<br/>
+                    Mit dieser Funktion k&ouml;nnen Sie bereits installierte Pakete etc. wieder deinstallieren.<br />
                     Dabei werden jedoch alle Daten der deinstallierten Installation gel&ouml;scht.
                 </p>
                 <h4>Weitere Funktionen</h4>
                 <p>
-                    Mithilfe der DebugLogInfo k&ouml;nnen Sie den aktuell von DebugLogs verbrauchten Speicherplatz einsehen.<br/>
+                    Mithilfe der DebugLogInfo k&ouml;nnen Sie den aktuell von DebugLogs verbrauchten Speicherplatz einsehen.<br />
                     Aufr&auml;umen kann nach einer &Auml;nderung der Ordnerstruktur von B&uuml;ro &uuml;berfl&uuml;ssige Ordner und deren Inhalt entfernen.
                 </p>
             </div>
             <div style="display: block;">
                 <h2 id="pakete">Pakete</h2>
                 <p>
-                    Erhalten Sie hier Informationen &uuml;ber die verschiedenen von B&uuml;ro angebotenen Pakete.<br/>
+                    Erhalten Sie hier Informationen &uuml;ber die verschiedenen von B&uuml;ro angebotenen Pakete.<br />
                     Diese sind nach Bereichen geordnet.
                 </p>
                 <h3>Werkzeuge</h3>
@@ -544,49 +538,49 @@
                 </p>
                 <h4>Verschl&uuml;sseler (V6.3)</h4>
                 <p>
-                    Beim Verschl&uuml;sseler handelt es sich um ein kostenpflichtiges Tool zum Verschl&uuml;sseln verschiedenster Inhalte.<br/>
-                    Dazu z&auml;hlen Dateien, Fotos, Texte etc..<br/>
-                    Sie k&ouml;nnen den Schl&uuml;ssel und den Sicherheitsgrad selbst festlegen.<br/>
-                    Dar&uuml;ber hinaus bietet der Verschl&uuml;sseler weitere Einstellungen und Tools zur Sicherheitsoptimierung.<br/><br/>
+                    Beim Verschl&uuml;sseler handelt es sich um ein kostenpflichtiges Tool zum Verschl&uuml;sseln verschiedenster Inhalte.<br />
+                    Dazu z&auml;hlen Dateien, Fotos, Texte etc..<br />
+                    Sie k&ouml;nnen den Schl&uuml;ssel und den Sicherheitsgrad selbst festlegen.<br />
+                    Dar&uuml;ber hinaus bietet der Verschl&uuml;sseler weitere Einstellungen und Tools zur Sicherheitsoptimierung.<br /><br />
                     <b>Achtung: Zurzeit wird der Verschl&uuml;sseler nicht weiterentwickelt. Es liegen jedoch gro&szlig;e Neuerungen in der Luft.</b>
                 </p>
                 <h4><a href="./data/Passwortgenerator1.3.0.zip">Passwortgenerator (V1.3)</a></h4>
                 <p>
-                    Der Passwortgenerator kann Ihnen Passw&ouml;rter aus W&ouml;rtern und Sonderzeichen eines bestimmten Wortschatzes zusammensetzen.<br/>
-                    Sie k&ouml;nnen den Passwortgenerator auch bewerten.<br/><br/>
+                    Der Passwortgenerator kann Ihnen Passw&ouml;rter aus W&ouml;rtern und Sonderzeichen eines bestimmten Wortschatzes zusammensetzen.<br />
+                    Sie k&ouml;nnen den Passwortgenerator auch bewerten.<br /><br />
                     <i>
                         Login und Bewerten wurden von Grund auf neu gestaltet und sind jetzt besser als zuvor.
                     </i>
                 </p>
                 <h4><a href="./data/lebensmittel3.0.4.zip">Lebensmittel (V3.0.4)</a></h4>
                 <p>
-                    Lebensmittel ist ein Paket zum Ordnen von Lebensmitteln nach Lagerort,<br/>
-                    sodass Sie nie wieder bereits gekaufte Lebensmittel vergessen.<br/>
-                    Au&szlig;erdem k&ouml;nnen Sie nun nach Haltbarkeitsdaten filtern.<br/><br/>
+                    Lebensmittel ist ein Paket zum Ordnen von Lebensmitteln nach Lagerort,<br />
+                    sodass Sie nie wieder bereits gekaufte Lebensmittel vergessen.<br />
+                    Au&szlig;erdem k&ouml;nnen Sie nun nach Haltbarkeitsdaten filtern.<br /><br />
                     <i>
                         Ein Fehler beim Scrollen wurde behoben.
                     </i>
                 </p>
                 <h4><a href="./data/Rechnungen1.8.4.zip">Rechnungen (V1.8.4)</a></h4>
                 <p>
-                    Rechnungen ist ein Tool zum Einfachen Tracken von verdientem Geld.<br/>
-                    Sie k&ouml;nnen Ihre Kunden und L&ouml;hne verwalten und live stoppen, wie viel Geld Sie verdienen.<br/>
-                    Au&szlig;erdem k&ouml;nnen Sie Ihr verdientes Geld live teilen, <br/>
-                    sodass auch Ihre Freunde/Familie live sehen kann, wie viel Geld Sie verdient haben.<br/>
-                    Zudem kann das Programm auch eine fertige Rechnung im TXT- oder PDF-Format exportieren,<br/>
-                    Rechnungen zwischenspeichern und Stunden hinzuf&uuml;gen.<br/><br/>
+                    Rechnungen ist ein Tool zum Einfachen Tracken von verdientem Geld.<br />
+                    Sie k&ouml;nnen Ihre Kunden und L&ouml;hne verwalten und live stoppen, wie viel Geld Sie verdienen.<br />
+                    Au&szlig;erdem k&ouml;nnen Sie Ihr verdientes Geld live teilen, <br />
+                    sodass auch Ihre Freunde/Familie live sehen kann, wie viel Geld Sie verdient haben.<br />
+                    Zudem kann das Programm auch eine fertige Rechnung im TXT- oder PDF-Format exportieren,<br />
+                    Rechnungen zwischenspeichern und Stunden hinzuf&uuml;gen.<br /><br />
                     <i>
                         Sie k&ouml;nnen Ihrer Rechnung jetzt eine individuelle Bemerkung anf&uuml;gen.
                     </i>
                 </p>
                 <h4><a href="./data/kaffee1.0.0.zip">Kaffee Manager (1.0)</a></h4>
                 <p>
-                    Der Kaffee Manager sammelt alle von Ihnen getrunkenen Kaffees in einer Datenbank.<br/>
-                    Sie k&ouml;nnen Daten wie die R&ouml;stung oder die Beschreibung angeben,<br/>
-                    aber auch eigene Bewertungen hinzuf&uuml;gen.<br/><br/>
+                    Der Kaffee Manager sammelt alle von Ihnen getrunkenen Kaffees in einer Datenbank.<br />
+                    Sie k&ouml;nnen Daten wie die R&ouml;stung oder die Beschreibung angeben,<br />
+                    aber auch eigene Bewertungen hinzuf&uuml;gen.<br /><br />
                     <i>
                         Dies ist die erste &ouml;ffentliche Version des Kaffee Managers.
-                    </i><br/><br/>
+                    </i><br /><br />
                     <b>Der Kaffee Manager nutzt die bueroUtils.</b>
                 </p>
                 <h3>Unterhaltung</h3>
@@ -595,23 +589,23 @@
                 </p>
                 <h4><a href="./data/Haustier3.2.8.zip">Haustier (V3.2.8)</a></h4>
                 <p>
-                    Erwecken Sie Ihr digitales Haustier und streicheln und f&uuml;ttern Sie es, damit es sich wohl f&uuml;hlt.<br/>
-                    Impfen Sie es, damit es nicht krank wird und entdecken Sie spannende Ereignisse,<br/>
-                    die Ihnen helfen oder schaden k&ouml;nnen.<br/>
-                    Sammeln Sie Punkte, um den Rekord zu knacken und Ihrem Haustier im Shop etwas zu kaufen<br/>
-                    und gehen Sie an die B&ouml;rse, um noch mehr zu verdienen oder andere Haustiere aufzukaufen!<br/><br/>
+                    Erwecken Sie Ihr digitales Haustier und streicheln und f&uuml;ttern Sie es, damit es sich wohl f&uuml;hlt.<br />
+                    Impfen Sie es, damit es nicht krank wird und entdecken Sie spannende Ereignisse,<br />
+                    die Ihnen helfen oder schaden k&ouml;nnen.<br />
+                    Sammeln Sie Punkte, um den Rekord zu knacken und Ihrem Haustier im Shop etwas zu kaufen<br />
+                    und gehen Sie an die B&ouml;rse, um noch mehr zu verdienen oder andere Haustiere aufzukaufen!<br /><br />
                     <i>
                         Eine Startnachricht, die unter Anderem &uuml;ber die Version informiert, wurde hinzugef&uuml;gt.
                     </i>
                 </p>
                 <h4>Ballonfahrt (V1.3.4)</h4>
                 <p>
-                    F&uuml;hren Sie Ihren Ballon so durch die Luft, dass Sie nicht mit Hindernissen kollidieren<br/>
+                    F&uuml;hren Sie Ihren Ballon so durch die Luft, dass Sie nicht mit Hindernissen kollidieren<br />
                     oder schauen Sie im Multiplayermodus, wer mer Punkte bekommt.
                 </p>
                 <h4>Garten im Gl&uuml;ck (V1.0.1)</h4>
                 <p>
-                    Ihr Garten ist in Gefahr!<br/>
+                    Ihr Garten ist in Gefahr!<br />
                     Gie&szlig;en Sie die Blumen, bevor diese vertrocknen, doch werden Sie nicht von den fiesen Mutantenblumen gefangen!
                 </p>
                 <h3>Medien</h3>
@@ -620,24 +614,24 @@
                 </p>
                 <h4><a href="./data/Musik1.3.0.zip">Musik (V1.3)</a></h4>
                 <p>
-                    Musik ist ein Media-Player, der auf dem Paket tkinter basiert.<br/>
-                    Sie k&ouml;nnen Titel abspielen, aber auch Playlists erstellen, Titel bewerten und Ihre Favoriten w&auml;hlen.<br/>
+                    Musik ist ein Media-Player, der auf dem Paket tkinter basiert.<br />
+                    Sie k&ouml;nnen Titel abspielen, aber auch Playlists erstellen, Titel bewerten und Ihre Favoriten w&auml;hlen.<br />
                     Zudem kann Musik auch die gemeinsamen Favoriten mehrerer Nutzer erkennen und abspielen.
-                    <br/><br/>
+                    <br /><br />
                     <i>
-                        Neu in dieser Version ist die M&ouml;glichkeit,<br/>
+                        Neu in dieser Version ist die M&ouml;glichkeit,<br />
                         sich anzumelden, auch wenn man nicht als Nutzer gespeichert ist.
-                    </i><br/><br/>
+                    </i><br /><br />
                     <b>Achtung: Musik wird nicht mehr weiterentwickelt.</b>
                 </p>
                 <h4><a href="./data/humor1.3.0.zip">abstrakte Verzerrungen (V1.3)</a></h4>
                 <p>
-                    Mit abstrakte Verzerrungen k&ouml;nnen Sie Fotos abstrakt ver&auml;ndern.<br/>
-                    Sie k&ouml;nnen z.B. alle Farben neu verteilen oder alle Pixel mischen lassen.<br/><br/>
+                    Mit abstrakte Verzerrungen k&ouml;nnen Sie Fotos abstrakt ver&auml;ndern.<br />
+                    Sie k&ouml;nnen z.B. alle Farben neu verteilen oder alle Pixel mischen lassen.<br /><br />
                     <i>
-                        Diese Version bringt die M&ouml;glichkeit, die Kamera frei zu w&auml;hlen und<br/>
+                        Diese Version bringt die M&ouml;glichkeit, die Kamera frei zu w&auml;hlen und<br />
                         verbessert Darstellung und Performance.
-                    </i><br/><br/>
+                    </i><br /><br />
                     <b>Achtung: abstrakte Verzerrungen wird nicht mehr weiterentwicelt.</b>
                 </p>
                 <h3>Lernen</h3>
@@ -646,63 +640,63 @@
                 </p>
                 <h4><a href="./data/SchingSchangSchongIntelligent1.0.0.zip">SchingSchangSchongIQ (V1.0)</a></h4>
                 <p>
-                    Jetzt ist Ihre Intelligenz gefragt.<br/>
+                    Jetzt ist Ihre Intelligenz gefragt.<br />
                     Ihr Gegner analysiert Ihre Strategie und antwortet darauf passend...
                 </p>
                 <h4><a href="./data/verlies1.0.8.zip">im Verlies (V1.0.8)</a></h4>
                 <p>
-                    Begeben Sie sich ins Verlies und verhindern Sie, dass der Held von den Wachen gefangen wird,<br/>
-                    indem Sie alle Schl&uuml;ssel sammeln und die T&uuml;r &ouml;ffnen!<br/>
-                    Spielen Sie die Level der Kampagne oder lernen Sie spielerisch programmieren,<br/>
+                    Begeben Sie sich ins Verlies und verhindern Sie, dass der Held von den Wachen gefangen wird,<br />
+                    indem Sie alle Schl&uuml;ssel sammeln und die T&uuml;r &ouml;ffnen!<br />
+                    Spielen Sie die Level der Kampagne oder lernen Sie spielerisch programmieren,<br />
                     indem Sie in LK-Script Ihr eigenes Level bauen!
-                    <br/><br/><i>
+                    <br /><br /><i>
                         Neu in dieser Version sind einige behobene Bugs.
                     </i>
                 </p>
                 <h4><a href="./data/Quiz1.0.2.zip">Das gro&szlig;e Quiz (V1.0.2)</a></h4>
                 <p>
-                    Testen Sie Ihr Wissen in diesem Quiz, dessen Fragen regelm&auml;&szlig;ig aktualisiert werden!<br/><br/>
+                    Testen Sie Ihr Wissen in diesem Quiz, dessen Fragen regelm&auml;&szlig;ig aktualisiert werden!<br /><br />
                     <i>Neu in dieser Version ist eine Meldung, wenn alle Fragen richtig beantwortet wurden.</i>
                 </p>
                 <h4><a href="./data/ltp1.0.6.zip">LTP Agent (V1.0.6)</a></h4>
                 <p>
-                    Der Desktop-Agent zu <a href="https://leanderkafemann.github.io/LateinTrainerPlus/#">LateinTrainerPlus</a>.<br/>
-                    Er ermittelt Ihre Punkte etc. und l&auml;dt sie hoch.<br/><br/>
+                    Der Desktop-Agent zu <a href="https://leanderkafemann.github.io/LateinTrainerPlus/#">LateinTrainerPlus</a>.<br />
+                    Er ermittelt Ihre Punkte etc. und l&auml;dt sie hoch.<br /><br />
                     <i>
                         Vom LTP Agenten generierte Bestätigungscodes funktionieren nun wieder korrekt.
-                    </i><br/><br/>
+                    </i><br /><br />
                     <b>Der LTP Agent nutzt B&uuml;ro-Ressourcen wie die bueroUtils und Ihren Nutzernamen sowie Ihre DeviceID.</b>
                 </p>
                 <h3>Plugins</h3>
                 <p>
-                    In diesem Bereich finden Sie Pakete, die Daten von Ihrer B&uuml;ro-Installation und Funktionen von B&uuml;ro mitnutzen und &auml;ndern k&ouml;nnen.<br/>
+                    In diesem Bereich finden Sie Pakete, die Daten von Ihrer B&uuml;ro-Installation und Funktionen von B&uuml;ro mitnutzen und &auml;ndern k&ouml;nnen.<br />
                     Diese Daten sind vorrangig Ihr PREMIUM-Pass sowie Ihr Nutzername und Ihre DeviceID.
                 </p>
                 <h4 id="bMail11"><a href="./data/mail1.2.10.zip">B&uuml;roMail (1.2.10)</a></h4>
                 <p>
-                    Mit B&uuml;roMail k&ouml;nnen Sie B&uuml;roMails senden und empfangen.<br/>
-                    Senden Sie eine Mail mit unserem Hauptprogramm oder<br/>
-                    starten Sie den BackgroundAgent, der Ihren Posteingang im Hintergrund pr&uuml;ft.<br/>
-                    Damit Sie diesen nicht vergessen, l&auml;sst sich B&uuml;ro nicht schlie&szlig;en, solange er l&auml;uft.<br/>
-                    Au&szlig;erdem verf&uuml;gt B&uuml;roMail &uuml;ber Funktionen zum Konfigurieren von z.B. einer Antwort auf eine empfangene Mail.<br/><br/>
+                    Mit B&uuml;roMail k&ouml;nnen Sie B&uuml;roMails senden und empfangen.<br />
+                    Senden Sie eine Mail mit unserem Hauptprogramm oder<br />
+                    starten Sie den BackgroundAgent, der Ihren Posteingang im Hintergrund pr&uuml;ft.<br />
+                    Damit Sie diesen nicht vergessen, l&auml;sst sich B&uuml;ro nicht schlie&szlig;en, solange er l&auml;uft.<br />
+                    Au&szlig;erdem verf&uuml;gt B&uuml;roMail &uuml;ber Funktionen zum Konfigurieren von z.B. einer Antwort auf eine empfangene Mail.<br /><br />
                     <i>
                         B&uuml;roMail ist nun kompatibel mit den neuesten Versionen von Numpy und PyautoGUI.
                     </i>
                 </p>
                 <h4 id="bb"><a href="./data/bank1.2.2.zip">B&uuml;roBank (1.2.2)</a></h4>
                 <p>
-                    Mit B&uuml;roBank sehen Sie blitzschnell Ihren Kontostand auf der B&uuml;roBank.<br/>
-                    Sie k&ouml;nnen auch &Uuml;berweisungen t&auml;tigen oder mithilfe der TransaktionsID solche empfangen.<br/>
-                    Au&szlig;erdem k&ouml;nnen Sie auch mobil in Ihrem Online-Konto &Uuml;berweisungen t&auml;tigen.<br/><br/>
+                    Mit B&uuml;roBank sehen Sie blitzschnell Ihren Kontostand auf der B&uuml;roBank.<br />
+                    Sie k&ouml;nnen auch &Uuml;berweisungen t&auml;tigen oder mithilfe der TransaktionsID solche empfangen.<br />
+                    Au&szlig;erdem k&ouml;nnen Sie auch mobil in Ihrem Online-Konto &Uuml;berweisungen t&auml;tigen.<br /><br />
                     <i>
                         B&uuml;roBank ist nun kompatibel mit den neuesten Versionen von Numpy und PyautoGUI.
                     </i>
                 </p>
                 <h4 id="bonusFile"><a href="./data/bonus1.0.0.zip">B&uuml;roBonus (1.0)</a></h4>
                 <p>
-                    Mit BüroBonus sammeln Sie Bonuspunkte für Büro!<br/>
-                    Kaufen Sie Upgrades, um noch mehr Punkte zu sammeln,<br/>
-                    oder erwerben Sie gratis PREMIUM im Punkteshop!<br/><br/>
+                    Mit BüroBonus sammeln Sie Bonuspunkte für Büro!<br />
+                    Kaufen Sie Upgrades, um noch mehr Punkte zu sammeln,<br />
+                    oder erwerben Sie gratis PREMIUM im Punkteshop!<br /><br />
                     <i>
                         Der Shop wurde hinzugefügt und das BETA-Stadium beendet.
                     </i>
@@ -711,36 +705,36 @@
             <div style="display: block">
                 <h2 id="marketing">Marketing-Bilder</h2>
                 <p>
-                    <img src="./images/Mail128.png" class="photoElement"/><br/>
-                    <img src="./images/büro4.3.png" class="photoElement"/><br/>
-                    <img src="./images/B&uuml;roBank.png" class="photoElement"/><br/>
-                    <img src="./images/LM3.png" class="photoElement"/><br/>
-                    <img src="./images/LTP.png" class="photoElement"/><br/>
+                    <img src="./images/Mail128.png" class="photoElement" /><br />
+                    <img src="./images/büro4.3.png" class="photoElement" /><br />
+                    <img src="./images/B&uuml;roBank.png" class="photoElement" /><br />
+                    <img src="./images/LM3.png" class="photoElement" /><br />
+                    <img src="./images/LTP.png" class="photoElement" /><br />
                 </p>
             </div>
             <h2 id="entwickler">Entwickler</h2>
             <p>
-                Diese Sektion wird in K&uuml;rze erscheinen.<br/>
+                Diese Sektion wird in K&uuml;rze erscheinen.<br />
                 Sehen Sie sich f&uuml;r mehr Informationen <a href="#entwickeln">das</a> an.
             </p>
             <h3>Wie ver&ouml;ffentliche ich ein Paket?</h3>
             <p>
-                <b>1.</b> &Uuml;berlegen Sie sich, was Ihr Paket machen soll.<br/><br/>
-                <b>2.</b> &Uuml;berlegen Sie sich, in welchen <a href="#bereiche">Bereich</a> Ihr Paket dementsprechend f&auml;llt.<br/><br/>
-                <b>3.</b> Schreiben Sie den Code f&uuml;r Ihr Paket (in Python).<br/>
-                Dabei sollten alle vom Paket gespeicherten Daten im Verzeichnis <i>./programdata/passenderOrdnername</i> liegen.<br/><br/>
-                <b>4.</b> Erstellen Sie ein GitHub Repository (mehr dazu in den <a href="#weblinks">Weblinks</a>) mit Ihrem Paket.<br/><br/>
-                <b>5.</b> Kontaktieren Sie uns &uuml;ber <a href="#bMail11">B&uuml;roMail</a> (Name: The Creator) oder &uuml;ber die <a href="#kontakt">hier</a> aufgef&uuml;hrten M&ouml;glichkeiten.<br/>
-                Ihr Code wird einer umfassenden Pr&uuml;fung unterzogen, um Malware und Trojaner zu vermeiden.<br/>
-                Nach der &Uuml;berpr&uuml;fung erhalten Sie eine R&uuml;ckmeldung zur Annahme Ihres Paketes.<br/><br/>
-                <b>6.</b> Beantworten Sie etwaige R&uuml;ckfragen zu Ihrem Paket zugeh&ouml;rigen Dateien etc..<br/><br/>
-                <b>7.</b> Sie erhalten eine weitere R&uuml;ckmeldung, sobald die Daten zu Ihrem Paket in B&uuml;ro implementiert wurden.<br/>
+                <b>1.</b> &Uuml;berlegen Sie sich, was Ihr Paket machen soll.<br /><br />
+                <b>2.</b> &Uuml;berlegen Sie sich, in welchen <a href="#bereiche">Bereich</a> Ihr Paket dementsprechend f&auml;llt.<br /><br />
+                <b>3.</b> Schreiben Sie den Code f&uuml;r Ihr Paket (in Python).<br />
+                Dabei sollten alle vom Paket gespeicherten Daten im Verzeichnis <i>./programdata/passenderOrdnername</i> liegen.<br /><br />
+                <b>4.</b> Erstellen Sie ein GitHub Repository (mehr dazu in den <a href="#weblinks">Weblinks</a>) mit Ihrem Paket.<br /><br />
+                <b>5.</b> Kontaktieren Sie uns &uuml;ber <a href="#bMail11">B&uuml;roMail</a> (Name: The Creator) oder &uuml;ber die <a href="#kontakt">hier</a> aufgef&uuml;hrten M&ouml;glichkeiten.<br />
+                Ihr Code wird einer umfassenden Pr&uuml;fung unterzogen, um Malware und Trojaner zu vermeiden.<br />
+                Nach der &Uuml;berpr&uuml;fung erhalten Sie eine R&uuml;ckmeldung zur Annahme Ihres Paketes.<br /><br />
+                <b>6.</b> Beantworten Sie etwaige R&uuml;ckfragen zu Ihrem Paket zugeh&ouml;rigen Dateien etc..<br /><br />
+                <b>7.</b> Sie erhalten eine weitere R&uuml;ckmeldung, sobald die Daten zu Ihrem Paket in B&uuml;ro implementiert wurden.<br />
                 Ihr Paket erh&auml;lt einen Eintrag auf dieser Seite und wir f&uuml;gen diesem eine B&uuml;ro-kompatible ZIP-Datei Ihres Paketes an.
             </p>
             <h3>Wie ver&ouml;ffentliche ich Updates?</h3>
             <p>
-                <b>1.</b> Implementieren Sie das Update in Ihr GitHub Repository.<br/><br/>
-                <b>2.</b> Benachrichtigen Sie uns (ausschlie&szlig;lich) &uuml;ber <a href="#bMail11">B&uuml;roMail</a>.<br/><br/>
+                <b>1.</b> Implementieren Sie das Update in Ihr GitHub Repository.<br /><br />
+                <b>2.</b> Benachrichtigen Sie uns (ausschlie&szlig;lich) &uuml;ber <a href="#bMail11">B&uuml;roMail</a>.<br /><br />
                 <b>3.</b> Eine ZIP-Datei mit dem Update erscheint im Bereich Ihres Pakets auf dieser Seite.
             </p>
             <h3>Sonderfall Plugin</h3>
@@ -760,108 +754,108 @@
             </p>
             <h4>Funktionen der bueroUtils</h4>
             <p>
-                Die bueroUtils umfassen mehrere Klassen mit allen f&uuml;r B&uuml;ro ben&ouml;tigten Funktionen.<br/>
-                Autorisierte (von uns gepr&uuml;fte) Plugins (und ggf. auch andere Pakete) k&ouml;nnen diese Funktionen nutzen.<br/>
-                N&uuml;tzliche Funktionen sind z.B.:<br/>
-                -DebugLogs erstellen (Klasse DebugLog)<br/>
-                -Statusbalken erstellen (Klasse status)<br/>
-                -PREMIUM &uuml;berpr&uuml;fen (Funktion bueroUtils.checkPREMIUM)<br/>
-                -PreMails f&uuml;r B&uuml;roMail erstellen (Funktion bueroUtils.createPreMail)<br/>
-                -Pre&Uuml;berweisungen f&uuml;r B&uuml;roBank erstellen (Funktion bueroUtils.createPreBank)<br/>
-                -Schnellzahlungen/-mails (bueroUtils.shareViaMail / bueroUtils.payViaBank)<br/>
-                -Unterdr&uuml;cken von Outputs mit der Klasse bueroUtils.outputSuppressor<br/>
-                -u.v.m.<br/>
-                Zus&auml;tzlich k&ouml;nnen Sie die folgenden, zwingend installierten Module nutzen:<br/>
-                'pip', 'colorama', 'easygui', 'eyed3', 'datetime', 'keyboard', 'naturalsize',<br/>
-                'numpy', 'pgzero', 'pillow', 'ping3',<br/>
-                'pyautogui', 'pycols', 'pygame', 'pyimager', 'pymsgbox',<br/>
-                'pyperclip', 'pyscreeze', 'pysounds', 'reportlab', 'requests'<br/><br/>
+                Die bueroUtils umfassen mehrere Klassen mit allen f&uuml;r B&uuml;ro ben&ouml;tigten Funktionen.<br />
+                Autorisierte (von uns gepr&uuml;fte) Plugins (und ggf. auch andere Pakete) k&ouml;nnen diese Funktionen nutzen.<br />
+                N&uuml;tzliche Funktionen sind z.B.:<br />
+                -DebugLogs erstellen (Klasse DebugLog)<br />
+                -Statusbalken erstellen (Klasse status)<br />
+                -PREMIUM &uuml;berpr&uuml;fen (Funktion bueroUtils.checkPREMIUM)<br />
+                -PreMails f&uuml;r B&uuml;roMail erstellen (Funktion bueroUtils.createPreMail)<br />
+                -Pre&Uuml;berweisungen f&uuml;r B&uuml;roBank erstellen (Funktion bueroUtils.createPreBank)<br />
+                -Schnellzahlungen/-mails (bueroUtils.shareViaMail / bueroUtils.payViaBank)<br />
+                -Unterdr&uuml;cken von Outputs mit der Klasse bueroUtils.outputSuppressor<br />
+                -u.v.m.<br />
+                Zus&auml;tzlich k&ouml;nnen Sie die folgenden, zwingend installierten Module nutzen:<br />
+                'pip', 'colorama', 'easygui', 'eyed3', 'datetime', 'keyboard', 'naturalsize',<br />
+                'numpy', 'pgzero', 'pillow', 'ping3',<br />
+                'pyautogui', 'pycols', 'pygame', 'pyimager', 'pymsgbox',<br />
+                'pyperclip', 'pyscreeze', 'pysounds', 'reportlab', 'requests'<br /><br />
                 Schauen Sie f&uuml;r mehr Informationen direkt in die bueroUtils - die Funktionen sind jeweils erkl&auml;rt.
             </p>
             <h4>Das Paket B&uuml;roEntwickler</h4>
             <p>
-                Dieses Paket ist noch nicht erschienen,<br/>
+                Dieses Paket ist noch nicht erschienen,<br />
                 weshalb dieser Eintrag noch nicht verf&uuml;gbar ist.
             </p>
             <div style="display: block;">
                 <h2 id="weblinks">Weblinks</h2>
                 <p>
-                    Zu B&uuml;ro:<br/>
-                    <a href="https://lkunited.pythonanywhere.com/login">Online-Login</a><br/><br/>
-                    Zum Entwickler:<br/>
-                    <a href="https://github.com/LeanderKafemann/bueroWebsite">GitHub-Repository dieser Seite</a><br/>
-                    <a href="https://github.com/LeanderKafemann">GitHub-Seite vom Entwickler</a><br/>
-                    <a href="https://leanderkafemann.github.io/LateinTrainerPlus">LateinTrainerPlus</a><br/>
-                    <a href="https://pypi.org/user/LK-Software/">PyPi-Seite vom Entwickler</a><br/><br/>
-                    Zu Python:<br/>
-                    <a href="https://www.python.org">Python Homepage</a><br/>
-                    <a href="https://www.python.org/downloads">Python Download</a><br/><br/>
-                    Zu GitHub:<br/>
+                    Zu B&uuml;ro:<br />
+                    <a href="https://lkunited.pythonanywhere.com/login">Online-Login</a><br /><br />
+                    Zum Entwickler:<br />
+                    <a href="https://github.com/LeanderKafemann/bueroWebsite">GitHub-Repository dieser Seite</a><br />
+                    <a href="https://github.com/LeanderKafemann">GitHub-Seite vom Entwickler</a><br />
+                    <a href="https://leanderkafemann.github.io/LateinTrainerPlus">LateinTrainerPlus</a><br />
+                    <a href="https://pypi.org/user/LK-Software/">PyPi-Seite vom Entwickler</a><br /><br />
+                    Zu Python:<br />
+                    <a href="https://www.python.org">Python Homepage</a><br />
+                    <a href="https://www.python.org/downloads">Python Download</a><br /><br />
+                    Zu GitHub:<br />
                     <a href="https://de.wikipedia.org/wiki/GitHub">Wikipedia-Eintrag zu GitHub</a>
                 </p>
             </div>
             <div style="display: block;">
                 <h2 id="kontakt">Kontakt</h2>
                 <p>
-                    <a href="mailto:leander@kafemann.berlin?subject=Kundenservice">Kundenservice</a><br/>
+                    <a href="mailto:leander@kafemann.berlin?subject=Kundenservice">Kundenservice</a><br />
                 </p>
             </div>
             <div style="display: block;">
                 <h2>Hinweise</h2>
                 <p>
-                    Diese Seite ben&ouml;tigt JavaScript - bitte aktivieren Sie es, falls nicht bereits geschehen.<br/>
-                    Mit der Nutzung dieser Seite erkl&auml;ren Sie sich mit der Nutzung externer Ressourcen wie Java-Bibliotheken einverstanden.<br/>
-                    Zudem stimmen Sie der Nutzung von Cookies zu.<br/><br/>
+                    Diese Seite ben&ouml;tigt JavaScript - bitte aktivieren Sie es, falls nicht bereits geschehen.<br />
+                    Mit der Nutzung dieser Seite erkl&auml;ren Sie sich mit der Nutzung externer Ressourcen wie Java-Bibliotheken einverstanden.<br />
+                    Zudem stimmen Sie der Nutzung von Cookies zu.<br /><br />
                     <details>
                         <summary>AGB</summary>
                         <p>
-                            Diese Website, B&uuml;ro oder Leander Kafemann haften nicht f&uuml;r jegliche Sch&auml;den.<br/>
+                            Diese Website, B&uuml;ro oder Leander Kafemann haften nicht f&uuml;r jegliche Sch&auml;den.<br />
                             Mit der Nutzung von B&uuml;ro oder jeglichen Paketen oder Services erkl&auml;ren Sie sich einverstanden mit den Bedingungen und Risiken.
                         </p>
                         <p>
-                            Sie erkl&auml;ren sich mit der Nutzung auch damit einverstanden,<br/>
+                            Sie erkl&auml;ren sich mit der Nutzung auch damit einverstanden,<br />
                             dass Daten &uuml;ber Ihr Nutzungsverhalten auf unseren Servern gespeichert werden.
                         </p>
                         <p>
-                            Des Weiteren ist bei jeglichen Gewinnspielen der Rechtsweg ausgeschlossen.<br/>
-                            Teilnehmer ben&ouml;tigen einen Wohnsitz in Deutschland und m&uuml;ssen mindestens 16 Jahre alt sein.<br/>
-                            Wir behalten es uns vor, bestimmte Teilnehmer auszuschlie&szlig;en und erhobene Daten zu verarbeiten.<br/>
+                            Des Weiteren ist bei jeglichen Gewinnspielen der Rechtsweg ausgeschlossen.<br />
+                            Teilnehmer ben&ouml;tigen einen Wohnsitz in Deutschland und m&uuml;ssen mindestens 16 Jahre alt sein.<br />
+                            Wir behalten es uns vor, bestimmte Teilnehmer auszuschlie&szlig;en und erhobene Daten zu verarbeiten.<br />
                             B&uuml;ro-Mitarbeiter sind ausdr&uuml;cklich nicht ausgeschlossen, haben jedoch mitnichten Vorteile.
                         </p>
                         <p>
-                            B&uuml;ro ist ein privates Projekt, dessen Code, sofern nicht anders gekennzeichnet, von Leander Kafemann entwickelt wurde.<br/>
-                            B&uuml;ro haftet nicht f&uuml;r gegebenenfalls auftretende Sch&auml;den an Ihrem Ger&auml;t,<br/>
+                            B&uuml;ro ist ein privates Projekt, dessen Code, sofern nicht anders gekennzeichnet, von Leander Kafemann entwickelt wurde.<br />
+                            B&uuml;ro haftet nicht f&uuml;r gegebenenfalls auftretende Sch&auml;den an Ihrem Ger&auml;t,<br />
                             auch nicht, wenn diese auf B&uuml;ro zur&uuml;ckzuf&uuml;hren sind.
                         </p>
                         <p>
-                            Von B&uuml;ro erhobene Daten werden lokal gesichert und teilweise an Server unserer Partner PythonAnywhere bzw. GitHub gesendet.<br/>
+                            Von B&uuml;ro erhobene Daten werden lokal gesichert und teilweise an Server unserer Partner PythonAnywhere bzw. GitHub gesendet.<br />
                             Wir behalten uns die Datenverarbeitung vor.
                         </p>
                         <p>
-                            B&uuml;ro verschl&uuml;sselt einige Daten nicht.<br/>
-                            Wir empfehlen, Ihre Passw&ouml;rter geheimzuhalten, um eine optimale Sicherheit zu gew&auml;hrleisten.<br/>
-                            Sie k&ouml;nnen VPN-Netzwerke nutzen, um Ihre IP-Adresse zu sch&uuml;tzen.<br/>
-                            Sofern m&ouml;glich nutzt B&uuml;ro HTTPS f&uuml;r die Daten&uuml;bermittlung,<br/>
+                            B&uuml;ro verschl&uuml;sselt einige Daten nicht.<br />
+                            Wir empfehlen, Ihre Passw&ouml;rter geheimzuhalten, um eine optimale Sicherheit zu gew&auml;hrleisten.<br />
+                            Sie k&ouml;nnen VPN-Netzwerke nutzen, um Ihre IP-Adresse zu sch&uuml;tzen.<br />
+                            Sofern m&ouml;glich nutzt B&uuml;ro HTTPS f&uuml;r die Daten&uuml;bermittlung,<br />
                             Sie sollten Ihr lokales Netzwerk aber dennoch gegen Drittzugriffe sichern.
                         </p>
                         <p>
-                            In B&uuml;roBank oder B&uuml;ro geleistete Zahlungen sind mehrwerts-  und umsatzsteuerbefreit,<br/>
-                            sie fallen in den privaten Bereich.<br/>
+                            In B&uuml;roBank oder B&uuml;ro geleistete Zahlungen sind mehrwerts-  und umsatzsteuerbefreit,<br />
+                            sie fallen in den privaten Bereich.<br />
                             Zahlungen sind nur bei vorheriger verifizierter Aufladung m&ouml;glich.
                         </p>
                         <p>
-                            B&uuml;ro distanziert sich ausdr&uuml;cklich von Hackern und Produzenten von Bloat- oder Malware.<br/>
+                            B&uuml;ro distanziert sich ausdr&uuml;cklich von Hackern und Produzenten von Bloat- oder Malware.<br />
                             Sie k&ouml;nnen B&uuml;ro vertrauen.
                         </p>
                     </details>
                 </p>
             </div>
-            <br/><br/><br/><br/><br/>
+            <br /><br /><br /><br /><br />
         </div>
     </div>
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2024-2025 - BueroWebKit 3.3.13 - LKWEB 2.15.0
+            Copyright Leander Kafemann 2024-2025 - BueroWebKit 3.3.14 - LKWEB 2.15.1
         </p>
     </div>
 </body>
