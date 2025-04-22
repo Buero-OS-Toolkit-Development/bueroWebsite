@@ -15,7 +15,7 @@
 }
 
 function renameMenuPoints() {
-    let menuTitlesShort = ["🏠", "🛈", "🡇", "🔧", "📦", "🖼", "💻", "🔗", "☎"];
+    let menuTitlesShort = ["🏠", "ℹ️", "⬇️", "🔧", "📦", "🖼", "💻", "🔗", "☎"];
     let menuTitlesLong = ["Home", "Über", "Installation", "Features", "Pakete", "Bilder", "Entwickler", "Weblinks", "Kontakt"];
     renameMenuPointsAgent(menuTitlesShort, menuTitlesLong);
 }
