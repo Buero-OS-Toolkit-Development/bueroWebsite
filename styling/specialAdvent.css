@@ -10,12 +10,12 @@ iframe {
     font-family: "Source Code Pro", monospace;
 }
 
-    iframe:hover {
-        margin-left: 7.5%;
-        margin-right: 7.5%;
-        width: 85%;
-        height: 600px;
-    }
+iframe:hover {
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    width: 85%;
+    height: 600px;
+}
 
 .loader {
     border: 32px groove hotpink;
@@ -59,4 +59,8 @@ p.white {
     text-align: center;
     margin-left: 45%;
     margin-right: 45%;
+}
+div.outer {
+    background-color: black;
+    height: 800px;
 }
