@@ -9,19 +9,19 @@
     <title>B&uuml;ro-der Guide</title>
     <meta name="author" content="Leander Kafemann" />
     <meta name="keywords" content="Leander Kafemann büro Guide LKunited King Lele" />
-    <link rel="stylesheet" href="./styling/style.css" />
-    <link rel="stylesheet" href="./styling/box.css" />
-    <link rel="stylesheet" href="./styling/like.css" />
-    <link rel="stylesheet" href="./styling/forms.css" />
+    <link rel="stylesheet" href="https://buero-os-toolkit-development.github.io/BueroWebKit/styling/style.css" />
+    <link rel="stylesheet" href="https://buero-os-toolkit-development.github.io/BueroWebKit/styling/box.css" />
+    <link rel="stylesheet" href="https://buero-os-toolkit-development.github.io/BueroWebKit/styling/like.css" />
+    <link rel="stylesheet" href="https://buero-os-toolkit-development.github.io/BueroWebKit/styling/forms.css" />
     <link rel="manifest" href="./manifest.json" />
     <link rel="icon" type="image/png" href="./images/logo_Python.png" />
-    <script type="text/javascript" src="./js/cookies.js"></script>
-    <script type="text/javascript" src="./js/login.js"></script>
-    <script type="text/javascript" src="./js/get_like.js"></script>
-    <script type="text/javascript" src="./js/set_like.js"></script>
-    <script type="text/javascript" src="./js/comment.js"></script>
-    <script type="text/javascript" src="./js/time.js"></script>
-    <script type="text/javascript" src="./js/menu.js"></script>
+    <script type="text/javascript" src="https://buero-os-toolkit-development.github.io/BueroWebKit/js/cookies.js"></script>
+    <script type="text/javascript" src="https://buero-os-toolkit-development.github.io/BueroWebKit/js/login.js"></script>
+    <script type="text/javascript" src="https://buero-os-toolkit-development.github.io/BueroWebKit/js/get_like.js"></script>
+    <script type="text/javascript" src="https://buero-os-toolkit-development.github.io/BueroWebKit/js/set_like.js"></script>
+    <script type="text/javascript" src="https://buero-os-toolkit-development.github.io/BueroWebKit/js/comment.js"></script>
+    <script type="text/javascript" src="https://buero-os-toolkit-development.github.io/BueroWebKit/js/time.js"></script>
+    <script type="text/javascript" src="https://buero-os-toolkit-development.github.io/BueroWebKit/js/menu.js"></script>
     <!--<script type="text/javascript" src="./js/easter.js"></script>--><!--Nach Nutzungsende auskommentieren/entfernen-->
     <meta charset="utf-8" />
     <meta name="google-site-verification" content="7B0CF-ClfZaLgOrvs32NkRIFktgrLNCGxIwQPBNUqBs" />
@@ -86,6 +86,26 @@
                 }
             </script>
             <h2>Aktuelles</h2>
+            <div class="oval">
+                <font color="black">
+                    <h3>BueroWebKit</h3>
+                    <p>
+                        <b>
+                            Die BueroWebsite, diese Webseite, <br />
+                            ist nun eine eigene Webseite und nicht mehr auch ein Toolkit für weitere Büro-Webseiten:<br />
+                            diese Funktion wurde in den neuen BueroWebKit ausgelagert.<br />
+                            Es ist zu erwarten, dass bis zum vollständigen Transfer einige Zeit verstreicht und dass einige Services eventuell nicht wie geplant funktionieren werden.
+                        </b>
+                    </p>
+                </font>
+                <div class="like" id="buerowebkit" style="">?</div><button onclick="setLike('buerowebkit')" type="button" class="likeButton">&#128151;</button>
+                <div id="buerowebkitComments"></div>
+                <textarea id="buerowebkitCommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('buerowebkit')" />
+                <script>
+                    getContent("buerowebkit");
+                </script>
+            </div>
             <div class="oval">
                 <font color="black">
                     <h3>Büro 4.3</h3>
@@ -908,7 +928,7 @@
     </div>
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2024-2025 - BueroWebKit 3.3.18 - LKWEB 2.15.4
+            Copyright Leander Kafemann 2024-2025 - bueroWebsite 3.3.19 - BueroWebKit 3.3.18 - LKWEB 2.15.4
         </p>
     </div>
 </body>
