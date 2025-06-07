@@ -4,7 +4,7 @@
   "short_name": "Buero Guide",
   "description": "Ein Guide durch die Features von Buero.",
   "orientation": "landscape-primary",
-  "start_url": "https://leanderkafemann.github.io/bueroWebsite/",
+  "start_url": "https://buero-os-toolkit-development.github.io/bueroWebsite/",
   "display": "standalone",
   "icons": [
     {

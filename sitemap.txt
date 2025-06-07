@@ -1,4 +1,4 @@
-https://leanderkafemann.github.io/bueroWebsite/
-https://leanderkafemann.github.io/bueroWebsite/jubiSpecial/
-https://leanderkafemann.github.io/bueroWebsite/advent/
-https://leanderkafemann.github.io/bueroWebsite/easterSpecial/
+https://buero-os-toolkit-development.github.io/bueroWebsite/
+https://buero-os-toolkit-development.github.io/bueroWebsite/jubiSpecial/
+https://buero-os-toolkit-development.github.io/bueroWebsite/advent/
+https://buero-os-toolkit-development.github.io/bueroWebsite/easterSpecial/
