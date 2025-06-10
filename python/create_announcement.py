@@ -6,7 +6,7 @@ import pyautogui as py
 SCHABL = """<div class="oval">
                 <font color="{}">
                     <h3>{}</h3>
-                    <p>{}
+                    <p class="announcement">{}
                         {}
                     {}</p>
                 </font>
@@ -34,7 +34,7 @@ def export():
         styling2 = "</s>"+styling2
     to_export = SCHABL.format(c.color, title, styling1, content, styling2, id_, id_, id_, id_, id_, id_)
     pyperclip.copy(to_export)
-    py.alert((to_export if len(to_export) < 3000 else "Content too long")+"\n\nin die Zwischenablage kopiert.", "Kopiert")
+    py.alert((to_export if len(to_export) < 4000 else "Content too long")+"\n\nin die Zwischenablage kopiert.", "Kopiert")
 
 def color_():
     c.color = c.colors[c.colors.index(c.color)+1 if c.color != c.colors[-1] else 0]
@@ -82,8 +82,8 @@ c.styling = ""
 c.underline = False
 c.stroke = False
 
-c.create_text(325, 60, text="  Büro Guide  \nContent Creator", font=("Verdana", "30", "bold"))
-c.create_text(325, 840, text="Copyright LK 2024-2025  -  Version 3.3.1", font=("Verdana", "10"))
+c.create_text(325, 60, text="    Büro Guide  \nContent Creator", font=("Verdana", "30", "bold"))
+c.create_text(325, 840, text="Copyright Leander Kafemann 2024-2025  -  Version 4.0.0", font=("Verdana", "10"))
 
 c.create_text(20, 200, text="Titel:", font=("Verdana", "20"), anchor="w")
 c.create_text(325, 270, text="Inhalt:", font=("Verdana", "25"))
