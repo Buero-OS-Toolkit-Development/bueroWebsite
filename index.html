@@ -88,6 +88,26 @@
             <h2>Aktuelles</h2>
             <div class="oval">
                 <font color="black">
+                    <h3>BueroRoadmap</h3>
+                    <p class="announcement">
+                        In unserer Weblinks-Sektion finden Sie nun einen Link zu Büros Roadmap.<br />
+                        Die dahinterliegende Seite befindet sich noch in Arbeit<br />
+                        und soll in Zukunft Roadmaps für verschiedene Büro-Komponenten beinhalten.<br />
+                        <br />
+                        Sie wollen auch eine Roadmap erstellen?<br />
+                        Unsere Roadmap wurde mit dem neuen RoadmapAssistant erstellt (verfügbar auf GitHub - Link siehe Weblinks).
+                    </p>
+                </font>
+                <div class="like" id="bueroroadmap" style="">?</div><button onclick="setLike('bueroroadmap')" type="button" class="likeButton">&#128151;</button>
+                <div id="bueroroadmapComments"></div>
+                <textarea id="bueroroadmapCommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('bueroroadmap')" />
+                <script>
+                    getContent("bueroroadmap");
+                </script>
+            </div>
+            <div class="oval">
+                <font color="black">
                     <h3>BueroWebKit 4</h3>
                     <p class="announcement">
                         <b>
@@ -154,34 +174,6 @@
                 </script>
             </div>
             <div class="oval">
-                <font color="magenta">
-                    <h3>Ostern 2025</h3>
-                    <p>
-                        <b>
-                            <u>
-                                Liebe Nutzer,<br />
-                                <br />
-                                erst einmal frohe Ostern 2025!<br />
-                                Wir waren nicht untätig und haben viele Updates für Sie vorbereitet,<br />
-                                die in den kommenden Tagen erscheinen werden.<br />
-                                Es gibt zum Beispiel neue Erfolge für Büro!<br />
-                                <br />
-                                In den kommenden Tagen können Sie auf dieser Webseite zusätzlich ein Osterei mit einer Überraschung für Sie entdecken.<br />
-                                <br />
-                                Viel Spaß und viel Glück!
-                            </u>
-                        </b>
-                    </p>
-                </font>
-                <div class="like" id="ostern2025" style="">?</div><button onclick="setLike('ostern2025')" type="button" class="likeButton">&#128151;</button>
-                <div id="ostern2025Comments"></div>
-                <textarea id="ostern2025CommentText" placeholder="Kommentieren..."></textarea><br />
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('ostern2025')" />
-                <script>
-                    getContent("ostern2025");
-                </script>
-            </div>
-            <div class="oval">
                 <font color="black">
                     <h3>B&uuml;roBonus</h3>
                     <p>
@@ -241,7 +233,7 @@
                 <h3>Installation</h3>
                 <p>
                     Laden Sie die neueste Version von
-                    <a href="./data/büro4.3.1.zip">B&uuml;ro (V4.3.1)</a> (Hauptprogramm),
+                    <a href="./data/büro4.3.2.zip">B&uuml;ro (V4.3.2)</a> (Hauptprogramm),
                     <a href="./data/system4.3.1.zip">System (V4.3.1)</a> (UpdateInstaller und Fehleranalyse)<br />und
                     <a href="./data/systemupdate6.zip">Hintergrundsystem (V6)</a> (Updater f&uuml;r System)
                     herunter.<br />
@@ -816,12 +808,13 @@
                 <h2 id="weblinks">Weblinks</h2>
                 <p>
                     Zu B&uuml;ro:<br />
-                    <a href="https://github.com/LeanderKafemann/Buero">GitHub-Repository von Büro</a><br />
-                    <a href="https://github.com/LeanderKafemann/BueroSystem">GitHub-Repository des Büro-Systems</a><br />
-                    <a href="https://github.com/LeanderKafemann/BueroSetup">GitHub-Repository des Büro-Installers</a><br />
+                    <a href="https://github.com/Buero-OS-Toolkit-Development/Buero">GitHub-Repository von Büro</a><br />
+                    <a href="https://github.com/Buero-OS-Toolkit-Development/BueroSystem">GitHub-Repository des Büro-Systems</a><br />
+                    <a href="https://github.com/Buero-OS-Toolkit-Development/BueroSetup">GitHub-Repository des Büro-Installers</a><br />
+                    <a href="./roadmap/">Roadmap für Büro</a>
                     <a href="https://lkunited.pythonanywhere.com/login">Online-Login</a><br /><br />
                     Zum Entwickler:<br />
-                    <a href="https://github.com/LeanderKafemann/bueroWebsite">GitHub-Repository dieser Seite</a><br />
+                    <a href="https://github.com/Buero-OS-Toolkit-Development/bueroWebsite">GitHub-Repository dieser Seite</a><br />
                     <a href="https://github.com/LeanderKafemann">GitHub-Seite vom Entwickler</a><br />
                     <a href="https://leanderkafemann.github.io/LateinTrainerPlus">LateinTrainerPlus</a><br />
                     <a href="https://pypi.org/user/LK-Software/">PyPi-Seite vom Entwickler</a><br /><br />
@@ -885,6 +878,12 @@
                             B&uuml;ro distanziert sich ausdr&uuml;cklich von Hackern und Produzenten von Bloat- oder Malware.<br />
                             Sie k&ouml;nnen B&uuml;ro vertrauen.
                         </p>
+                        <p>
+                            Für BüroBonus ist der Rechtsweg ausgeschlossen.
+                        </p>
+                        <p>
+                            Diese AGB können jederzeit zu einer neuen Version aktualisiert werden.
+                        </p>
                     </details>
                 </p>
             </div>
@@ -893,7 +892,7 @@
     </div>
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2024-2025 - bueroWebsite 3.3.22 - BueroWebKit 4.0.0 - LKWEB 2.15.5
+            Copyright Leander Kafemann 2024-2025 - bueroWebsite 3.3.23 - BueroWebKit 4.0.0 - LKWEB 2.15.6
         </p>
     </div>
 </body>
