@@ -93,6 +93,22 @@
             </script>
             <h2>Aktuelles</h2>
             <div class="oval">
+                <font color="black">
+                    <h3>Kundenservice Gruppe</h3>
+                    <p class="announcement">
+                        Es war noch nie einfacher,<br />
+                        unseren Kundenservice zu kontaktieren:<br />
+                        <br />
+                        Sie können im Kontakt-Bereich ganz einfach einer Kundenservice-Signal-Gruppe beitreten!
+                    </p>
+                </font>
+                <div class="like" id="kundenservicegruppe" style="">?</div><button onclick="setLike('kundenservicegruppe')" type="button" class="likeButton">&#128151;</button>
+                <div id="kundenservicegruppeComments"></div>
+                <textarea id="kundenservicegruppeCommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('kundenservicegruppe')" />
+                <script>getContent("kundenservicegruppe");</script>
+            </div>
+            <div class="oval">
                 <font color="blue">
                     <h3>Rechnungen 2</h3>
                     <p class="announcement">
@@ -757,19 +773,19 @@
             </p>
             <h3>Sonderfall Plugin</h3>
             <p>
-                Der wesentliche Unterschied zwischen einem normalen Paket und einem Plugin ist,<br/>
-                dass das Plugin Daten von B&uuml;ro lesen und &auml;ndern darf sowie Zugriff auf andere installierte Pakete hat.<br/>
-                Zudem ist ein Plugin an B&uuml;ro gebunden, kann also nicht als Standalone laufen.<br/><br/>
-                Diese Aspekte müssen Sie bei der Entwicklung natürlich bedenken.<br/><br/>
-                Ihnen werden dadurch aber auch immense Vorteile gewährt:<br/>
+                Der wesentliche Unterschied zwischen einem normalen Paket und einem Plugin ist,<br />
+                dass das Plugin Daten von B&uuml;ro lesen und &auml;ndern darf sowie Zugriff auf andere installierte Pakete hat.<br />
+                Zudem ist ein Plugin an B&uuml;ro gebunden, kann also nicht als Standalone laufen.<br /><br />
+                Diese Aspekte müssen Sie bei der Entwicklung natürlich bedenken.<br /><br />
+                Ihnen werden dadurch aber auch immense Vorteile gewährt:<br />
                 Sie können zum Beispiel das Nutzerkonto für Cross-App-Integrations nutzen etc...
             </p>
             <h3>Erleichterungen f&uuml;r Entwickler</h3>
             <p>
                 <font color="red">
                     <b>
-                        Die eigentlich geplanten Entwickler-Erleichterungen sowie das ehemals geplante Paket BüroEntwickler<br/>
-                        wurden bis auf Weiteres aus unserer ToDo-Liste genommen,<br/>
+                        Die eigentlich geplanten Entwickler-Erleichterungen sowie das ehemals geplante Paket BüroEntwickler<br />
+                        wurden bis auf Weiteres aus unserer ToDo-Liste genommen,<br />
                         da es auch ohne sie mit der Entwicklung von BueroOS und des Revamps von LKWEB genug zu tun gibt.
                     </b>
                 </font>
@@ -824,6 +840,7 @@
                 <h2 id="kontakt">Kontakt</h2>
                 <p>
                     <a href="mailto:update-bot@lk.kafemann.berlin?subject=Kundenservice">Kundenservice</a><br />
+                    <a href="https://signal.group/#CjQKIPiTrc6JA1czoL5ySfORQeJnpAY3f6XezhwkenGR0EWtEhDMO2XviW-pPwTzafY2mD3t">Signal-Gruppe</a>
                 </p>
             </div>
             <div style="display: block;">
@@ -877,8 +894,8 @@
                             Für BüroBonus und weitere Pakete ist der Rechtsweg ausgeschlossen.
                         </p>
                         <p>
-                            Alle Pakete und zugehörigen Projekte sowie Büro selbst gehören,<br/>
-                            sofern nicht ausdrücklich anders verfügt Leander Kafemann,<br/>
+                            Alle Pakete und zugehörigen Projekte sowie Büro selbst gehören,<br />
+                            sofern nicht ausdrücklich anders verfügt Leander Kafemann,<br />
                             der das dazugehörige Copyright allein innehat.
                         </p>
                         <p>
@@ -892,7 +909,7 @@
     </div>
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2024-2025 - BueroWebsite 3.3.26 - BueroWebKit 4.1.0 - LKWEB 2.15.7
+            Copyright Leander Kafemann 2024-2025 - BueroWebsite 3.3.27 - BueroWebKit 4.1.0 - LKWEB 2.15.7
         </p>
     </div>
 </body>
