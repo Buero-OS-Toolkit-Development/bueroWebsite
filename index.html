@@ -95,6 +95,33 @@
             <h2>Aktuelles</h2>
             <div class="oval">
                 <font color="black">
+                    <h3>Buero 4.4</h3>
+                    <p class="announcement">
+                        <b>
+                            Wie angekündigt ist nun die letzte große Büro-Version erschienen.<br />
+                            <br />
+                            Es wurden einige experimentelle Funktionen wie der BETA-Modus entfernt und<br />
+                            ein neuer Erfolg hinzugefügt,<br />
+                            den Sie mit der Installation automatisch erhalten.<br />
+                            <br />
+                            Wir Entwickler machen uns nun an die Entwicklung des "next big thing",<br />
+                            wobei Sie uns gern Ihre Ideen mitteilen dürfen.<br />
+                            Generell ist uns Feedback jeder Art willkommen: seien es Funktionsideen oder Fehlermeldungen.<br />
+                            <br />
+                            Viel Spaß!
+                        </b>
+                    </p>
+                </font>
+                <div class="like" id="buero4_4" style="">?</div><button onclick="setLike('buero4_4')" type="button" class="likeButton">&#128151;</button>
+                <div id="buero4_4Comments"></div>
+                <textarea id="buero4_4CommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('buero4_4')" />
+                <script>
+                    getContent("buero4_4");
+                </script>
+            </div>
+            <div class="oval">
+                <font color="black">
                     <h3>BueroSetup 18</h3>
                     <p class="announcement">
                         Die neue Version behebt einen kleineren Fehler und bereitet aufregende Neuerungen,<br />
@@ -186,31 +213,6 @@
             </div>
             <div class="oval">
                 <font color="black">
-                    <h3>B&uuml;ro 4.3</h3>
-                    <p>
-                        <b>
-                            Eine neue Version von B&uuml;ro ist erschienen!<br />
-                            <br />
-                            <img src="./images/büro4.3.png" class="photoElement" /><br />
-                            <br />
-                            Neben vielen kleineren &Auml;nderung zur Optimierung Ihres Erlebnisses wurde viel Inhalt hinzugef&uuml;gt:<br />
-                            + 5 neue Erfolge<br />
-                            + 1 Gewinnspiel<br />
-                            + 1 Paket<br />
-                            + ...
-                        </b>
-                    </p>
-                </font>
-                <div class="like" id="buero4_3" style="">?</div><button onclick="setLike('buero4_3')" type="button" class="likeButton">&#128151;</button>
-                <div id="buero4_3Comments"></div>
-                <textarea id="buero4_3CommentText" placeholder="Kommentieren..."></textarea><br />
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('buero4_3')" />
-                <script>
-                    getContent("buero4_3");
-                </script>
-            </div>
-            <div class="oval">
-                <font color="black">
                     <h3>GoodFood</h3>
                     <p>
                         <b>
@@ -248,8 +250,8 @@
                 <h3>Installation</h3>
                 <p>
                     Laden Sie die neueste Version von
-                    <a href="./data/büro4.3.2.zip">B&uuml;ro (V4.3.2)</a> (Hauptprogramm),
-                    <a href="./data/system4.3.1.zip">System (V4.3.1)</a> (UpdateInstaller und Fehleranalyse)<br />und
+                    <a href="./data/büro4.4.0.zip">B&uuml;ro (V4.4)</a> (Hauptprogramm),
+                    <a href="./data/system4.4.0.zip">System (V4.4)</a> (UpdateInstaller und Fehleranalyse)<br />und
                     <a href="./data/systemupdate6.zip">Hintergrundsystem (V6)</a> (Updater f&uuml;r System)
                     herunter.<br />
                     Laden Sie unseren
@@ -915,7 +917,7 @@
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
             Copyright Leander Kafemann 2024-2025 -
-            BueroWebsite 3.3.33 - BueroWebKit 4.1.0 - LKWEB <element id="LKWEBversionText">
+            BueroWebsite 3.3.34 - BueroWebKit 4.1.0 - LKWEB <element id="LKWEBversionText">
                 Version wird geladen...
             </element>
         </p>
