@@ -94,6 +94,27 @@
             </script>
             <h2>Aktuelles</h2>
             <div class="oval">
+                <font color="red">
+                    <h3>Buero 4.3 Support</h3>
+                    <p class="announcement">
+                        <b>
+                            Achtung:<br />
+                            <br />
+                            der Support für Büro 4.3 und niedriger wird zum 1.10. eingestellt.<br />
+                            Sie sollten Ihr Büro bis dahin auf 4.4 aktualisiert haben,<br />
+                            ansonsten wird es sich nicht mehr starten lassen.
+                        </b>
+                    </p>
+                </font>
+                <div class="like" id="buero4_3support" style="">?</div><button onclick="setLike('buero4_3support')" type="button" class="likeButton">&#128151;</button>
+                <div id="buero4_3supportComments"></div>
+                <textarea id="buero4_3supportCommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('buero4_3support')" />
+                <script>
+                    getContent("buero4_3support");
+                </script>
+            </div>
+            <div class="oval">
                 <font color="black">
                     <h3>Buero 4.4</h3>
                     <p class="announcement">
@@ -917,7 +938,7 @@
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
             Copyright Leander Kafemann 2024-2025 -
-            BueroWebsite 3.3.34 - BueroWebKit 4.1.0 - LKWEB <element id="LKWEBversionText">
+            BueroWebsite 3.3.35 - BueroWebKit 4.1.0 - LKWEB <element id="LKWEBversionText">
                 Version wird geladen...
             </element>
         </p>
