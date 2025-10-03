@@ -94,6 +94,61 @@
             </script>
             <h2>Aktuelles</h2>
             <div class="oval">
+                <font color="black">
+                    <h3>Entwickler gesucht</h3>
+                    <p class="announcement">
+                        Du programmierst gern und hast Lust,<br />
+                        an einem großen Projekt zu arbeiten?<br />
+                        <br />
+                        Melde dich über die Kommentare hier oder über BueroMail bei uns<br />
+                        und komm ins Team!<br />
+                        Du kannst bei uns nicht nur bei der Entwicklung von BueroOS mitwirken,<br />
+                        sondern auch Pakete wie Haustier übernehmen.<br />
+                        <br />
+                        Wir freuen uns auf dich!
+                    </p>
+                </font>
+                <div class="like" id="entwicklergesucht" style="">?</div><button onclick="setLike('entwicklergesucht')" type="button" class="likeButton">&#128151;</button>
+                <div id="entwicklergesuchtComments"></div>
+                <textarea id="entwicklergesuchtCommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('entwicklergesucht')" />
+                <script>getContent("entwicklergesucht");</script>
+            </div>
+            <div class="oval">
+                <font color="red">
+                    <h3>Buero 4.3 Support</h3>
+                    <p class="announcement">
+                        <b>
+                            Der Support für Büro 4.3 wurde nun eingestellt.<br />
+                            <br />
+                            Wenn Sie das Update zu 4.4 noch nicht installiert haben,<br />
+                            wird Ihre Version bei jedem Start abstürzen.<br />
+                            Sie können jedoch direkt update.py starten,<br />
+                            um das Update dennoch installieren zu können.
+                        </b>
+                    </p>
+                </font>
+                <div class="like" id="buero4_3support2" style="">?</div><button onclick="setLike('buero4_3support2')" type="button" class="likeButton">&#128151;</button>
+                <div id="buero4_3support2Comments"></div>
+                <textarea id="buero4_3support2CommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('buero4_3support2')" />
+                <script>getContent("buero4_3support2");</script>
+            </div>
+            <div class="oval">
+                <font color="black">
+                    <h3>Kommentarzeit</h3>
+                    <p class="announcement">
+                        Anscheinend gibt es Probleme mit der Zeiterfassung von Kommentaren auf dieser Seite.<br />
+                        Bitte schreibt möglichst viele Kommentare unter diesen Post, damit wir mehr Testdaten zum Beheben des Fehlers haben...
+                    </p>
+                </font>
+                <div class="like" id="kommentarzeit" style="">?</div><button onclick="setLike('kommentarzeit')" type="button" class="likeButton">&#128151;</button>
+                <div id="kommentarzeitComments"></div>
+                <textarea id="kommentarzeitCommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('kommentarzeit')" />
+                <script>getContent("kommentarzeit");</script>
+            </div>
+            <div class="oval">
                 <font color="red">
                     <h3>Buero 4.3 Support</h3>
                     <p class="announcement">
@@ -938,7 +993,7 @@
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
             Copyright Leander Kafemann 2024-2025 -
-            BueroWebsite 3.3.35 - BueroWebKit 4.1.0 - LKWEB <element id="LKWEBversionText">
+            BueroWebsite 3.3.36 - BueroWebKit 4.1.0 - LKWEB <element id="LKWEBversionText">
                 Version wird geladen...
             </element>
         </p>
