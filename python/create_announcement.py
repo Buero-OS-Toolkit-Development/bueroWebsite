@@ -7,7 +7,7 @@ import pyautogui as py
 SCHABL = """<div class="oval">
                 <font style="color: {} !important">
                     <h3 style="color: {} !important">{}</h3>
-                    <p style="font-size: 8px;">Veröffentlicht am {}</p>
+                    <p style="font-size: 8px; margin-top: -10px;">Veröffentlicht am {}</p>
                     <p class="announcement">{}
                         {}
                     {}</p>
