@@ -61,7 +61,7 @@
             </ul>
         </nav>
     </div>
-    <div style="margin-top: 50px;">
+    <div style="margin-top: 60px;">
         <div style="display: block;">
             <h1 style="font-size: 48px;" id="home"><u>B&uuml;ro - der Guide</u></h1>
             <h2>Account</h2>
@@ -93,6 +93,26 @@
                 }
             </script>
             <h2>Aktuelles</h2>
+            <div class="oval">
+                <font style="color: white !important">
+                    <h3 style="color: white !important">BueroWebKit 4.2</h3>
+                    <p style="font-size: 8px;">Veröffentlicht am 7.11.2025</p>
+                    <p class="announcement">
+                        <b>
+                            Wie Sie sicherlich schon bemerkt haben,<br />
+                            gibt es eine neue Version des BueroWebKit.<br />
+                            Das Design wurde nochmals etwas verbessert und neue Funktionen hinzugefügt.<br />
+                            <br />
+                            Es kann aber Probleme insbesondere mit älteren Beiträgen geben.
+                        </b>
+                    </p>
+                </font>
+                <div class="like" id="buerowebkit4_2" style="">?</div><button onclick="setLike('buerowebkit4_2')" type="button" class="likeButton">&#128151;</button>
+                <div id="buerowebkit4_2Comments"></div>
+                <textarea id="buerowebkit4_2CommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('buerowebkit4_2')" />
+                <script>getContent("buerowebkit4_2");</script>
+            </div>
             <div class="oval">
                 <font color="black">
                     <h3>Entwickler gesucht</h3>
@@ -990,16 +1010,18 @@
             <br /><br /><br /><br /><br />
         </div>
     </div>
-    <div class="footer" id="footer" style="text-align: center;">
-        <p class="footerText">
-            Copyright Leander Kafemann 2024-2025 -
-            BueroWebsite 3.3.36 - BueroWebKit 4.1.0 - LKWEB <element id="LKWEBversionText">
-                Version wird geladen...
-            </element>
-        </p>
-        <script>
-            getVersionLKWEBAgent();
-        </script>
+    <div class="footerContainer">
+        <footer class="footer" id="footer" style="text-align: center;">
+            <p class="footerText">
+                Copyright Leander Kafemann 2024-2025 -
+                BueroWebsite 3.3.37 - BueroWebKit 4.2.0 - LKWEB <element id="LKWEBversionText">
+                    Version wird geladen...
+                </element>
+            </p>
+            <script>
+                getVersionLKWEBAgent();
+            </script>
+        </footer>
     </div>
 </body>
 </html>

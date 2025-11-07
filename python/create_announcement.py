@@ -1,11 +1,13 @@
 from tkinter import *
 from tkinter import font
+from datetime import datetime
 import pyperclip
 import pyautogui as py
 
 SCHABL = """<div class="oval">
-                <font color="{}">
-                    <h3>{}</h3>
+                <font style="color: {} !important">
+                    <h3 style="color: {} !important">{}</h3>
+                    <p style="font-size: 8px;">Veröffentlicht am {}</p>
                     <p class="announcement">{}
                         {}
                     {}</p>
@@ -32,7 +34,8 @@ def export():
     if c.stroke:
         styling1 += "<s>"
         styling2 = "</s>"+styling2
-    to_export = SCHABL.format(c.color, title, styling1, content, styling2, id_, id_, id_, id_, id_, id_)
+    d = datetime.today()
+    to_export = SCHABL.format(c.color, c.color, title, str(d.day)+"."+str(d.month)+"."+str(d.year), styling1, content, styling2, id_, id_, id_, id_, id_, id_)
     pyperclip.copy(to_export)
     py.alert((to_export if len(to_export) < 4000 else "Content too long")+"\n\nin die Zwischenablage kopiert.", "Kopiert")
 
@@ -82,8 +85,8 @@ c.styling = ""
 c.underline = False
 c.stroke = False
 
-c.create_text(325, 60, text="    Büro Guide  \nContent Creator", font=("Verdana", "30", "bold"))
-c.create_text(325, 840, text="Copyright Leander Kafemann 2024-2025  -  Version 4.0.0", font=("Verdana", "10"))
+c.create_text(325, 60, text="    Buero Guide  \nContent Creator", font=("Verdana", "30", "bold"))
+c.create_text(325, 840, text="Copyright Leander Kafemann 2024-2025  -  Version 4.2.0", font=("Verdana", "10"))
 
 c.create_text(20, 200, text="Titel:", font=("Verdana", "20"), anchor="w")
 c.create_text(325, 270, text="Inhalt:", font=("Verdana", "25"))
