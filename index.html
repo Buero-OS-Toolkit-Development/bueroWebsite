@@ -95,8 +95,27 @@
             <h2>Aktuelles</h2>
             <div class="oval">
                 <font style="color: white !important">
+                    <h3 style="color: white !important">GoodFood 1.1</h3>
+                    <p style="font-size: 8px; margin-top: -10px;">Veröffentlicht am 8.11.2025</p>
+                    <p class="announcement">
+                        <b>
+                            Eine neue Version von GoodFood ist erschienen.<br />
+                            <br />
+                            Nun können GoodFood-Datenbanken auf einem Server gehosted werden,<br />
+                            sodass mehrere Nutzer sich die gleiche Datenbank teilen.
+                        </b>
+                    </p>
+                </font>
+                <div class="like" id="goodfood1_1" style="">?</div><button onclick="setLike('goodfood1_1')" type="button" class="likeButton">&#128151;</button>
+                <div id="goodfood1_1Comments"></div>
+                <textarea id="goodfood1_1CommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('goodfood1_1')" />
+                <script>getContent("goodfood1_1");</script>
+            </div>
+            <div class="oval">
+                <font style="color: white !important">
                     <h3 style="color: white !important">BueroWebKit 4.2</h3>
-                    <p style="font-size: 8px;">Veröffentlicht am 7.11.2025</p>
+                    <p style="font-size: 8px; margin-top: -10px;">Veröffentlicht am 7.11.2025</p>
                     <p class="announcement">
                         <b>
                             Wie Sie sicherlich schon bemerkt haben,<br />
@@ -681,14 +700,14 @@
                         Nutzen Sie stattdessen GoodFood.
                     </b>
                 </p>
-                <h4><a href="./data/goodFood1.0.0.zip">GoodFood (V1.0)</a></h4>
+                <h4><a href="./data/goodFood1.1.0.zip">GoodFood (V1.1)</a></h4>
                 <p>
                     GoodFood ist eine Weiterentwicklung des Lebensmittelmanagers,<br />
                     diw weiterhin alle bereits bekannten Features unterst&uuml;tzt.<br />
                     Dar&uuml;ber hinaus bietet GoodFood die Vorteile eines B&uuml;roPlugins und von SQL und<br />
                     verf&uuml;gt &uuml;ber eine Importieren-Funktion von Datenbanken.<br /><br />
                     <i>
-                        Dies ist die erste Version von GoodFood.
+                        Mit geteilten Datenbanken k&ouml;nnen Sie Ihre Lebensmittel-Datenbank mit anderen Nutzern teilen.
                     </i><br /><br />
                     <b>GoodFood ist eine Weiterentwicklung des Lebensmittelmanagers, gewisserma&szlig;en Version 4.</b><br /><br />
                     <b>
@@ -1017,7 +1036,7 @@
             </p>
             <p class="correct">
                 Copyright Leander Kafemann 2024-2025 -
-                BueroWebsite 3.3.39 - BueroWebKit 4.2.0 - LKWEB <element id="LKWEBversionText">
+                BueroWebsite 3.3.40 - BueroWebKit 4.2.0 - LKWEB <element id="LKWEBversionText">
                     Version wird geladen...
                 </element>
             </p>
