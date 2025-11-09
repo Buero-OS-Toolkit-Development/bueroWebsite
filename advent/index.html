@@ -20,7 +20,10 @@
     <script type="text/javascript" src="https://buero-os-toolkit-development.github.io/BueroWebKit/js/get_like.js"></script>
     <script type="text/javascript" src="https://buero-os-toolkit-development.github.io/BueroWebKit/js/set_like.js"></script>
     <script type="text/javascript" src="https://buero-os-toolkit-development.github.io/BueroWebKit/js/comment.js"></script>
+    <script type="text/javascript" src="https://buero-os-toolkit-development.github.io/BueroWebKit/js/menu.js"></script>
+    <script type="text/javascript" src="https://buero-os-toolkit-development.github.io/LKWEB-Backend/getVersion/getVersion.js"></script>
     <meta charset="utf-8" />
+    <meta name="google-site-verification" content="7B0CF-ClfZaLgOrvs32NkRIFktgrLNCGxIwQPBNUqBs" />
 </head>
 <body>
     <noscript>
@@ -71,10 +74,21 @@
             getContent("adventskalender");
         </script>
     </div>
-    <div class="footer" id="footer" style="text-align: center;">
-        <p class="footerText">
-            Copyright Leander Kafemann 2024-2025
-        </p>
+    <div class="footerContainer">
+        <footer class="footer" id="footer" style="text-align: center;">
+            <p class="placeholder">
+                Copyright
+            </p>
+            <p class="correct">
+                Copyright Leander Kafemann 2024-2025 -
+                BueroWebsite 3.3.41 - BueroWebKit 4.2.0 - LKWEB <element id="LKWEBversionText">
+                    Version wird geladen...
+                </element>
+            </p>
+            <script>
+            getVersionLKWEBAgent();
+            </script>
+        </footer>
     </div>
     <script>
         alert("Dieses Special war zeitlich begrenzt und ist momentan nicht verfügbar.");
