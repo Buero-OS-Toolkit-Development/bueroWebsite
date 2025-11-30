@@ -1,66 +1,39 @@
-iframe {
-    margin-left: 10%;
-    margin-right: 10%;
-    height: 500px;
-    width: 80%;
-    border: dotted white;
-    border-radius: 80px;
-    transition-duration: 4s;
-    background-color: black;
-    font-family: "Source Code Pro", monospace;
+/*
+    Dieser Code wurde exklusiv und allein von Leander Kafemann entwickelt.
+*/
+
+body {
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/snow.png');
+    background-color: #f0f8ff; /* Ein sanftes Schneeweiß als Fallback */
+    color: #333; /* Dunklerer Text für besseren Kontrast */
 }
 
-iframe:hover {
-    margin-left: 7.5%;
-    margin-right: 7.5%;
-    width: 85%;
-    height: 600px;
+.oval {
+    background-color: rgba(255, 255, 255, 0.8); /* Leicht transparenter weißer Hintergrund */
+    border: 2px solid #d4af37; /* Goldener Rand */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Weicherer Schatten */
 }
 
-.loader {
-    border: 32px groove hotpink;
-    border-radius: 60%;
-    width: 300px;
-    height: 300px;
-    margin-left: 40%;
-    padding: 55px;
-    margin-top: 50px;
-    margin-bottom: 200px;
-    animation: spin 2s alternate-reverse infinite;
+h1, h2, h3 {
+    color: #b22222; /* Ein festliches Feuerrot */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
+.navbar {
+    background-color: #2e8b57; /* Ein sattes Tannengrün */
+}
+
+    .navbar a {
+        color: white;
     }
 
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-html.black {
-    background-color: black;
-    height: 300px;
-}
-
-h1.fix {
-    position: absolute;
-    text-align: center;
-    margin-left: 43.5%;
-    margin-right: 45%;
-    margin-bottom: 170px;
+.footerContainer .footer {
+    background-color: #2e8b57; /* Passend zur Navbar */
     color: white;
-    font-family: "Source Code Pro", monospace;
-    /*margin: 200px;*/
 }
-p.white {
-    color: ghostwhite;
-    text-align: center;
-    margin-left: 45%;
-    margin-right: 45%;
-}
-div.outer {
-    background-color: black;
-    height: 800px;
+
+iframe {
+    border: 3px solid #d4af37; /* Goldener Rand für den Kalender */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

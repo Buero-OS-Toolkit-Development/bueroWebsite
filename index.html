@@ -39,7 +39,7 @@
             <ul>
                 <li style="margin: 0;">
                     <a href="#" style="padding: 0;">
-                        <img src="./images/logo.png" alt="logo" class="navBarImage"/>
+                        <img src="./images/logo.png" alt="logo" class="navBarImage" />
                     </a>
                 </li>
                 <li style="margin-left: 3px;">
@@ -61,6 +61,11 @@
             </ul>
         </nav>
     </div>
+    <!-- Weihnachtskranz-Link zum Adventskalender -->
+    <a href="./advent/index.html" title="Zum Adventskalender" style="position: fixed; bottom: 80px; right: 20px; z-index: 1000; width: 100px; height: 100px; transition: transform 0.2s ease-in-out;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Christmas_wreath.svg/240px-Christmas_wreath.svg.png" alt="Adventskranz" style="width: 100%; height: auto;">
+    </a>
+    <!-- Ende Weihnachtskranz-Link -->
     <div style="margin-top: 60px;">
         <div style="display: block;">
             <h1 style="font-size: 48px;" id="home"><u>B&uuml;ro - der Guide</u></h1>
@@ -133,7 +138,7 @@
                 <script>getContent("buerowebkit4_2");</script>
             </div>
             <div class="oval">
-                <font color="black">
+                <font color="white">
                     <h3>Entwickler gesucht</h3>
                     <p class="announcement">
                         Du programmierst gern und hast Lust,<br />
@@ -174,27 +179,6 @@
                 <script>getContent("buero4_3support2");</script>
             </div>
             <div class="oval">
-                <font color="red">
-                    <h3>Buero 4.3 Support</h3>
-                    <p class="announcement">
-                        <b>
-                            Achtung:<br />
-                            <br />
-                            der Support für Büro 4.3 und niedriger wird zum 1.10. eingestellt.<br />
-                            Sie sollten Ihr Büro bis dahin auf 4.4 aktualisiert haben,<br />
-                            ansonsten wird es sich nicht mehr starten lassen.
-                        </b>
-                    </p>
-                </font>
-                <div class="like" id="buero4_3support" style="">?</div><button onclick="setLike('buero4_3support')" type="button" class="likeButton">&#128151;</button>
-                <div id="buero4_3supportComments"></div>
-                <textarea id="buero4_3supportCommentText" placeholder="Kommentieren..."></textarea><br />
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('buero4_3support')" />
-                <script>
-                    getContent("buero4_3support");
-                </script>
-            </div>
-            <div class="oval">
                 <font color="black">
                     <h3>Buero 4.4</h3>
                     <p class="announcement">
@@ -222,7 +206,7 @@
                 </script>
             </div>
             <div class="oval">
-                <font color="black">
+                <font color="white">
                     <h3>BueroSetup 18</h3>
                     <p class="announcement">
                         Die neue Version behebt einen kleineren Fehler und bereitet aufregende Neuerungen,<br />
@@ -238,25 +222,7 @@
                 </script>
             </div>
             <div class="oval">
-                <font color="black">
-                    <h3>große Neuerungen</h3>
-                    <p class="announcement">
-                        Liebe Nutzer,<br />
-                        <br />
-                        wir freuen uns, <br />
-                        endlich mal wieder etwas Größeres ankündigen zu können.<br />
-                        In Kürze wird mit Büro 4.4 die letzte Version von Büro, wie Sie es kennen, erscheinen.<br />
-                        Was danach kommt, werden Sie sehen...
-                    </p>
-                </font>
-                <div class="like" id="großeneuerungen" style="">?</div><button onclick="setLike('großeneuerungen')" type="button" class="likeButton">&#128151;</button>
-                <div id="großeneuerungenComments"></div>
-                <textarea id="großeneuerungenCommentText" placeholder="Kommentieren..."></textarea><br />
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('großeneuerungen')" />
-                <script>getContent("großeneuerungen");</script>
-            </div>
-            <div class="oval">
-                <font color="black">
+                <font color="white">
                     <h3>LKWEB 3</h3>
                     <p class="announcement">
                         <b>
@@ -671,7 +637,7 @@
                     GoodFood ist eine Weiterentwicklung des Lebensmittelmanagers,<br />
                     diw weiterhin alle bereits bekannten Features unterst&uuml;tzt.<br />
                     Dar&uuml;ber hinaus bietet GoodFood die Vorteile eines B&uuml;roPlugins und von SQL und<br />
-                    verf&uuml;gt &uuml;ber eine Importieren-Funktion von Datenbanken,<br/>
+                    verf&uuml;gt &uuml;ber eine Importieren-Funktion von Datenbanken,<br />
                     mit der Sie auch geteilte Datenbanken dauerhaft als Quelle hinterlegen können.<br /><br />
                     <i>
                         Ein durch eine fehlerhafte Speicherung des Passworts hervorgerufener Fehler wurde behoben.
@@ -1003,7 +969,7 @@
             </p>
             <p class="correct">
                 Copyright Leander Kafemann 2024-2025 -
-                BueroWebsite 3.3.41 - BueroWebKit 4.2.0 - LKWEB <element id="LKWEBversionText">
+                BueroWebsite 3.3.42 - BueroWebKit 4.2.0 - LKWEB <element id="LKWEBversionText">
                     Version wird geladen...
                 </element>
             </p>
