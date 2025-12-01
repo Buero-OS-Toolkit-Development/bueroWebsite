@@ -1,39 +1,128 @@
-/*
+﻿/*
     Dieser Code wurde exklusiv und allein von Leander Kafemann entwickelt.
 */
 
+/* Winterlicher Hintergrund mit sanftem Verlauf */
 body {
-    background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/snow.png');
-    background-color: #f0f8ff; /* Ein sanftes Schneewei� als Fallback */
-    color: #333; /* Dunklerer Text f�r besseren Kontrast */
+    background: linear-gradient(180deg, #0b1f33 0%, #123a5a 60%, #1f4d70 100%);
+    color: #eaf6ff; /* gute Lesbarkeit auf dunklem Hintergrund */
 }
 
-.oval {
-    background-color: rgba(255, 255, 255, 0.8); /* Leicht transparenter wei�er Hintergrund */
-    border: 2px solid #d4af37; /* Goldener Rand */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Weicherer Schatten */
+    /* Fallende Schneeflocken mittels Emoji – ohne Bilder */
+    body::before,
+    body::after {
+        content: "❄️ ❄️ ❄️ ❄️ ❄️ ❄️ ❄️ ❄️ ❄️ ❄️";
+        position: fixed;
+        top: -10vh;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        line-height: 1.8;
+        pointer-events: none;
+        opacity: 0.45;
+        animation: snowFall 12s linear infinite;
+        z-index: 0;
+        filter: drop-shadow(0 0 2px rgba(255,255,255,0.25));
+    }
+
+    /* Zweite Ebene mit anderer Geschwindigkeit/Versatz für Tiefe */
+    body::after {
+        content: "❄️    ❄️ ❄️   ❄️    ❄️ ❄️    ❄️   ❄️";
+        animation-duration: 18s;
+        animation-delay: 3s;
+        opacity: 0.30;
+    }
+
+@keyframes snowFall {
+    0% {
+        transform: translateY(-10vh);
+    }
+
+    100% {
+        transform: translateY(110vh);
+    }
 }
 
-h1, h2, h3 {
-    color: #b22222; /* Ein festliches Feuerrot */
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-}
-
+/* Navbar in Tannengrün, Links hell */
 .navbar {
-    background-color: #2e8b57; /* Ein sattes Tannengr�n */
+    background-color: #1c5b3f;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+    z-index: 2;
 }
 
     .navbar a {
-        color: white;
+        color: #eaf6ff;
     }
 
-.footerContainer .footer {
-    background-color: #2e8b57; /* Passend zur Navbar */
-    color: white;
+/* Überschriften in festlichem Rot mit zarter Schattenkante */
+h1, h2, h3 {
+    color: #ffdddd;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.35);
 }
 
+    h1 u {
+        text-decoration-color: #d32f2f;
+    }
+
+/* Inhaltliche Boxen winterlich aufbereitet */
+.oval {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+    color: #eaf6ff;
+}
+
+/* Kalender-Frame hervorheben */
 iframe {
-    border: 3px solid #d4af37; /* Goldener Rand f�r den Kalender */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    width: 100%;
+    min-height: 420px;
+    border: 2.5px solid #d4af37; /* goldener Akzent */
+    border-radius: 12px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.35);
+    background: rgba(255,255,255,0.06);
+}
+
+/* Like-Elemente mit festlichem Hover */
+.like {
+    color: #ffebee;
+}
+
+.likeButton {
+    background: #b71c1c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 10px;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.35);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+    .likeButton:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+    }
+
+/* Formular-Elemente dezenter */
+textarea {
+    background: rgba(255,255,255,0.10);
+    color: #eaf6ff;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 8px;
+}
+
+/* Footer an Navbar angepasst */
+.footerContainer .footer {
+    background-color: #1c5b3f;
+    color: #eaf6ff;
+    border-top: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Sicherstellen, dass Inhalte über dem Schnee liegen */
+.navbar, .oval, footer, iframe {
+    position: relative;
+    z-index: 1;
 }
