@@ -62,31 +62,78 @@
         </nav>
     </div>
     <!-- Weihnachtskranz-Link zum Adventskalender -->
-    <!-- Weihnachtskranz-Link zum Adventskalender -->
+    <!-- Adventskranz-Link zum Adventskalender (ohne Schleife) -->
     <a href="./advent/index.html" title="Zum Adventskalender"
-       style="position: fixed; bottom: 80px; right: 20px; z-index: 1000; width: 100px; height: 100px; display: inline-block; transition: transform 0.2s ease-in-out;"
-       onmouseover="this.style.transform='scale(1.1)'"
+       style="position: fixed; bottom: 80px; right: 20px; z-index: 1000; width: 120px; height: 120px; display: inline-block; transition: transform 0.2s ease-in-out;"
+       onmouseover="this.style.transform='scale(1.08)'"
        onmouseout="this.style.transform='scale(1)'">
-        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
-             style="width: 100%; height: 100%; border-radius: 50%; box-shadow: 0 2px 6px rgba(0,0,0,0.25); background: radial-gradient(#0b3d20, #145a32);">
-            <!-- Kranz-Blätter -->
-            <circle cx="50" cy="50" r="40" fill="none" stroke="#1e7a3b" stroke-width="12" />
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"
+             style="width: 100%; height: 100%; border-radius: 50%; box-shadow: 0 3px 8px rgba(0,0,0,0.25);">
+            <defs>
+                <radialGradient id="wreathBg" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#0f3a22" />
+                    <stop offset="100%" stop-color="#154d2d" />
+                </radialGradient>
+                <linearGradient id="berryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ff3b3b" />
+                    <stop offset="100%" stop-color="#b71c1c" />
+                </linearGradient>
+                <linearGradient id="leafGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#2f8f57" />
+                    <stop offset="100%" stop-color="#1e7a3b" />
+                </linearGradient>
+                <path id="leafPath" d="M0,-38 C6,-36 8,-32 9,-28 C8,-24 5,-22 0,-21 C-5,-22 -8,-24 -9,-28 C-8,-32 -6,-36 0,-38 Z" />
+            </defs>
+
+            <!-- Kranz-Hintergrund -->
+            <circle cx="60" cy="60" r="56" fill="url(#wreathBg)" />
+
+            <!-- Laub-Ring -->
+            <g transform="translate(60,60)" fill="url(#leafGrad)" stroke="#145a32" stroke-width="0.6">
+                <use href="#leafPath" transform="rotate(0)" />
+                <use href="#leafPath" transform="rotate(15)" />
+                <use href="#leafPath" transform="rotate(30)" />
+                <use href="#leafPath" transform="rotate(45)" />
+                <use href="#leafPath" transform="rotate(60)" />
+                <use href="#leafPath" transform="rotate(75)" />
+                <use href="#leafPath" transform="rotate(90)" />
+                <use href="#leafPath" transform="rotate(105)" />
+                <use href="#leafPath" transform="rotate(120)" />
+                <use href="#leafPath" transform="rotate(135)" />
+                <use href="#leafPath" transform="rotate(150)" />
+                <use href="#leafPath" transform="rotate(165)" />
+                <use href="#leafPath" transform="rotate(180)" />
+                <use href="#leafPath" transform="rotate(195)" />
+                <use href="#leafPath" transform="rotate(210)" />
+                <use href="#leafPath" transform="rotate(225)" />
+                <use href="#leafPath" transform="rotate(240)" />
+                <use href="#leafPath" transform="rotate(255)" />
+                <use href="#leafPath" transform="rotate(270)" />
+                <use href="#leafPath" transform="rotate(285)" />
+                <use href="#leafPath" transform="rotate(300)" />
+                <use href="#leafPath" transform="rotate(315)" />
+                <use href="#leafPath" transform="rotate(330)" />
+                <use href="#leafPath" transform="rotate(345)" />
+            </g>
+
+            <!-- Innerer Ring -->
+            <circle cx="60" cy="60" r="32" fill="none" stroke="#134b2d" stroke-width="8" />
+
             <!-- Beeren -->
-            <circle cx="30" cy="40" r="3" fill="#c62828" />
-            <circle cx="60" cy="30" r="3" fill="#c62828" />
-            <circle cx="70" cy="55" r="3" fill="#c62828" />
-            <circle cx="40" cy="65" r="3" fill="#c62828" />
-            <circle cx="50" cy="50" r="3" fill="#c62828" />
-            <!-- Schleife -->
-            <path d="M50 70
-             c10 0 16-6 18-10
-             c-6 2-10 0-18-6
-             c-8 6-12 8-18 6
-             c2 4 8 10 18 10z" fill="#d32f2f" />
-            <rect x="47" y="62" width="6" height="14" rx="2" fill="#b71c1c" />
+            <g>
+                <circle cx="25" cy="50" r="4.2" fill="url(#berryGrad)" />
+                <circle cx="40" cy="30" r="4.2" fill="url(#berryGrad)" />
+                <circle cx="62" cy="24" r="4.2" fill="url(#berryGrad)" />
+                <circle cx="82" cy="36" r="4.2" fill="url(#berryGrad)" />
+                <circle cx="92" cy="60" r="4.2" fill="url(#berryGrad)" />
+                <circle cx="80" cy="80" r="4.2" fill="url(#berryGrad)" />
+                <circle cx="58" cy="92" r="4.2" fill="url(#berryGrad)" />
+                <circle cx="38" cy="84" r="4.2" fill="url(#berryGrad)" />
+                <circle cx="28" cy="68" r="4.2" fill="url(#berryGrad)" />
+            </g>
         </svg>
     </a>
-    <!-- Ende Weihnachtskranz-Link -->
+    <!-- Ende Adventskranz-Link -->
     <!-- Ende Weihnachtskranz-Link -->
     <div style="margin-top: 60px;">
         <div style="display: block;">
