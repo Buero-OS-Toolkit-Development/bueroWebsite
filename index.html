@@ -62,9 +62,31 @@
         </nav>
     </div>
     <!-- Weihnachtskranz-Link zum Adventskalender -->
-    <a href="./advent/index.html" title="Zum Adventskalender" style="position: fixed; bottom: 80px; right: 20px; z-index: 1000; width: 100px; height: 100px; transition: transform 0.2s ease-in-out;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Christmas_wreath.svg/240px-Christmas_wreath.svg.png" alt="Adventskranz" style="width: 100%; height: auto;">
+    <!-- Weihnachtskranz-Link zum Adventskalender -->
+    <a href="./advent/index.html" title="Zum Adventskalender"
+       style="position: fixed; bottom: 80px; right: 20px; z-index: 1000; width: 100px; height: 100px; display: inline-block; transition: transform 0.2s ease-in-out;"
+       onmouseover="this.style.transform='scale(1.1)'"
+       onmouseout="this.style.transform='scale(1)'">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+             style="width: 100%; height: 100%; border-radius: 50%; box-shadow: 0 2px 6px rgba(0,0,0,0.25); background: radial-gradient(#0b3d20, #145a32);">
+            <!-- Kranz-Blätter -->
+            <circle cx="50" cy="50" r="40" fill="none" stroke="#1e7a3b" stroke-width="12" />
+            <!-- Beeren -->
+            <circle cx="30" cy="40" r="3" fill="#c62828" />
+            <circle cx="60" cy="30" r="3" fill="#c62828" />
+            <circle cx="70" cy="55" r="3" fill="#c62828" />
+            <circle cx="40" cy="65" r="3" fill="#c62828" />
+            <circle cx="50" cy="50" r="3" fill="#c62828" />
+            <!-- Schleife -->
+            <path d="M50 70
+             c10 0 16-6 18-10
+             c-6 2-10 0-18-6
+             c-8 6-12 8-18 6
+             c2 4 8 10 18 10z" fill="#d32f2f" />
+            <rect x="47" y="62" width="6" height="14" rx="2" fill="#b71c1c" />
+        </svg>
     </a>
+    <!-- Ende Weihnachtskranz-Link -->
     <!-- Ende Weihnachtskranz-Link -->
     <div style="margin-top: 60px;">
         <div style="display: block;">
@@ -969,7 +991,7 @@
             </p>
             <p class="correct">
                 Copyright Leander Kafemann 2024-2025 -
-                BueroWebsite 3.3.42 - BueroWebKit 4.2.0 - LKWEB <element id="LKWEBversionText">
+                BueroWebsite 3.3.43 - BueroWebKit 4.2.0 - LKWEB <element id="LKWEBversionText">
                     Version wird geladen...
                 </element>
             </p>
