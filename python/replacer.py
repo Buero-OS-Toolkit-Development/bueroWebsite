@@ -1,9 +1,9 @@
 from naturalsize import listToInt, special_starter
 
-print("Booting replacer v4.0.0")
+print("Booting replacer v4.2.0")
 print("replacer is part of Leander Kafemanns project BueroWebKit.")
 
-path = input("Pfad angeben: ") # or add own default path here
+path = input("Pfad angeben: ") or "../index.html" # or add own default path here
 with open(path, "r", encoding="utf-8") as f:
     content_org = f.read()
 invalid = ["ß", "ü", "ö", "Ö", "ü", "ä", "Ä", "b&uuml;", " />"]

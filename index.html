@@ -63,6 +63,7 @@
     </div>
     <!-- Weihnachtskranz-Link zum Adventskalender -->
     <!-- Adventskranz-Link zum Adventskalender (ohne Schleife) -->
+    <!--
     <a href="./advent/index.html" title="Zum Adventskalender"
        style="position: fixed; bottom: 80px; right: 20px; z-index: 1000; width: 120px; height: 120px; display: inline-block; transition: transform 0.2s ease-in-out;"
        onmouseover="this.style.transform='scale(1.08)'"
@@ -85,10 +86,8 @@
                 <path id="leafPath" d="M0,-38 C6,-36 8,-32 9,-28 C8,-24 5,-22 0,-21 C-5,-22 -8,-24 -9,-28 C-8,-32 -6,-36 0,-38 Z" />
             </defs>
 
-            <!-- Kranz-Hintergrund -->
             <circle cx="60" cy="60" r="56" fill="url(#wreathBg)" />
 
-            <!-- Laub-Ring -->
             <g transform="translate(60,60)" fill="url(#leafGrad)" stroke="#145a32" stroke-width="0.6">
                 <use href="#leafPath" transform="rotate(0)" />
                 <use href="#leafPath" transform="rotate(15)" />
@@ -116,10 +115,8 @@
                 <use href="#leafPath" transform="rotate(345)" />
             </g>
 
-            <!-- Innerer Ring -->
             <circle cx="60" cy="60" r="32" fill="none" stroke="#134b2d" stroke-width="8" />
 
-            <!-- Beeren -->
             <g>
                 <circle cx="25" cy="50" r="4.2" fill="url(#berryGrad)" />
                 <circle cx="40" cy="30" r="4.2" fill="url(#berryGrad)" />
@@ -133,6 +130,7 @@
             </g>
         </svg>
     </a>
+    -->
     <!-- Ende Adventskranz-Link -->
     <!-- Ende Weihnachtskranz-Link -->
     <div style="margin-top: 60px;">
@@ -167,6 +165,35 @@
                 }
             </script>
             <h2>Aktuelles</h2>
+
+            <!--Neue Artikel hier einfügen-->
+
+            <div class="oval">
+                <font style="color: black !important">
+                    <h3 style="color: black !important">Entwickler gesucht</h3>
+                    <p style="font-size: 8px; margin-top: -10px;">Veröffentlicht am 9.6.2026</p>
+                    <p class="announcement">
+                        <b>
+                            Du programmierst gern in deiner Freizeit und hast Lust,<br />
+                            zusammen mit Anderen an einem größeren Projekt zu arbeiten?<br />
+                            <br />
+                            Melde dich gern bei uns!<br />
+                            <br />
+                            Was wir bieten:<br />
+                            - einfacher Einstieg in die Programmierwelt<br />
+                            - Entwicklungstools für die Arbeit mit und an BueroOS<br />
+                            - eigene Projekte (z.B. BueroBonus etc.)
+                        </b>
+                    </p>
+                </font>
+                <div class="like" id="entwicklergesucht" style="">?</div><button onclick="setLike('entwicklergesucht')" type="button" class="likeButton">&#128151;</button>
+                <div id="entwicklergesuchtComments"></div>
+                <textarea id="entwicklergesuchtCommentText" placeholder="Kommentieren..."></textarea><br />
+                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('entwicklergesucht')" />
+                <script>
+                    getContent("entwicklergesucht");
+                </script>
+            </div>
             <div class="oval">
                 <font style="color: white !important">
                     <h3 style="color: white !important">GoodFood 1.1</h3>
@@ -205,27 +232,6 @@
                 <textarea id="buerowebkit4_2CommentText" placeholder="Kommentieren..."></textarea><br />
                 <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('buerowebkit4_2')" />
                 <script>getContent("buerowebkit4_2");</script>
-            </div>
-            <div class="oval">
-                <font color="white">
-                    <h3>Entwickler gesucht</h3>
-                    <p class="announcement">
-                        Du programmierst gern und hast Lust,<br />
-                        an einem großen Projekt zu arbeiten?<br />
-                        <br />
-                        Melde dich über die Kommentare hier oder über BueroMail bei uns<br />
-                        und komm ins Team!<br />
-                        Du kannst bei uns nicht nur bei der Entwicklung von BueroOS mitwirken,<br />
-                        sondern auch Pakete wie Haustier übernehmen.<br />
-                        <br />
-                        Wir freuen uns auf dich!
-                    </p>
-                </font>
-                <div class="like" id="entwicklergesucht" style="">?</div><button onclick="setLike('entwicklergesucht')" type="button" class="likeButton">&#128151;</button>
-                <div id="entwicklergesuchtComments"></div>
-                <textarea id="entwicklergesuchtCommentText" placeholder="Kommentieren..."></textarea><br />
-                <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('entwicklergesucht')" />
-                <script>getContent("entwicklergesucht");</script>
             </div>
             <div class="oval">
                 <font color="red">
@@ -1038,7 +1044,7 @@
             </p>
             <p class="correct">
                 Copyright Leander Kafemann 2024-2025 -
-                BueroWebsite 3.3.43 - BueroWebKit 4.2.0 - LKWEB <element id="LKWEBversionText">
+                BueroWebsite 3.3.44 - BueroWebKit 4.2.0 - LKWEB <element id="LKWEBversionText">
                     Version wird geladen...
                 </element>
             </p>
